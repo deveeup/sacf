@@ -4,7 +4,8 @@
   "description": "SACF Banco de Bogota",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:dev": "webpack --config ./webpack.config.js",
+    "build:sev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
