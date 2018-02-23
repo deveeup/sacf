@@ -1,10 +1,10 @@
 
 import React from 'react'
-import AppViewStyl from './app-view.styl'
+import './app-view.styl'
 
 function AppView(props){
 	return(
-		<div className="container">
+		<div className="AppContainer">
 			{props.children}
 		</div>
 	)

@@ -1,5 +1,81 @@
-.container {
+.AppContainer {
   margin: auto;
   max-width: 1366px;
   width: 100%;
+}
+.Header {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background: -webkit-linear-gradient(right, #1e335c, #074780, #1e335c);
+  background: -moz-linear-gradient(right, #1e335c, #074780, #1e335c);
+  background: -o-linear-gradient(right, #1e335c, #074780, #1e335c);
+  background: -ms-linear-gradient(right, #1e335c, #074780, #1e335c);
+  background: linear-gradient(to left, #1e335c, #074780, #1e335c);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  height: 130px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.Menu {
+  border: 1px dashed #f00;
+  margin: 0;
+  padding: 0;
+  height: 103px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: #0974b7;
+}
+.Menu ul {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.Menu ul li {
+  border: 1px solid #f00;
+  padding: 10px;
+  width: 16.6%;
+  text-align: center;
+}
+.Menu ul li a {
+  color: #fff;
+  text-decoration: none;
 }
