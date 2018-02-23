@@ -11,5 +11,10 @@
     "url": "git@github:deveeup/sacf.git"
   },
   "author": "deveeup",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-stage-2": "^6.24.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
 }
