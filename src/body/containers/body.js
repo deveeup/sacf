@@ -6,11 +6,11 @@ import Modal from '../../modal/containers/modal'
 
 class Body extends Component {
 	state = {
-		Prison: false,
-		Politics: false,
 		ModalActive: false,
+		ModalContent: '',
+		Politics: false,
+		Prison: false,
 	}
-
 	MouseEnter = (e) => {
 		switch(e.target.id) {
 			case 'Prison':
@@ -25,7 +25,6 @@ class Body extends Component {
 			break;
 		}
 	}
-
 	MouseLeave = (e) => {
 		switch(e.target.id) {
 			case 'Prison':
@@ -44,28 +43,48 @@ class Body extends Component {
 		this.setState({
 			ModalActive: true,
 		})
-		console.log(e.target.id)
+		switch(e.target.id) {
+			case 'Prison':
+			this.setState({
+				ModalContent: 'Prisión',
+			})
+			break;
+			case 'Politics':
+			this.setState({
+				ModalContent: 'Alcaldía',
+			})
+			break;
+		}
+
 	}
-	CloseModal = () => {
-		this.setState({
-			ModalActive: false,
-		})
+	CloseModal = (e) => {
+		if(e.target.id == 'ModalContainer' || 'ButtonClose') {
+			this.setState({
+				ModalActive: false,
+			})
+		}
+		if (e.target.id == ''){
+			this.setState({
+				ModalActive: true,
+			})
+		}
 	}
 	render(){
 		return(
 			<div>
 				<BodyView 
 					Ciudad={Ciudad} 
+					MouseClick={this.MouseClick}
 					MouseEnter={this.MouseEnter}
 					MouseLeave={this.MouseLeave}
-					MouseClick={this.MouseClick}
 
-					Prison={this.state.Prison}
 					Politics={this.state.Politics}
+					Prison={this.state.Prison}
 				/>
 				<Modal 
-					ModalActive={this.state.ModalActive}
 					CloseModal={this.CloseModal}
+					ModalActive={this.state.ModalActive}
+					ModalContent={this.state.ModalContent}
 				/>
 			</div>
 		)

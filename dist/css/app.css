@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);.AppContainer {
-  border: 1px solid #000;
   font-family: 'Roboto', sans-serif;
   margin: auto;
   max-width: 1366px;
@@ -119,9 +118,9 @@
   transform: scale(0.9);
 }
 .BodyView {
-  width: 1366px;
   min-height: 1024px;
   position: relative;
+  width: 1366px;
 }
 .BodyView .Ciudad {
   left: 0;
@@ -138,7 +137,6 @@
   z-index: 2;
 }
 .BodyView .Transparent .HandleClick {
-  border: 1px solid #008000;
   height: 100%;
   position: absolute;
   width: 100%;
@@ -203,6 +201,12 @@
   display: -ms-flexbox;
   display: box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -moz-box-pack: center;
   -o-box-pack: center;

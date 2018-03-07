@@ -18658,9 +18658,10 @@ var Body = function (_Component) {
 		}
 
 		return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Body.__proto__ || Object.getPrototypeOf(Body)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-			Prison: false,
+			ModalActive: false,
+			ModalContent: '',
 			Politics: false,
-			ModalActive: false
+			Prison: false
 		}, _this.MouseEnter = function (e) {
 			switch (e.target.id) {
 				case 'Prison':
@@ -18691,11 +18692,29 @@ var Body = function (_Component) {
 			_this.setState({
 				ModalActive: true
 			});
-			console.log(e.target.id);
-		}, _this.CloseModal = function () {
-			_this.setState({
-				ModalActive: false
-			});
+			switch (e.target.id) {
+				case 'Prison':
+					_this.setState({
+						ModalContent: 'Prisión'
+					});
+					break;
+				case 'Politics':
+					_this.setState({
+						ModalContent: 'Alcaldía'
+					});
+					break;
+			}
+		}, _this.CloseModal = function (e) {
+			if (e.target.id == 'ModalContainer' || 'ButtonClose') {
+				_this.setState({
+					ModalActive: false
+				});
+			}
+			if (e.target.id == '') {
+				_this.setState({
+					ModalActive: true
+				});
+			}
 		}, _temp), _possibleConstructorReturn(_this, _ret);
 	}
 
@@ -18707,16 +18726,17 @@ var Body = function (_Component) {
 				null,
 				_react2.default.createElement(_bodyView2.default, {
 					Ciudad: _ciudad2.default,
+					MouseClick: this.MouseClick,
 					MouseEnter: this.MouseEnter,
 					MouseLeave: this.MouseLeave,
-					MouseClick: this.MouseClick,
 
-					Prison: this.state.Prison,
-					Politics: this.state.Politics
+					Politics: this.state.Politics,
+					Prison: this.state.Prison
 				}),
 				_react2.default.createElement(_modal2.default, {
+					CloseModal: this.CloseModal,
 					ModalActive: this.state.ModalActive,
-					CloseModal: this.CloseModal
+					ModalContent: this.state.ModalContent
 				})
 			);
 		}
@@ -18767,16 +18787,16 @@ function BodyView(props) {
 				_react2.default.createElement('div', {
 					className: 'Prison',
 					id: 'Prison',
+					onClick: props.MouseClick,
 					onMouseEnter: props.MouseEnter,
-					onMouseLeave: props.MouseLeave,
-					onClick: props.MouseClick
+					onMouseLeave: props.MouseLeave
 				}),
 				_react2.default.createElement('div', {
 					className: 'Politics',
 					id: 'Politics',
+					onClick: props.MouseClick,
 					onMouseEnter: props.MouseEnter,
-					onMouseLeave: props.MouseLeave,
-					onClick: props.MouseClick
+					onMouseLeave: props.MouseLeave
 				})
 			),
 			_react2.default.createElement('div', { className: 'PrisonHover', style: Prison }),
@@ -18846,8 +18866,9 @@ var ModalContainer = function (_Component) {
 				'div',
 				null,
 				_react2.default.createElement(_modal2.default, {
+					CloseModal: this.props.CloseModal,
 					ModalActive: this.props.ModalActive,
-					CloseModal: this.props.CloseModal
+					ModalContent: this.props.ModalContent
 				})
 			);
 		}
@@ -18884,14 +18905,15 @@ function ModalView(props) {
 	}
 	return _react2.default.createElement(
 		'div',
-		{ className: 'ModalContainer', style: ModalViewConditional },
+		{ id: 'ModalContainer', className: 'ModalContainer', style: ModalViewConditional, onClick: props.CloseModal },
 		_react2.default.createElement(
 			'div',
 			{ className: 'WindowsModal' },
-			'Windows Modal',
+			'- ',
+			props.ModalContent,
 			_react2.default.createElement(
 				'button',
-				{ onClick: props.CloseModal },
+				{ onClick: props.CloseModal, id: 'ButtonClose' },
 				'cerrar'
 			)
 		)

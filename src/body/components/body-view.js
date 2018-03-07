@@ -22,16 +22,16 @@ function BodyView (props) {
 					<div 
 						className="Prison" 
 						id="Prison"
+						onClick={props.MouseClick}
 						onMouseEnter={props.MouseEnter}
 						onMouseLeave={props.MouseLeave}
-						onClick={props.MouseClick}
 					></div>
 					<div
 						className="Politics"
 						id="Politics"
+						onClick={props.MouseClick}
 						onMouseEnter={props.MouseEnter}
 						onMouseLeave={props.MouseLeave}
-						onClick={props.MouseClick}
 					>
 					</div>
 				</div>

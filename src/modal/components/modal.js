@@ -10,10 +10,10 @@ function ModalView(props){
 		: ModalViewConditional =  { visibility: 'hidden', opacity: 0 }
 	}
 	return(
-		<div className="ModalContainer" style={ModalViewConditional}>
+		<div id="ModalContainer" className="ModalContainer" style={ModalViewConditional} onClick={props.CloseModal}>
 			<div className="WindowsModal">
-				Windows Modal 
-				<button onClick={props.CloseModal}>
+				- {props.ModalContent} 
+				<button onClick={props.CloseModal} id="ButtonClose">
 					cerrar
 				</button>
 			</div>

@@ -7,8 +7,9 @@ class ModalContainer extends Component {
 		return (
 			<div>
 				<ModalView 
-					ModalActive={this.props.ModalActive} 
 					CloseModal={this.props.CloseModal}
+					ModalActive={this.props.ModalActive} 
+					ModalContent={this.props.ModalContent}
 				/>
 			</div>
 		)
