@@ -6,7 +6,7 @@ class Menu extends Component {
 	render(){
 		return(
 			<MenuView
-				text={MenuItems}
+				listItems={MenuItems}
 			/>
 		)
 	}
