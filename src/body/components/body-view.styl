@@ -1,0 +1,34 @@
+.BodyView 
+	width 1366px
+	min-height 1024px  
+	position relative
+	.Ciudad
+		left 0
+		position absolute 
+		top 0 
+		z-index 1
+	.Transparent 
+		height 1024px 
+		left 0
+		position absolute 
+		top 0
+		width 1366px
+		z-index 2
+		.HandleClick
+			height 100% 
+			position absolute 
+			width 100% 
+			.Prison 
+				border 1px solid green
+				border-radius 50% 
+				height 230px 
+				position absolute 
+				right 400px
+				top 40px
+				width 230px 
+				z-index 3
+		.PrisonHover
+			width 100% 
+			height 100%
+			background-image url('./assets/prison-hover.png')
+	
