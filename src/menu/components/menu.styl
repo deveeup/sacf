@@ -1,25 +1,38 @@
 .Menu 
-	border 1px dashed red
 	margin 0
 	padding 0
 	height 103px
 	display flex 
 	align-items center
 	background-color #0974B7
+	padding 0
 	ul
 		align-items center
 		display flex
+		height 100%
 		justify-content center
 		list-style none 
 		margin 0
 		padding 0
 		width 100%
 		li 
-			border 1px solid red
+			align-items flex-start
+			display flex
+			height 80%
+			justify-content center
 			padding 10px
-			width 16.6%
 			text-align center
+			width 16.6%
+			&:hover 
+				border-bottom 3px solid #eb1b23
 			a 
 				color white
+				font-size 1em
 				text-decoration none
+				will-change transform
+				padding 17px 0
+				&:hover 
+					font-weight bold
+				&:active 
+					transform scale(.9)
 	

@@ -1,6 +1,7 @@
 
 import React from 'react'
 import './menu.styl'
+import Item from './item'
 
 function MenuView (props){
 	const menu = props.listItems.menu
@@ -8,8 +9,8 @@ function MenuView (props){
 		<nav className="Menu">
 			<ul>
 				{
-					menu.map((item) => {
-						return console.log(item.item)
+					menu.map((items) => {
+						return <Item {...items} key={items.id} />
 					})
 				}
 			</ul>

@@ -18527,11 +18527,17 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
 __webpack_require__(36);
+
+var _item = __webpack_require__(39);
+
+var _item2 = _interopRequireDefault(_item);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18543,8 +18549,8 @@ function MenuView(props) {
 		_react2.default.createElement(
 			'ul',
 			null,
-			menu.map(function (item) {
-				return console.log(item.item);
+			menu.map(function (items) {
+				return _react2.default.createElement(_item2.default, _extends({}, items, { key: items.id }));
 			})
 		)
 	);
@@ -18561,7 +18567,39 @@ exports.default = MenuView;
 /* 37 */
 /***/ (function(module, exports) {
 
-module.exports = {"menu":[{"title":"¿Que es SACF?"},{"title":"Principios del SACF"},{"title":"Contenido Mínimo de la información"},{"title":"Cláusulas y Prácticas Abusivas"},{"title":"Defensor del Consumidor Financiero"},{"title":"Educación Financiera"}]}
+module.exports = {"menu":[{"id":"1","title":"¿Que es SACF?"},{"id":"2","title":"Principios del SACF"},{"id":"3","title":"Contenido Mínimo de la información"},{"id":"4","title":"Cláusulas y Prácticas Abusivas"},{"id":"5","title":"Defensor del Consumidor Financiero"},{"id":"6","title":"Educación Financiera"}]}
+
+/***/ }),
+/* 38 */,
+/* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Item(props) {
+	return _react2.default.createElement(
+		"li",
+		null,
+		_react2.default.createElement(
+			"a",
+			{ href: "" },
+			props.title
+		)
+	);
+}
+
+exports.default = Item;
 
 /***/ })
 /******/ ]);

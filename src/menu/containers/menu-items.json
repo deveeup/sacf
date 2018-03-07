@@ -1,10 +1,28 @@
 {
 	"menu": [
-		{ "title": "¿Que es SACF?" }, 
-		{ "title": "Principios del SACF" }, 
-		{ "title": "Contenido Mínimo de la información" }, 
-		{ "title": "Cláusulas y Prácticas Abusivas" }, 
-		{ "title": "Defensor del Consumidor Financiero" }, 
-		{ "title": "Educación Financiera" }
+		{ 
+			"id": "1", 
+			"title": "¿Que es SACF?" 
+		}, 
+		{ 
+			"id": "2", 
+			"title": "Principios del SACF" 
+		}, 
+		{ 
+			"id": "3", 
+			"title": "Contenido Mínimo de la información" 
+		}, 
+		{ 
+			"id": "4", 
+			"title": "Cláusulas y Prácticas Abusivas" 
+		}, 
+		{ 
+			"id": "5", 
+			"title": "Defensor del Consumidor Financiero" 
+		}, 
+		{ 
+			"id": "6",
+			"title": "Educación Financiera" 
+		}
 	]
 }
