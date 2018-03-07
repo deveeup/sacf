@@ -140,13 +140,12 @@
   width: 100%;
 }
 .BodyView .Transparent .HandleClick .Prison {
-  border: 1px solid #008000;
   border-radius: 50%;
-  height: 230px;
+  height: 255px;
   position: absolute;
-  right: 400px;
-  top: 40px;
-  width: 230px;
+  right: 380px;
+  top: 35px;
+  width: 260px;
   z-index: 3;
 }
 .BodyView .Transparent .PrisonHover {
