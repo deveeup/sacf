@@ -4,7 +4,6 @@ import AppView from '../components/app-view'
 import Header from '../../header/containers/header'
 import Menu from '../../menu/containers/menu'
 import Body from '../../body/containers/body'
-import Modal from '../../modal/containers/modal'
 
 class App extends Component {
 	render(){
@@ -13,7 +12,6 @@ class App extends Component {
 				<Header/>
 				<Menu/>
 				<Body/>
-				<Modal/>
 			</AppView>
 		)
 	}

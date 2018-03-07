@@ -18297,10 +18297,6 @@ var _body = __webpack_require__(40);
 
 var _body2 = _interopRequireDefault(_body);
 
-var _modal = __webpack_require__(46);
-
-var _modal2 = _interopRequireDefault(_modal);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -18326,8 +18322,7 @@ var App = function (_Component) {
 				null,
 				_react2.default.createElement(_header2.default, null),
 				_react2.default.createElement(_menu2.default, null),
-				_react2.default.createElement(_body2.default, null),
-				_react2.default.createElement(_modal2.default, null)
+				_react2.default.createElement(_body2.default, null)
 			);
 		}
 	}]);
@@ -18636,6 +18631,10 @@ var _ciudad = __webpack_require__(43);
 
 var _ciudad2 = _interopRequireDefault(_ciudad);
 
+var _modal = __webpack_require__(46);
+
+var _modal2 = _interopRequireDefault(_modal);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -18659,30 +18658,67 @@ var Body = function (_Component) {
 		}
 
 		return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Body.__proto__ || Object.getPrototypeOf(Body)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-			PrisonToggle: false
-		}, _this.PrisonMouseEnter = function () {
+			Prison: false,
+			Politics: false,
+			ModalActive: false
+		}, _this.MouseEnter = function (e) {
+			switch (e.target.id) {
+				case 'Prison':
+					_this.setState({
+						Prison: true
+					});
+					break;
+				case 'Politics':
+					_this.setState({
+						Politics: true
+					});
+					break;
+			}
+		}, _this.MouseLeave = function (e) {
+			switch (e.target.id) {
+				case 'Prison':
+					_this.setState({
+						Prison: false
+					});
+					break;
+				case 'Politics':
+					_this.setState({
+						Politics: false
+					});
+					break;
+			}
+		}, _this.MouseClick = function (e) {
 			_this.setState({
-				PrisonToggle: true
+				ModalActive: true
 			});
-		}, _this.PrisonMouseLeave = function () {
+			console.log(e.target.id);
+		}, _this.CloseModal = function () {
 			_this.setState({
-				PrisonToggle: false
+				ModalActive: false
 			});
-		}, _this.PrisonMouseClick = function () {
-			alert("click!");
 		}, _temp), _possibleConstructorReturn(_this, _ret);
 	}
 
 	_createClass(Body, [{
 		key: 'render',
 		value: function render() {
-			return _react2.default.createElement(_bodyView2.default, {
-				ciudad: _ciudad2.default,
-				PrisonMouseEnter: this.PrisonMouseEnter,
-				PrisonMouseLeave: this.PrisonMouseLeave,
-				PrisonMouseClick: this.PrisonMouseClick,
-				PrisonToggle: this.state.PrisonToggle
-			});
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(_bodyView2.default, {
+					Ciudad: _ciudad2.default,
+					MouseEnter: this.MouseEnter,
+					MouseLeave: this.MouseLeave,
+					MouseClick: this.MouseClick,
+
+					Prison: this.state.Prison,
+					Politics: this.state.Politics
+				}),
+				_react2.default.createElement(_modal2.default, {
+					ModalActive: this.state.ModalActive,
+					CloseModal: this.CloseModal
+				})
+			);
 		}
 	}]);
 
@@ -18711,14 +18747,17 @@ __webpack_require__(42);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function BodyView(props) {
-	var PrisonToggle = { visibility: 'hidden', opacity: 0 };
+	var Prison = { visibility: 'hidden', opacity: 0 };
+	var Politics = { visibility: 'visible', opacity: 1 };
 	{
-		props.PrisonToggle ? PrisonToggle = { visibility: 'visible', opacity: 1 } : PrisonToggle = { visibility: 'hidden', opacity: 0 };
+		props.Prison ? Prison = { visibility: 'visible', opacity: 1 } : Prison = { visibility: 'hidden', opacity: 0 };
+
+		props.Politics ? Politics = { visibility: 'visible', opacity: 1 } : Politics = { visibility: 'hidden', opacity: 0 };
 	}
 	return _react2.default.createElement(
 		'div',
 		{ className: 'BodyView' },
-		_react2.default.createElement('img', { src: props.ciudad, className: 'Ciudad' }),
+		_react2.default.createElement('img', { src: props.Ciudad, className: 'Ciudad' }),
 		_react2.default.createElement(
 			'div',
 			{ className: 'Transparent' },
@@ -18727,12 +18766,21 @@ function BodyView(props) {
 				{ className: 'HandleClick' },
 				_react2.default.createElement('div', {
 					className: 'Prison',
-					onMouseEnter: props.PrisonMouseEnter,
-					onMouseLeave: props.PrisonMouseLeave,
-					onClick: props.PrisonMouseClick
+					id: 'Prison',
+					onMouseEnter: props.MouseEnter,
+					onMouseLeave: props.MouseLeave,
+					onClick: props.MouseClick
+				}),
+				_react2.default.createElement('div', {
+					className: 'Politics',
+					id: 'Politics',
+					onMouseEnter: props.MouseEnter,
+					onMouseLeave: props.MouseLeave,
+					onClick: props.MouseClick
 				})
 			),
-			_react2.default.createElement('div', { className: 'PrisonHover', style: PrisonToggle })
+			_react2.default.createElement('div', { className: 'PrisonHover', style: Prison }),
+			_react2.default.createElement('div', { className: 'PoliticsHover', style: Politics })
 		)
 	);
 }
@@ -18770,7 +18818,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(18);
+var _modal = __webpack_require__(47);
+
+var _modal2 = _interopRequireDefault(_modal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18779,8 +18829,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Modal = document.getElementById("sacf-modal");
 
 var ModalContainer = function (_Component) {
 	_inherits(ModalContainer, _Component);
@@ -18794,11 +18842,14 @@ var ModalContainer = function (_Component) {
 	_createClass(ModalContainer, [{
 		key: 'render',
 		value: function render() {
-			return (0, _reactDom.createPortal)(_react2.default.createElement(
-				'h1',
+			return _react2.default.createElement(
+				'div',
 				null,
-				'this is portal!'
-			), Modal);
+				_react2.default.createElement(_modal2.default, {
+					ModalActive: this.props.ModalActive,
+					CloseModal: this.props.CloseModal
+				})
+			);
 		}
 	}]);
 
@@ -18806,6 +18857,54 @@ var ModalContainer = function (_Component) {
 }(_react.Component);
 
 exports.default = ModalContainer;
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(48);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function ModalView(props) {
+	var ModalViewConditional = { visibility: 'hidden', opacity: 0 };
+	{
+		props.ModalActive ? ModalViewConditional = { visibility: 'visible', opacity: 1 } : ModalViewConditional = { visibility: 'hidden', opacity: 0 };
+	}
+	return _react2.default.createElement(
+		'div',
+		{ className: 'ModalContainer', style: ModalViewConditional },
+		_react2.default.createElement(
+			'div',
+			{ className: 'WindowsModal' },
+			'Windows Modal',
+			_react2.default.createElement(
+				'button',
+				{ onClick: props.CloseModal },
+				'cerrar'
+			)
+		)
+	);
+}
+
+exports.default = ModalView;
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

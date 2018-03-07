@@ -1,12 +1,17 @@
 
 import React, { Component } from 'react'
-import { createPortal } from 'react-dom'
-
-const Modal = document.getElementById("sacf-modal")
+import ModalView from '../components/modal'
 
 class ModalContainer extends Component {
 	render(){
-		return createPortal(<h1>this is portal!</h1>, Modal)
+		return (
+			<div>
+				<ModalView 
+					ModalActive={this.props.ModalActive} 
+					CloseModal={this.props.CloseModal}
+				/>
+			</div>
+		)
 	}
 }
 
