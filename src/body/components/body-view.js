@@ -3,8 +3,9 @@ import React from 'react'
 import './body-view.styl'
 
 function BodyView (props) {
-	let Prison = { visibility: 'hidden', opacity: 0 }
-	let Politics = { visibility: 'visible', opacity: 1 }
+	let Prison = { visibility: 'hidden', opacity: 0 },
+			Politics = { visibility: 'hidden', opacity: 0 },
+			Bank = { visibility: 'hidden', opacity: 0 }
 	{
 		props.Prison 
 			? Prison = { visibility: 'visible', opacity: 1  } 
@@ -13,6 +14,10 @@ function BodyView (props) {
 		props.Politics 
 		? Politics = { visibility: 'visible', opacity: 1  } 
 		: Politics = { visibility: 'hidden', opacity: 0 };
+
+		props.Bank 
+		? Bank = { visibility: 'visible', opacity: 1  } 
+		: Bank = { visibility: 'hidden', opacity: 0 };
 	}
 	return(
 		<div className="BodyView">
@@ -34,9 +39,18 @@ function BodyView (props) {
 						onMouseLeave={props.MouseLeave}
 					>
 					</div>
+					<div
+						className="Bank"
+						id="Bank"
+						onMouseEnter={props.MouseEnter}
+						onMouseLeave={props.MouseLeave}
+						onClick={props.MouseClick}
+					>
+					</div>
 				</div>
 				<div className="PrisonHover" style={Prison}></div>
 				<div className="PoliticsHover" style={Politics}></div>
+				<div className="BankHover" style={Bank}></div>
 			</div>	
 		</div>
 	)

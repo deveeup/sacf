@@ -10,32 +10,43 @@ class Body extends Component {
 		ModalContent: '',
 		Politics: false,
 		Prison: false,
+		Bank: false,
 	}
 	MouseEnter = (e) => {
 		switch(e.target.id) {
 			case 'Prison':
-			this.setState({
-				Prison: true,
-			})
+				this.setState({
+					Prison: true,
+				})
 			break;
 			case 'Politics':
-			this.setState({
-				Politics: true,
-			})
+				this.setState({
+					Politics: true,
+				})
+			break;
+			case 'Bank':
+				this.setState({
+					Bank: true,
+				})
 			break;
 		}
 	}
 	MouseLeave = (e) => {
 		switch(e.target.id) {
 			case 'Prison':
-			this.setState({
-				Prison: false,
-			})
+				this.setState({
+					Prison: false,
+				})
 			break;
 			case 'Politics':
-			this.setState({
-				Politics: false,
-			})
+				this.setState({
+					Politics: false,
+				})
+			break;
+			case 'Bank':
+				this.setState({
+					Bank: false,
+				})
 			break;
 		}
 	}
@@ -45,14 +56,19 @@ class Body extends Component {
 		})
 		switch(e.target.id) {
 			case 'Prison':
-			this.setState({
-				ModalContent: 'Prisión',
-			})
+				this.setState({
+					ModalContent: 'Prisión',
+				})
 			break;
 			case 'Politics':
-			this.setState({
-				ModalContent: 'Alcaldía',
-			})
+				this.setState({
+					ModalContent: 'Alcaldía',
+				})
+			break;
+			case 'Bank':
+				this.setState({
+					ModalContent: 'Bank',
+				})
 			break;
 		}
 
@@ -80,6 +96,7 @@ class Body extends Component {
 
 					Politics={this.state.Politics}
 					Prison={this.state.Prison}
+					Bank={this.state.Bank}
 				/>
 				<Modal 
 					CloseModal={this.CloseModal}

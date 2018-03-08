@@ -18,23 +18,26 @@
 			height 100% 
 			position absolute 
 			width 100% 
-			.Prison 
+			.Prison, .Politics, .Bank 
 				border-radius 50% 
-				height 255px 
 				position absolute 
+				z-index 3
+			.Prison 
+				height 255px 
 				right 380px
 				top 35px
 				width 260px 
-				z-index 3
 			.Politics
-				border-radius 50% 
 				height 250px 
-				position absolute  
 				right 80px
 				top 170px
 				width 250px 
-				z-index 3
-		.PrisonHover, .PoliticsHover
+			.Bank
+				height 250px 
+				left 560px
+				top 450px
+				width 250px 
+		.PrisonHover, .PoliticsHover, .BankHover
 			height 100%
 			left 0 
 			position absolute
@@ -44,3 +47,5 @@
 			background-image url('./assets/prison-hover.png')
 		.PoliticsHover
 			background-image url('./assets/politics-hover.png')
+		.BankHover
+			background-image url('./assets/bank-hover.png')
