@@ -3,6 +3,7 @@ import React from 'react'
 import './body-view.styl'
 
 function BodyView (props) {
+	console.log(props.Bank)
 	let Prison = { visibility: 'hidden', opacity: 0 },
 			Politics = { visibility: 'hidden', opacity: 0 },
 			Bank = { visibility: 'hidden', opacity: 0 }

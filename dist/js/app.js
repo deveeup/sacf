@@ -18636,6 +18636,8 @@ var _modal2 = _interopRequireDefault(_modal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -18657,11 +18659,12 @@ var Body = function (_Component) {
 		}
 
 		return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Body.__proto__ || Object.getPrototypeOf(Body)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+			Bank: false,
+			Library: false,
 			ModalActive: false,
-			ModalContent: '',
 			Politics: false,
 			Prison: false,
-			Bank: false
+			ModalContent: ''
 		}, _this.MouseEnter = function (e) {
 			switch (e.target.id) {
 				case 'Prison':
@@ -18679,24 +18682,59 @@ var Body = function (_Component) {
 						Bank: true
 					});
 					break;
+				case 'Library':
+					_this.setState({
+						Library: true
+					});
+					break;
 			}
 		}, _this.MouseLeave = function (e) {
-			switch (e.target.id) {
-				case 'Prison':
-					_this.setState({
-						Prison: false
-					});
-					break;
-				case 'Politics':
-					_this.setState({
-						Politics: false
-					});
-					break;
-				case 'Bank':
-					_this.setState({
-						Bank: false
-					});
-					break;
+			if (_this.state.ModalActive) {
+				switch (e.target.id) {
+					case 'Prison':
+						_this.setState({
+							Prison: true
+						});
+						break;
+					case 'Politics':
+						_this.setState({
+							Politics: true
+						});
+						break;
+					case 'Bank':
+						_this.setState({
+							Bank: true
+						});
+						break;
+					case 'Library':
+						_this.setState({
+							Library: true
+						});
+						break;
+				}
+			} else {
+				switch (e.target.id) {
+					case 'Prison':
+						_this.setState({
+							Prison: false
+						});
+						break;
+					case 'Politics':
+						_this.setState({
+							Politics: false
+						});
+						break;
+					case 'Bank':
+						_this.setState({
+							Bank: false
+						});
+						break;
+					case 'Library':
+						_this.setState({
+							Library: false
+						});
+						break;
+				}
 			}
 		}, _this.MouseClick = function (e) {
 			_this.setState({
@@ -18711,19 +18749,30 @@ var Body = function (_Component) {
 				case 'Politics':
 					_this.setState({
 						ModalContent: 'Alcaldía'
+
 					});
 					break;
 				case 'Bank':
 					_this.setState({
-						ModalContent: 'Bank'
+						ModalContent: 'Bank',
+						Bank: true
+					});
+					break;
+				case 'Library':
+					_this.setState({
+						ModalContent: 'Library'
 					});
 					break;
 			}
 		}, _this.CloseModal = function (e) {
 			if (e.target.id == 'ModalContainer' || 'ButtonClose') {
-				_this.setState({
-					ModalActive: false
-				});
+				var _this$setState;
+
+				_this.setState((_this$setState = {
+					ModalActive: false,
+					Bank: false,
+					Library: false
+				}, _defineProperty(_this$setState, 'ModalActive', false), _defineProperty(_this$setState, 'Politics', false), _defineProperty(_this$setState, 'Prison', false), _this$setState));
 			}
 			if (e.target.id == '') {
 				_this.setState({
@@ -18745,9 +18794,10 @@ var Body = function (_Component) {
 					MouseEnter: this.MouseEnter,
 					MouseLeave: this.MouseLeave,
 
+					Bank: this.state.Bank,
+					Library: this.state.Library,
 					Politics: this.state.Politics,
-					Prison: this.state.Prison,
-					Bank: this.state.Bank
+					Prison: this.state.Prison
 				}),
 				_react2.default.createElement(_modal2.default, {
 					CloseModal: this.CloseModal,
@@ -18783,6 +18833,7 @@ __webpack_require__(41);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function BodyView(props) {
+	console.log(props.Bank);
 	var Prison = { visibility: 'hidden', opacity: 0 },
 	    Politics = { visibility: 'hidden', opacity: 0 },
 	    Bank = { visibility: 'hidden', opacity: 0 };

@@ -6,11 +6,12 @@ import Modal from '../../modal/containers/modal'
 
 class Body extends Component {
 	state = {
+		Bank: false,
+		Library: false,
 		ModalActive: false,
-		ModalContent: '',
 		Politics: false,
 		Prison: false,
-		Bank: false,
+		ModalContent: '',
 	}
 	MouseEnter = (e) => {
 		switch(e.target.id) {
@@ -29,25 +30,60 @@ class Body extends Component {
 					Bank: true,
 				})
 			break;
+			case 'Library':
+				this.setState({
+					Library: true,
+				})
+			break;
 		}
 	}
 	MouseLeave = (e) => {
-		switch(e.target.id) {
-			case 'Prison':
-				this.setState({
-					Prison: false,
-				})
-			break;
-			case 'Politics':
-				this.setState({
-					Politics: false,
-				})
-			break;
-			case 'Bank':
-				this.setState({
-					Bank: false,
-				})
-			break;
+		if (this.state.ModalActive) {
+			switch(e.target.id) {
+				case 'Prison':
+					this.setState({
+						Prison: true,
+					})
+				break;
+				case 'Politics':
+					this.setState({
+						Politics: true,
+					})
+				break;
+				case 'Bank':
+					this.setState({
+						Bank: true,
+					})
+				break;
+				case 'Library':
+					this.setState({
+						Library: true,
+					})
+				break;
+			}
+		}	else {
+	 		switch(e.target.id) {
+				case 'Prison':
+					this.setState({
+						Prison: false,
+					})
+				break;
+				case 'Politics':
+					this.setState({
+						Politics: false,
+					})
+				break;
+				case 'Bank':
+					this.setState({
+						Bank: false,
+					})
+				break;
+				case 'Library':
+					this.setState({
+						Library: false,
+					})
+				break;
+			}
 		}
 	}
 	MouseClick = (e) => {
@@ -63,11 +99,18 @@ class Body extends Component {
 			case 'Politics':
 				this.setState({
 					ModalContent: 'Alcaldía',
+
 				})
 			break;
 			case 'Bank':
 				this.setState({
 					ModalContent: 'Bank',
+					Bank: true,
+				})
+			break;
+			case 'Library':
+				this.setState({
+					ModalContent: 'Library',
 				})
 			break;
 		}
@@ -77,6 +120,11 @@ class Body extends Component {
 		if(e.target.id == 'ModalContainer' || 'ButtonClose') {
 			this.setState({
 				ModalActive: false,
+				Bank: false,
+				Library: false,
+				ModalActive: false,
+				Politics: false,
+				Prison: false,
 			})
 		}
 		if (e.target.id == ''){
@@ -94,9 +142,10 @@ class Body extends Component {
 					MouseEnter={this.MouseEnter}
 					MouseLeave={this.MouseLeave}
 
+					Bank={this.state.Bank}
+					Library={this.state.Library}
 					Politics={this.state.Politics}
 					Prison={this.state.Prison}
-					Bank={this.state.Bank}
 				/>
 				<Modal 
 					CloseModal={this.CloseModal}

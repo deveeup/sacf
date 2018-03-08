@@ -143,7 +143,8 @@
 }
 .BodyView .Transparent .HandleClick .Prison,
 .BodyView .Transparent .HandleClick .Politics,
-.BodyView .Transparent .HandleClick .Bank {
+.BodyView .Transparent .HandleClick .Bank,
+.BodyView .Transparent .HandleClick .Library {
   border-radius: 50%;
   position: absolute;
   z-index: 3;
@@ -164,6 +165,12 @@
   height: 250px;
   left: 560px;
   top: 450px;
+  width: 250px;
+}
+.BodyView .Transparent .HandleClick .Library {
+  height: 250px;
+  left: 0;
+  top: 0;
   width: 250px;
 }
 .BodyView .Transparent .PrisonHover,
