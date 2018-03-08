@@ -168,11 +168,10 @@ class Body extends Component {
 				Bank: false,
 				Court: false,
 				Library: false,
-				ModalActive: false,
-				ModalActive: false,
 				Politics: false,
 				Prison: false,
 				School: false,
+				ModalActive: false,
 			})
 		}
 		if (e.target.id == ''){
@@ -206,5 +205,5 @@ class Body extends Component {
 		)
 	}
 }
-
 export default Body
+

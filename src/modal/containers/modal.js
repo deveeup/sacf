@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 import ModalView from '../components/modal'
 
 class ModalContainer extends Component {
+	componentWillReceiveProps() {
+	}
 	render(){
 		return (
 			<div>
