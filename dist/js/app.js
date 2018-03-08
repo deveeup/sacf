@@ -18660,26 +18660,23 @@ var Body = function (_Component) {
 
 		return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Body.__proto__ || Object.getPrototypeOf(Body)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
 			Bank: false,
+			Court: false,
 			Library: false,
-			ModalActive: false,
 			Politics: false,
 			Prison: false,
+			School: false,
+			ModalActive: false,
 			ModalContent: ''
 		}, _this.MouseEnter = function (e) {
 			switch (e.target.id) {
-				case 'Prison':
-					_this.setState({
-						Prison: true
-					});
-					break;
-				case 'Politics':
-					_this.setState({
-						Politics: true
-					});
-					break;
 				case 'Bank':
 					_this.setState({
 						Bank: true
+					});
+					break;
+				case 'Court':
+					_this.setState({
+						Court: true
 					});
 					break;
 				case 'Library':
@@ -18687,23 +18684,33 @@ var Body = function (_Component) {
 						Library: true
 					});
 					break;
+				case 'Politics':
+					_this.setState({
+						Politics: true
+					});
+					break;
+				case 'Prison':
+					_this.setState({
+						Prison: true
+					});
+					break;
+				case 'School':
+					_this.setState({
+						School: true
+					});
+					break;
 			}
 		}, _this.MouseLeave = function (e) {
 			if (_this.state.ModalActive) {
 				switch (e.target.id) {
-					case 'Prison':
-						_this.setState({
-							Prison: true
-						});
-						break;
-					case 'Politics':
-						_this.setState({
-							Politics: true
-						});
-						break;
 					case 'Bank':
 						_this.setState({
 							Bank: true
+						});
+						break;
+					case 'Court':
+						_this.setState({
+							Court: true
 						});
 						break;
 					case 'Library':
@@ -18711,12 +18718,37 @@ var Body = function (_Component) {
 							Library: true
 						});
 						break;
+					case 'Politics':
+						_this.setState({
+							Politics: true
+						});
+						break;
+					case 'Prison':
+						_this.setState({
+							Prison: true
+						});
+						break;
+					case 'School':
+						_this.setState({
+							School: true
+						});
+						break;
 				}
 			} else {
 				switch (e.target.id) {
-					case 'Prison':
+					case 'Bank':
 						_this.setState({
-							Prison: false
+							Bank: false
+						});
+						break;
+					case 'Court':
+						_this.setState({
+							Court: false
+						});
+						break;
+					case 'Library':
+						_this.setState({
+							Library: false
 						});
 						break;
 					case 'Politics':
@@ -18724,14 +18756,14 @@ var Body = function (_Component) {
 							Politics: false
 						});
 						break;
-					case 'Bank':
+					case 'Prison':
 						_this.setState({
-							Bank: false
+							Prison: false
 						});
 						break;
-					case 'Library':
+					case 'School':
 						_this.setState({
-							Library: false
+							School: false
 						});
 						break;
 				}
@@ -18741,26 +18773,41 @@ var Body = function (_Component) {
 				ModalActive: true
 			});
 			switch (e.target.id) {
-				case 'Prison':
-					_this.setState({
-						ModalContent: 'Prisión'
-					});
-					break;
-				case 'Politics':
-					_this.setState({
-						ModalContent: 'Alcaldía'
-
-					});
-					break;
 				case 'Bank':
 					_this.setState({
 						ModalContent: 'Bank',
 						Bank: true
 					});
 					break;
+				case 'Court':
+					_this.setState({
+						ModalContent: 'Juzgado',
+						Court: true
+					});
+					break;
 				case 'Library':
 					_this.setState({
-						ModalContent: 'Library'
+						ModalContent: 'Library',
+						Library: true
+					});
+					break;
+				case 'Politics':
+					_this.setState({
+						ModalContent: 'Alcaldía',
+						Politics: true
+
+					});
+					break;
+				case 'Prison':
+					_this.setState({
+						ModalContent: 'Prisión',
+						Prison: true
+					});
+					break;
+				case 'School':
+					_this.setState({
+						ModalContent: 'Escuela',
+						Scool: true
 					});
 					break;
 			}
@@ -18769,10 +18816,11 @@ var Body = function (_Component) {
 				var _this$setState;
 
 				_this.setState((_this$setState = {
-					ModalActive: false,
 					Bank: false,
-					Library: false
-				}, _defineProperty(_this$setState, 'ModalActive', false), _defineProperty(_this$setState, 'Politics', false), _defineProperty(_this$setState, 'Prison', false), _this$setState));
+					Court: false,
+					Library: false,
+					ModalActive: false
+				}, _defineProperty(_this$setState, 'ModalActive', false), _defineProperty(_this$setState, 'Politics', false), _defineProperty(_this$setState, 'Prison', false), _defineProperty(_this$setState, 'School', false), _this$setState));
 			}
 			if (e.target.id == '') {
 				_this.setState({
@@ -18795,9 +18843,11 @@ var Body = function (_Component) {
 					MouseLeave: this.MouseLeave,
 
 					Bank: this.state.Bank,
+					Court: this.state.Court,
 					Library: this.state.Library,
 					Politics: this.state.Politics,
-					Prison: this.state.Prison
+					Prison: this.state.Prison,
+					School: this.state.School
 				}),
 				_react2.default.createElement(_modal2.default, {
 					CloseModal: this.CloseModal,
@@ -18833,16 +18883,23 @@ __webpack_require__(41);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function BodyView(props) {
-	console.log(props.Bank);
-	var Prison = { visibility: 'hidden', opacity: 0 },
-	    Politics = { visibility: 'hidden', opacity: 0 },
-	    Bank = { visibility: 'hidden', opacity: 0 };
+	var Bank = void 0,
+	    Court = void 0,
+	    Library = void 0,
+	    Politics = void 0,
+	    Prison = void 0,
+	    School = Hidden;
+
+	var Visible = { visibility: 'visible', opacity: 1 };
+	var Hidden = { visibility: 'hidden', opacity: 0 };
+
 	{
-		props.Prison ? Prison = { visibility: 'visible', opacity: 1 } : Prison = { visibility: 'hidden', opacity: 0 };
-
-		props.Politics ? Politics = { visibility: 'visible', opacity: 1 } : Politics = { visibility: 'hidden', opacity: 0 };
-
-		props.Bank ? Bank = { visibility: 'visible', opacity: 1 } : Bank = { visibility: 'hidden', opacity: 0 };
+		props.Bank ? Bank = Visible : Bank = Hidden;
+		props.Court ? Court = Visible : Court = Hidden;
+		props.Library ? Library = Visible : Library = Hidden;
+		props.Politics ? Politics = Visible : Politics = Hidden;
+		props.Prison ? Prison = Visible : Prison = Hidden;
+		props.School ? School = Visible : School = Hidden;
 	}
 	return _react2.default.createElement(
 		'div',
@@ -18855,30 +18912,54 @@ function BodyView(props) {
 				'div',
 				{ className: 'HandleClick' },
 				_react2.default.createElement('div', {
-					className: 'Prison',
-					id: 'Prison',
-					onClick: props.MouseClick,
-					onMouseEnter: props.MouseEnter,
-					onMouseLeave: props.MouseLeave
-				}),
-				_react2.default.createElement('div', {
-					className: 'Politics',
-					id: 'Politics',
-					onClick: props.MouseClick,
-					onMouseEnter: props.MouseEnter,
-					onMouseLeave: props.MouseLeave
-				}),
-				_react2.default.createElement('div', {
-					className: 'Bank',
 					id: 'Bank',
+					className: 'Bank',
+					onClick: props.MouseClick,
 					onMouseEnter: props.MouseEnter,
-					onMouseLeave: props.MouseLeave,
-					onClick: props.MouseClick
+					onMouseLeave: props.MouseLeave
+				}),
+				_react2.default.createElement('div', {
+					id: 'Court',
+					className: 'Court',
+					onClick: props.MouseClick,
+					onMouseEnter: props.MouseEnter,
+					onMouseLeave: props.MouseLeave
+				}),
+				_react2.default.createElement('div', {
+					id: 'Library',
+					className: 'Library',
+					onClick: props.MouseClick,
+					onMouseEnter: props.MouseEnter,
+					onMouseLeave: props.MouseLeave
+				}),
+				_react2.default.createElement('div', {
+					id: 'Politics',
+					className: 'Politics',
+					onClick: props.MouseClick,
+					onMouseEnter: props.MouseEnter,
+					onMouseLeave: props.MouseLeave
+				}),
+				_react2.default.createElement('div', {
+					id: 'Prison',
+					className: 'Prison',
+					onClick: props.MouseClick,
+					onMouseEnter: props.MouseEnter,
+					onMouseLeave: props.MouseLeave
+				}),
+				_react2.default.createElement('div', {
+					id: 'School',
+					className: 'School',
+					onClick: props.MouseClick,
+					onMouseEnter: props.MouseEnter,
+					onMouseLeave: props.MouseLeave
 				})
 			),
-			_react2.default.createElement('div', { className: 'PrisonHover', style: Prison }),
+			_react2.default.createElement('div', { className: 'BankHover', style: Bank }),
+			_react2.default.createElement('div', { className: 'CourtHover', style: Court }),
+			_react2.default.createElement('div', { className: 'LibraryHover', style: Library }),
 			_react2.default.createElement('div', { className: 'PoliticsHover', style: Politics }),
-			_react2.default.createElement('div', { className: 'BankHover', style: Bank })
+			_react2.default.createElement('div', { className: 'PrisonHover', style: Prison }),
+			_react2.default.createElement('div', { className: 'SchoolHover', style: School })
 		)
 	);
 }
@@ -18975,9 +19056,11 @@ __webpack_require__(45);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function ModalView(props) {
-	var ModalViewConditional = { visibility: 'hidden', opacity: 0 };
+	var Visible = { visibility: 'visible', opacity: 1 };
+	var Hidden = { visibility: 'hidden', opacity: 0 };
+	var ModalViewConditional = Hidden;
 	{
-		props.ModalActive ? ModalViewConditional = { visibility: 'visible', opacity: 1 } : ModalViewConditional = { visibility: 'hidden', opacity: 0 };
+		props.ModalActive ? ModalViewConditional = Visible : ModalViewConditional = Hidden;
 	}
 	return _react2.default.createElement(
 		'div',

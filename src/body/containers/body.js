@@ -7,27 +7,24 @@ import Modal from '../../modal/containers/modal'
 class Body extends Component {
 	state = {
 		Bank: false,
+		Court: false,
 		Library: false,
-		ModalActive: false,
 		Politics: false,
 		Prison: false,
+		School: false,
+		ModalActive: false,
 		ModalContent: '',
 	}
 	MouseEnter = (e) => {
 		switch(e.target.id) {
-			case 'Prison':
-				this.setState({
-					Prison: true,
-				})
-			break;
-			case 'Politics':
-				this.setState({
-					Politics: true,
-				})
-			break;
 			case 'Bank':
 				this.setState({
 					Bank: true,
+				})
+			break;
+			case 'Court':
+				this.setState({
+					Court: true,
 				})
 			break;
 			case 'Library':
@@ -35,24 +32,34 @@ class Body extends Component {
 					Library: true,
 				})
 			break;
+			case 'Politics':
+				this.setState({
+					Politics: true,
+				})
+			break;
+			case 'Prison':
+				this.setState({
+					Prison: true,
+				})
+			break;
+			case 'School':
+				this.setState({
+					School: true,
+				})
+			break;
 		}
 	}
 	MouseLeave = (e) => {
 		if (this.state.ModalActive) {
 			switch(e.target.id) {
-				case 'Prison':
-					this.setState({
-						Prison: true,
-					})
-				break;
-				case 'Politics':
-					this.setState({
-						Politics: true,
-					})
-				break;
 				case 'Bank':
 					this.setState({
 						Bank: true,
+					})
+				break;
+				case 'Court':
+					this.setState({
+						Court: true,
 					})
 				break;
 				case 'Library':
@@ -60,12 +67,37 @@ class Body extends Component {
 						Library: true,
 					})
 				break;
+				case 'Politics':
+					this.setState({
+						Politics: true,
+					})
+				break;
+				case 'Prison':
+					this.setState({
+						Prison: true,
+					})
+				break;
+				case 'School':
+					this.setState({
+						School: true,
+					})
+				break;
 			}
 		}	else {
 	 		switch(e.target.id) {
-				case 'Prison':
+				case 'Bank':
 					this.setState({
-						Prison: false,
+						Bank: false,
+					})
+				break;
+				case 'Court':
+					this.setState({
+						Court: false,
+					})
+				break;
+				case 'Library':
+					this.setState({
+						Library: false,
 					})
 				break;
 				case 'Politics':
@@ -73,14 +105,14 @@ class Body extends Component {
 						Politics: false,
 					})
 				break;
-				case 'Bank':
+				case 'Prison':
 					this.setState({
-						Bank: false,
+						Prison: false,
 					})
 				break;
-				case 'Library':
+				case 'School':
 					this.setState({
-						Library: false,
+						School: false,
 					})
 				break;
 			}
@@ -91,40 +123,56 @@ class Body extends Component {
 			ModalActive: true,
 		})
 		switch(e.target.id) {
-			case 'Prison':
-				this.setState({
-					ModalContent: 'Prisión',
-				})
-			break;
-			case 'Politics':
-				this.setState({
-					ModalContent: 'Alcaldía',
-
-				})
-			break;
 			case 'Bank':
 				this.setState({
 					ModalContent: 'Bank',
 					Bank: true,
 				})
 			break;
+			case 'Court':
+				this.setState({
+					ModalContent: 'Juzgado',
+					Court: true,
+				})
+			break;
 			case 'Library':
 				this.setState({
 					ModalContent: 'Library',
+					Library: true
+				})
+			break;
+			case 'Politics':
+				this.setState({
+					ModalContent: 'Alcaldía',
+					Politics: true,
+
+				})
+			break;
+			case 'Prison':
+				this.setState({
+					ModalContent: 'Prisión',
+					Prison: true,
+				})
+			break;
+			case 'School':
+				this.setState({
+					ModalContent: 'Escuela',
+					Scool: true,
 				})
 			break;
 		}
-
 	}
 	CloseModal = (e) => {
 		if(e.target.id == 'ModalContainer' || 'ButtonClose') {
 			this.setState({
-				ModalActive: false,
 				Bank: false,
+				Court: false,
 				Library: false,
+				ModalActive: false,
 				ModalActive: false,
 				Politics: false,
 				Prison: false,
+				School: false,
 			})
 		}
 		if (e.target.id == ''){
@@ -143,9 +191,11 @@ class Body extends Component {
 					MouseLeave={this.MouseLeave}
 
 					Bank={this.state.Bank}
+					Court={this.state.Court}
 					Library={this.state.Library}
 					Politics={this.state.Politics}
 					Prison={this.state.Prison}
+					School={this.state.School}
 				/>
 				<Modal 
 					CloseModal={this.CloseModal}

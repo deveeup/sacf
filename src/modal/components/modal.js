@@ -3,12 +3,10 @@ import React from 'react'
 import './modal.styl'
 
 function ModalView(props){
-	let ModalViewConditional = { visibility: 'hidden', opacity: 0 }
-	{
-		props.ModalActive
-		? ModalViewConditional = { visibility: 'visible', opacity: 1 }
-		: ModalViewConditional =  { visibility: 'hidden', opacity: 0 }
-	}
+	const Visible = { visibility: 'visible', opacity: 1  }
+	const Hidden = { visibility: 'hidden', opacity: 0 }
+	let ModalViewConditional = Hidden
+	{ props.ModalActive ? ModalViewConditional = Visible : ModalViewConditional = Hidden }
 	return(
 		<div id="ModalContainer" className="ModalContainer" style={ModalViewConditional} onClick={props.CloseModal}>
 			<div className="WindowsModal">
