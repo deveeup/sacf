@@ -1,7 +1,8 @@
 
 import React, { Component } from 'react'
 import BodyView from '../components/body-view'
-import Ciudad from '../components/assets/ciudad.gif'
+import CityAnimate from '../components/assets/ciudad.gif'
+import CityStatic from '../components/assets/ciudad.jpg'
 import Modal from '../../modal/containers/modal'
 
 class Body extends Component {
@@ -184,10 +185,12 @@ class Body extends Component {
 		return(
 			<div>
 				<BodyView 
-					Ciudad={Ciudad} 
+					CityAnimate={CityAnimate} 
+					CityStatic={CityStatic} 
 					MouseClick={this.MouseClick}
 					MouseEnter={this.MouseEnter}
 					MouseLeave={this.MouseLeave}
+					ModalActive={this.state.ModalActive}
 
 					Bank={this.state.Bank}
 					Court={this.state.Court}

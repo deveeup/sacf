@@ -4,10 +4,13 @@ import './body-view.styl'
 
 function BodyView (props) {
 	let Bank, Court, Library, Politics, Prison, School = Hidden
+	let background
+	const Visible = {visibility: 'visible', opacity: 1}
+	const Hidden = {visibility: 'hidden', opacity: 0}
 
-		const Visible = { visibility: 'visible', opacity: 1  }
-		const Hidden = { visibility: 'hidden', opacity: 0 }
-
+	props.ModalActive 
+		? background = props.CityStatic
+		: background = props.CityAnimate
 	{
 		props.Bank ? Bank = Visible : Bank = Hidden
 		props.Court ? Court = Visible : Court = Hidden
@@ -18,7 +21,7 @@ function BodyView (props) {
 	}
 	return(
 		<div className="BodyView">
-			<img src={props.Ciudad} className="Ciudad"/>
+			<img src={background} className="Ciudad"/>
 			<div className="Transparent">
 				<div className="HandleClick">
 					<div

@@ -13,10 +13,8 @@ function ModalView(props){
 	return(
 		<div id="ModalContainer" className="ModalContainer" style={ModalViewConditional} onClick={props.CloseModal}>
 			<div className="WindowsModal">
-				- {props.ModalContent} 
-				<button onClick={props.CloseModal} id="ButtonClose">
-					cerrar
-				</button>
+				{props.children}
+				<button className="CloseButton" onClick={props.CloseModal} id="ButtonClose"></button>
 			</div>
 		</div>
 	)

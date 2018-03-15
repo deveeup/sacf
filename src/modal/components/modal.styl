@@ -1,5 +1,6 @@
 .ModalContainer
 	background-color rgba(#0974B7, .7)
+	border 1px solid red
 	min-height 1024px	
 	position absolute 
 	top 233px
@@ -9,10 +10,27 @@
 	.WindowsModal
 		align-items center
 		background-color white 
+		border 1px solid blue
 		border-radius 25px
 		display flex 
 		flex-direction column
 		justify-content center 
 		margin 30px auto
 		min-height 600px
+		padding 10px 
+		position relative 
 		width 95% 
+		.CloseButton
+			background-color transparent
+			background-image url('./assets/ButtonClose.svg')
+			border none
+			height 40px
+			outline 0
+			position absolute 
+			right 20px
+			top 20px
+			width 40px
+			will-change transfrom
+			&:active 
+				outline:0px
+				transform scale(.9)
