@@ -3,7 +3,7 @@ import React from 'react'
 function Item (props) {
 	return(
 		<li>
-			<a href="#">
+			<a>
 				{props.title}
 			</a>
 		</li>

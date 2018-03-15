@@ -6,20 +6,18 @@ import Bdb from '../../widgets/bdb/containers/bdb'
 import ButtonCloseImage from '../components/assets/ButtonClose.svg'
 
 class ModalContainer extends Component {
-  componentWillReceiveProps() {
-  }
   render(){
+    console.log(this.props.ModalContent)
     {
       switch(this.props.ModalContent){
-        case 'Bank':
+        case 'undefined':
           return(
             <ModalView 
               CloseModal={this.props.CloseModal}
               ModalActive={this.props.ModalActive}
-              ModalContent={this.props.ModalContent}
               ButtonCloseImage={ButtonCloseImage}
             >
-              <Bdb/>
+              asd
             </ModalView>
           )
         break 
@@ -28,10 +26,9 @@ class ModalContainer extends Component {
             <ModalView 
               CloseModal={this.props.CloseModal}
               ModalActive={this.props.ModalActive}
-              ModalContent={this.props.ModalContent}
               ButtonCloseImage={ButtonCloseImage}
             >
-
+              Ninguno!
             </ModalView>
           )
       }

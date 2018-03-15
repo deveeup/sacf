@@ -6,203 +6,30 @@ import CityStatic from '../components/assets/ciudad.jpg'
 import Modal from '../../modal/containers/modal'
 
 class Body extends Component {
-	state = {
-		Bank: false,
-		Court: false,
-		Library: false,
-		Politics: false,
-		Prison: false,
-		School: false,
-		ModalActive: false,
-		ModalContent: '',
-	}
-	MouseEnter = (e) => {
-		switch(e.target.id) {
-			case 'Bank':
-				this.setState({
-					Bank: true,
-				})
-			break;
-			case 'Court':
-				this.setState({
-					Court: true,
-				})
-			break;
-			case 'Library':
-				this.setState({
-					Library: true,
-				})
-			break;
-			case 'Politics':
-				this.setState({
-					Politics: true,
-				})
-			break;
-			case 'Prison':
-				this.setState({
-					Prison: true,
-				})
-			break;
-			case 'School':
-				this.setState({
-					School: true,
-				})
-			break;
-		}
-	}
-	MouseLeave = (e) => {
-		if (this.state.ModalActive) {
-			switch(e.target.id) {
-				case 'Bank':
-					this.setState({
-						Bank: true,
-					})
-				break;
-				case 'Court':
-					this.setState({
-						Court: true,
-					})
-				break;
-				case 'Library':
-					this.setState({
-						Library: true,
-					})
-				break;
-				case 'Politics':
-					this.setState({
-						Politics: true,
-					})
-				break;
-				case 'Prison':
-					this.setState({
-						Prison: true,
-					})
-				break;
-				case 'School':
-					this.setState({
-						School: true,
-					})
-				break;
-			}
-		}	else {
-	 		switch(e.target.id) {
-				case 'Bank':
-					this.setState({
-						Bank: false,
-					})
-				break;
-				case 'Court':
-					this.setState({
-						Court: false,
-					})
-				break;
-				case 'Library':
-					this.setState({
-						Library: false,
-					})
-				break;
-				case 'Politics':
-					this.setState({
-						Politics: false,
-					})
-				break;
-				case 'Prison':
-					this.setState({
-						Prison: false,
-					})
-				break;
-				case 'School':
-					this.setState({
-						School: false,
-					})
-				break;
-			}
-		}
-	}
-	MouseClick = (e) => {
-		this.setState({
-			ModalActive: true,
-		})
-		switch(e.target.id) {
-			case 'Bank':
-				this.setState({
-					ModalContent: 'Bank',
-					Bank: true,
-				})
-			break;
-			case 'Court':
-				this.setState({
-					ModalContent: 'Juzgado',
-					Court: true,
-				})
-			break;
-			case 'Library':
-				this.setState({
-					ModalContent: 'Library',
-					Library: true
-				})
-			break;
-			case 'Politics':
-				this.setState({
-					ModalContent: 'Alcaldía',
-					Politics: true,
-
-				})
-			break;
-			case 'Prison':
-				this.setState({
-					ModalContent: 'Prisión',
-					Prison: true,
-				})
-			break;
-			case 'School':
-				this.setState({
-					ModalContent: 'Escuela',
-					Scool: true,
-				})
-			break;
-		}
-	}
-	CloseModal = (e) => {
-		if(e.target.id == 'ModalContainer' || 'ButtonClose') {
-			this.setState({
-				Bank: false,
-				Court: false,
-				Library: false,
-				Politics: false,
-				Prison: false,
-				School: false,
-				ModalActive: false,
-			})
-		}
-		if (e.target.id == ''){
-			this.setState({
-				ModalActive: true,
-			})
-		}
-	}
+	
+	
 	render(){
 		return(
 			<div>
 				<BodyView 
 					CityAnimate={CityAnimate} 
 					CityStatic={CityStatic} 
-					MouseClick={this.MouseClick}
-					MouseEnter={this.MouseEnter}
-					MouseLeave={this.MouseLeave}
-					ModalActive={this.state.ModalActive}
+					MouseClick={this.props.MouseClick}
+					MouseEnter={this.props.MouseEnter}
+					MouseLeave={this.props.MouseLeave}
+					ModalActive={this.props.ModalActive}
 
-					Bank={this.state.Bank}
-					Court={this.state.Court}
-					Library={this.state.Library}
-					Politics={this.state.Politics}
-					Prison={this.state.Prison}
-					School={this.state.School}
+					Bank={this.props.Bank}
+					Court={this.props.Court}
+					Library={this.props.Library}
+					Politics={this.props.Politics}
+					Prison={this.props.Prison}
+					School={this.props.School}
 				/>
 				<Modal 
-					CloseModal={this.CloseModal}
-					ModalActive={this.state.ModalActive}
-					ModalContent={this.state.ModalContent}
+					CloseModal={this.props.CloseModal}
+					ModalActive={this.props.ModalActive}
+					ModalContent={this.props.ModalContent}
 				/>
 			</div>
 		)

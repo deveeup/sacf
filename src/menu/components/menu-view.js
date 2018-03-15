@@ -10,7 +10,7 @@ function MenuView (props){
 			<ul>
 				{
 					menu.map((items) => {
-						return <Item {...items} key={items.id} />
+						return <Item {...items} key={items.id}/>
 					})
 				}
 			</ul>

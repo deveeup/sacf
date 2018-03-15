@@ -1,27 +1,27 @@
 {
 	"menu": [
 		{ 
-			"id": "1", 
+			"id": "Bank", 
 			"title": "¿Que es SACF?" 
 		}, 
 		{ 
-			"id": "2", 
+			"id": "Politics", 
 			"title": "Principios del SACF" 
 		}, 
 		{ 
-			"id": "3", 
+			"id": "Library", 
 			"title": "Contenido Mínimo de la información" 
 		}, 
 		{ 
-			"id": "4", 
+			"id": "Prison", 
 			"title": "Cláusulas y Prácticas Abusivas" 
 		}, 
 		{ 
-			"id": "5", 
+			"id": "Court", 
 			"title": "Defensor del Consumidor Financiero" 
 		}, 
 		{ 
-			"id": "6",
+			"id": "School",
 			"title": "Educación Financiera" 
 		}
 	]

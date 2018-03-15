@@ -18272,7 +18272,7 @@ module.exports = camelize;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -18293,6 +18293,10 @@ var _menu = __webpack_require__(34);
 
 var _menu2 = _interopRequireDefault(_menu);
 
+var _menuItems = __webpack_require__(38);
+
+var _menuItems2 = _interopRequireDefault(_menuItems);
+
 var _body = __webpack_require__(39);
 
 var _body2 = _interopRequireDefault(_body);
@@ -18306,28 +18310,221 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var App = function (_Component) {
-	_inherits(App, _Component);
+  _inherits(App, _Component);
 
-	function App() {
-		_classCallCheck(this, App);
+  function App() {
+    var _ref;
 
-		return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
-	}
+    var _temp, _this, _ret;
 
-	_createClass(App, [{
-		key: 'render',
-		value: function render() {
-			return _react2.default.createElement(
-				_appView2.default,
-				null,
-				_react2.default.createElement(_header2.default, null),
-				_react2.default.createElement(_menu2.default, null),
-				_react2.default.createElement(_body2.default, null)
-			);
-		}
-	}]);
+    _classCallCheck(this, App);
 
-	return App;
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = App.__proto__ || Object.getPrototypeOf(App)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+      Bank: false,
+      Court: false,
+      Library: false,
+      Politics: false,
+      Prison: false,
+      School: false,
+      ModalActive: false,
+      ModalContent: ''
+    }, _this.MouseEnter = function (e) {
+      switch (e.target.id) {
+        case 'Bank':
+          _this.setState({
+            Bank: true
+          });
+          break;
+        case 'Court':
+          _this.setState({
+            Court: true
+          });
+          break;
+        case 'Library':
+          _this.setState({
+            Library: true
+          });
+          break;
+        case 'Politics':
+          _this.setState({
+            Politics: true
+          });
+          break;
+        case 'Prison':
+          _this.setState({
+            Prison: true
+          });
+          break;
+        case 'School':
+          _this.setState({
+            School: true
+          });
+          break;
+      }
+    }, _this.MouseLeave = function (e) {
+      if (_this.state.ModalActive) {
+        switch (e.target.id) {
+          case 'Bank':
+            _this.setState({
+              Bank: true
+            });
+            break;
+          case 'Court':
+            _this.setState({
+              Court: true
+            });
+            break;
+          case 'Library':
+            _this.setState({
+              Library: true
+            });
+            break;
+          case 'Politics':
+            _this.setState({
+              Politics: true
+            });
+            break;
+          case 'Prison':
+            _this.setState({
+              Prison: true
+            });
+            break;
+          case 'School':
+            _this.setState({
+              School: true
+            });
+            break;
+        }
+      } else {
+        switch (e.target.id) {
+          case 'Bank':
+            _this.setState({
+              Bank: false
+            });
+            break;
+          case 'Court':
+            _this.setState({
+              Court: false
+            });
+            break;
+          case 'Library':
+            _this.setState({
+              Library: false
+            });
+            break;
+          case 'Politics':
+            _this.setState({
+              Politics: false
+            });
+            break;
+          case 'Prison':
+            _this.setState({
+              Prison: false
+            });
+            break;
+          case 'School':
+            _this.setState({
+              School: false
+            });
+            break;
+        }
+      }
+    }, _this.MouseClick = function (e) {
+      console.log(e.target.id);
+      _this.setState({
+        ModalActive: true
+      });
+      switch (e.target.id) {
+        case 'Bank':
+          _this.setState({
+            ModalContent: 'Bank',
+            Bank: true
+          });
+          break;
+        case 'Court':
+          _this.setState({
+            ModalContent: 'Juzgado',
+            Court: true
+          });
+          break;
+        case 'Library':
+          _this.setState({
+            ModalContent: 'Library',
+            Library: true
+          });
+          break;
+        case 'Politics':
+          _this.setState({
+            ModalContent: 'Alcaldía',
+            Politics: true
+
+          });
+          break;
+        case 'Prison':
+          _this.setState({
+            ModalContent: 'Prisión',
+            Prison: true
+          });
+          break;
+        case 'School':
+          _this.setState({
+            ModalContent: 'Escuela',
+            Scool: true
+          });
+          break;
+      }
+    }, _this.CloseModal = function (e) {
+      if (e.target.id == 'ModalContainer' || 'ButtonClose') {
+        _this.setState({
+          Bank: false,
+          Court: false,
+          Library: false,
+          Politics: false,
+          Prison: false,
+          School: false,
+          ModalActive: false
+        });
+      }
+      if (e.target.id == '') {
+        _this.setState({
+          ModalActive: true
+        });
+      }
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  _createClass(App, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        _appView2.default,
+        null,
+        _react2.default.createElement(_header2.default, null),
+        _react2.default.createElement(_menu2.default, { listItems: _menuItems2.default }),
+        _react2.default.createElement(_body2.default, {
+          MouseClick: this.MouseClick,
+          MouseEnter: this.MouseEnter,
+          MouseLeave: this.MouseLeave,
+          CloseModal: this.CloseModal,
+
+          ModalActive: this.state.ModalActive,
+          Bank: this.state.Bank,
+          Court: this.state.Court,
+          Library: this.state.Library,
+          Politics: this.state.Politics,
+          Prison: this.state.Prison,
+          School: this.state.School
+
+        })
+      );
+    }
+  }]);
+
+  return App;
 }(_react.Component);
 
 exports.default = App;
@@ -18486,10 +18683,6 @@ var _menuView = __webpack_require__(35);
 
 var _menuView2 = _interopRequireDefault(_menuView);
 
-var _menuItems = __webpack_require__(38);
-
-var _menuItems2 = _interopRequireDefault(_menuItems);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -18511,7 +18704,7 @@ var Menu = function (_Component) {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(_menuView2.default, {
-				listItems: _menuItems2.default
+				listItems: this.props.listItems
 			});
 		}
 	}]);
@@ -18587,11 +18780,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function Item(props) {
 	return _react2.default.createElement(
-		"li",
+		'li',
 		null,
 		_react2.default.createElement(
-			"a",
-			{ href: "#" },
+			'a',
+			null,
 			props.title
 		)
 	);
@@ -18603,7 +18796,7 @@ exports.default = Item;
 /* 38 */
 /***/ (function(module, exports) {
 
-module.exports = {"menu":[{"id":"1","title":"¿Que es SACF?"},{"id":"2","title":"Principios del SACF"},{"id":"3","title":"Contenido Mínimo de la información"},{"id":"4","title":"Cláusulas y Prácticas Abusivas"},{"id":"5","title":"Defensor del Consumidor Financiero"},{"id":"6","title":"Educación Financiera"}]}
+module.exports = {"menu":[{"id":"Bank","title":"¿Que es SACF?"},{"id":"Politics","title":"Principios del SACF"},{"id":"Library","title":"Contenido Mínimo de la información"},{"id":"Prison","title":"Cláusulas y Prácticas Abusivas"},{"id":"Court","title":"Defensor del Consumidor Financiero"},{"id":"School","title":"Educación Financiera"}]}
 
 /***/ }),
 /* 39 */
@@ -18650,187 +18843,9 @@ var Body = function (_Component) {
 	_inherits(Body, _Component);
 
 	function Body() {
-		var _ref;
-
-		var _temp, _this, _ret;
-
 		_classCallCheck(this, Body);
 
-		for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-			args[_key] = arguments[_key];
-		}
-
-		return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Body.__proto__ || Object.getPrototypeOf(Body)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-			Bank: false,
-			Court: false,
-			Library: false,
-			Politics: false,
-			Prison: false,
-			School: false,
-			ModalActive: false,
-			ModalContent: ''
-		}, _this.MouseEnter = function (e) {
-			switch (e.target.id) {
-				case 'Bank':
-					_this.setState({
-						Bank: true
-					});
-					break;
-				case 'Court':
-					_this.setState({
-						Court: true
-					});
-					break;
-				case 'Library':
-					_this.setState({
-						Library: true
-					});
-					break;
-				case 'Politics':
-					_this.setState({
-						Politics: true
-					});
-					break;
-				case 'Prison':
-					_this.setState({
-						Prison: true
-					});
-					break;
-				case 'School':
-					_this.setState({
-						School: true
-					});
-					break;
-			}
-		}, _this.MouseLeave = function (e) {
-			if (_this.state.ModalActive) {
-				switch (e.target.id) {
-					case 'Bank':
-						_this.setState({
-							Bank: true
-						});
-						break;
-					case 'Court':
-						_this.setState({
-							Court: true
-						});
-						break;
-					case 'Library':
-						_this.setState({
-							Library: true
-						});
-						break;
-					case 'Politics':
-						_this.setState({
-							Politics: true
-						});
-						break;
-					case 'Prison':
-						_this.setState({
-							Prison: true
-						});
-						break;
-					case 'School':
-						_this.setState({
-							School: true
-						});
-						break;
-				}
-			} else {
-				switch (e.target.id) {
-					case 'Bank':
-						_this.setState({
-							Bank: false
-						});
-						break;
-					case 'Court':
-						_this.setState({
-							Court: false
-						});
-						break;
-					case 'Library':
-						_this.setState({
-							Library: false
-						});
-						break;
-					case 'Politics':
-						_this.setState({
-							Politics: false
-						});
-						break;
-					case 'Prison':
-						_this.setState({
-							Prison: false
-						});
-						break;
-					case 'School':
-						_this.setState({
-							School: false
-						});
-						break;
-				}
-			}
-		}, _this.MouseClick = function (e) {
-			_this.setState({
-				ModalActive: true
-			});
-			switch (e.target.id) {
-				case 'Bank':
-					_this.setState({
-						ModalContent: 'Bank',
-						Bank: true
-					});
-					break;
-				case 'Court':
-					_this.setState({
-						ModalContent: 'Juzgado',
-						Court: true
-					});
-					break;
-				case 'Library':
-					_this.setState({
-						ModalContent: 'Library',
-						Library: true
-					});
-					break;
-				case 'Politics':
-					_this.setState({
-						ModalContent: 'Alcaldía',
-						Politics: true
-
-					});
-					break;
-				case 'Prison':
-					_this.setState({
-						ModalContent: 'Prisión',
-						Prison: true
-					});
-					break;
-				case 'School':
-					_this.setState({
-						ModalContent: 'Escuela',
-						Scool: true
-					});
-					break;
-			}
-		}, _this.CloseModal = function (e) {
-			if (e.target.id == 'ModalContainer' || 'ButtonClose') {
-				_this.setState({
-					Bank: false,
-					Court: false,
-					Library: false,
-					Politics: false,
-					Prison: false,
-					School: false,
-					ModalActive: false
-				});
-			}
-			if (e.target.id == '') {
-				_this.setState({
-					ModalActive: true
-				});
-			}
-		}, _temp), _possibleConstructorReturn(_this, _ret);
+		return _possibleConstructorReturn(this, (Body.__proto__ || Object.getPrototypeOf(Body)).apply(this, arguments));
 	}
 
 	_createClass(Body, [{
@@ -18842,22 +18857,22 @@ var Body = function (_Component) {
 				_react2.default.createElement(_bodyView2.default, {
 					CityAnimate: _ciudad2.default,
 					CityStatic: _ciudad4.default,
-					MouseClick: this.MouseClick,
-					MouseEnter: this.MouseEnter,
-					MouseLeave: this.MouseLeave,
-					ModalActive: this.state.ModalActive,
+					MouseClick: this.props.MouseClick,
+					MouseEnter: this.props.MouseEnter,
+					MouseLeave: this.props.MouseLeave,
+					ModalActive: this.props.ModalActive,
 
-					Bank: this.state.Bank,
-					Court: this.state.Court,
-					Library: this.state.Library,
-					Politics: this.state.Politics,
-					Prison: this.state.Prison,
-					School: this.state.School
+					Bank: this.props.Bank,
+					Court: this.props.Court,
+					Library: this.props.Library,
+					Politics: this.props.Politics,
+					Prison: this.props.Prison,
+					School: this.props.School
 				}),
 				_react2.default.createElement(_modal2.default, {
-					CloseModal: this.CloseModal,
-					ModalActive: this.state.ModalActive,
-					ModalContent: this.state.ModalContent
+					CloseModal: this.props.CloseModal,
+					ModalActive: this.props.ModalActive,
+					ModalContent: this.props.ModalContent
 				})
 			);
 		}
@@ -19031,32 +19046,32 @@ var ModalContainer = function (_Component) {
   }
 
   _createClass(ModalContainer, [{
-    key: 'componentWillReceiveProps',
-    value: function componentWillReceiveProps() {}
-  }, {
     key: 'render',
     value: function render() {
+      console.log(this.props.ModalContent);
       {
         switch (this.props.ModalContent) {
-          case 'Bank':
+          case 'undefined':
             return _react2.default.createElement(
               _modal2.default,
               {
                 CloseModal: this.props.CloseModal,
                 ModalActive: this.props.ModalActive,
-                ModalContent: this.props.ModalContent,
                 ButtonCloseImage: _ButtonClose2.default
               },
-              _react2.default.createElement(_bdb2.default, null)
+              'asd'
             );
             break;
           default:
-            return _react2.default.createElement(_modal2.default, {
-              CloseModal: this.props.CloseModal,
-              ModalActive: this.props.ModalActive,
-              ModalContent: this.props.ModalContent,
-              ButtonCloseImage: _ButtonClose2.default
-            });
+            return _react2.default.createElement(
+              _modal2.default,
+              {
+                CloseModal: this.props.CloseModal,
+                ModalActive: this.props.ModalActive,
+                ButtonCloseImage: _ButtonClose2.default
+              },
+              'Ninguno!'
+            );
         }
       }
     }
@@ -19194,7 +19209,7 @@ function BdbView(props) {
   return _react2.default.createElement(
     'div',
     { className: 'BdbContainer' },
-    'LEEEL'
+    'Lorem LOREM'
   );
 }
 
