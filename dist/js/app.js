@@ -18503,7 +18503,10 @@ var App = function (_Component) {
         _appView2.default,
         null,
         _react2.default.createElement(_header2.default, null),
-        _react2.default.createElement(_menu2.default, { listItems: _menuItems2.default }),
+        _react2.default.createElement(_menu2.default, {
+          listItems: _menuItems2.default,
+          MouseClick: this.MouseClick
+        }),
         _react2.default.createElement(_body2.default, {
           MouseClick: this.MouseClick,
           MouseEnter: this.MouseEnter,
@@ -18702,7 +18705,8 @@ var Menu = function (_Component) {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(_menuView2.default, {
-				listItems: this.props.listItems
+				listItems: this.props.listItems,
+				MouseClick: this.props.MouseClick
 			});
 		}
 	}]);
@@ -18746,7 +18750,11 @@ function MenuView(props) {
 			'ul',
 			null,
 			menu.map(function (items) {
-				return _react2.default.createElement(_item2.default, _extends({}, items, { key: items.id }));
+				return _react2.default.createElement(_item2.default, _extends({}, items, {
+					key: items.id,
+					id: items.id,
+					MouseClick: props.MouseClick
+				}));
 			})
 		)
 	);
@@ -18782,7 +18790,8 @@ function Item(props) {
 		null,
 		_react2.default.createElement(
 			'a',
-			null,
+			{ id: props.id, onClick: props.MouseClick },
+			'* ',
 			props.title
 		)
 	);

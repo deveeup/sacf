@@ -1,10 +1,10 @@
 import React from 'react'
 
 function Item (props) {
-	return(
+  return(
 		<li>
-			<a>
-				{props.title}
+			<a id={props.id} onClick={props.MouseClick}>
+				* {props.title}
 			</a>
 		</li>
 	)
