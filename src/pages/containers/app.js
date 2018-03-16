@@ -121,7 +121,6 @@ class App extends Component {
     }
   }
   MouseClick = (e) => {
-    console.log(e.target.id)
     this.setState({
       ModalActive: true,
     })
@@ -193,15 +192,14 @@ class App extends Component {
           MouseEnter={this.MouseEnter}
           MouseLeave={this.MouseLeave}
           CloseModal={this.CloseModal}
-
           ModalActive={this.state.ModalActive}
+          ModalContent={this.state.ModalContent}
           Bank={this.state.Bank}
           Court={this.state.Court}
           Library={this.state.Library}
           Politics={this.state.Politics}
           Prison={this.state.Prison}
           School={this.state.School}
-
         />
 			</AppView>
 		)

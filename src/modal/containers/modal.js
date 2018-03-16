@@ -7,17 +7,16 @@ import ButtonCloseImage from '../components/assets/ButtonClose.svg'
 
 class ModalContainer extends Component {
   render(){
-    console.log(this.props.ModalContent)
     {
       switch(this.props.ModalContent){
-        case 'undefined':
+        case 'Bank':
           return(
             <ModalView 
               CloseModal={this.props.CloseModal}
               ModalActive={this.props.ModalActive}
               ButtonCloseImage={ButtonCloseImage}
             >
-              asd
+              <Bdb/>
             </ModalView>
           )
         break 

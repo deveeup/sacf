@@ -5,7 +5,7 @@ import './bdb.styl'
 function BdbView (props) {
   return(
     <div className="BdbContainer">
-      Lorem LOREM
+      BdB
     </div>
   )
 }

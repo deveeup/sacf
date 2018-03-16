@@ -6,8 +6,6 @@ import CityStatic from '../components/assets/ciudad.jpg'
 import Modal from '../../modal/containers/modal'
 
 class Body extends Component {
-	
-	
 	render(){
 		return(
 			<div>
