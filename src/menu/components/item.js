@@ -4,7 +4,7 @@ function Item (props) {
   return(
 		<li>
 			<a id={props.id} onClick={props.MouseClick}>
-				* {props.title}
+				{props.title}
 			</a>
 		</li>
 	)

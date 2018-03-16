@@ -187,7 +187,7 @@ class App extends Component {
 			<AppView>
 				<Header/>
 				<Menu 
-          listItems={Menuitems}
+          ListItems={Menuitems}
           MouseClick={this.MouseClick}
         />
 				<Body

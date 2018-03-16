@@ -18504,7 +18504,7 @@ var App = function (_Component) {
         null,
         _react2.default.createElement(_header2.default, null),
         _react2.default.createElement(_menu2.default, {
-          listItems: _menuItems2.default,
+          ListItems: _menuItems2.default,
           MouseClick: this.MouseClick
         }),
         _react2.default.createElement(_body2.default, {
@@ -18705,7 +18705,7 @@ var Menu = function (_Component) {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(_menuView2.default, {
-				listItems: this.props.listItems,
+				ListItems: this.props.ListItems,
 				MouseClick: this.props.MouseClick
 			});
 		}
@@ -18742,7 +18742,7 @@ var _item2 = _interopRequireDefault(_item);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function MenuView(props) {
-	var menu = props.listItems.menu;
+	var menu = props.ListItems.menu;
 	return _react2.default.createElement(
 		'nav',
 		{ className: 'Menu' },
@@ -18791,7 +18791,6 @@ function Item(props) {
 		_react2.default.createElement(
 			'a',
 			{ id: props.id, onClick: props.MouseClick },
-			'* ',
 			props.title
 		)
 	);

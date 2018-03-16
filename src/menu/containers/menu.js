@@ -6,7 +6,7 @@ class Menu extends Component {
 	render(){
 		return(
 			<MenuView
-				listItems={this.props.listItems}
+				ListItems={this.props.ListItems}
         MouseClick={this.props.MouseClick}
 			/>
 		)

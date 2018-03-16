@@ -4,7 +4,7 @@ import './menu.styl'
 import Item from './item'
 
 function MenuView (props){
-	const menu = props.listItems.menu
+	const menu = props.ListItems.menu
 	return(
 		<nav className="Menu">
 			<ul>
