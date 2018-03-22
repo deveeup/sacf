@@ -18,11 +18,17 @@ class Body extends Component {
 					ModalActive={this.props.ModalActive}
 
 					Bank={this.props.Bank}
+					BankHover={this.props.BankHover}
 					Court={this.props.Court}
+					CourtHover={this.props.CourtHover}
 					Library={this.props.Library}
+					LibraryHover={this.props.LibraryHover}
 					Politics={this.props.Politics}
+					PoliticsHover={this.props.PoliticsHover}
 					Prison={this.props.Prison}
+					PrisonHover={this.props.PrisonHover}
 					School={this.props.School}
+					SchoolHover={this.props.SchoolHover}
 				/>
 				<Modal 
 					CloseModal={this.props.CloseModal}

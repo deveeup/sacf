@@ -8,45 +8,51 @@ import Body from '../../body/containers/body'
 
 class App extends Component {
   state = {
-    Bank: false,
+    Bank: true,
+    BankHover: true,
     Court: false,
+    CourtHover: false,
     Library: false,
+    LibraryHover: false,
     Politics: false,
+    PoliticsHover: false,
     Prison: false,
+    PrisonHover: false,
     School: false,
-    ModalActive: false,
-    ModalContent: '',
+    SchoolHover: false,
+    ModalActive: true,
+    ModalContent: 'Bank',
   }
   MouseEnter = (e) => {
     switch(e.target.id) {
       case 'Bank':
         this.setState({
-          Bank: true,
+          BankHover: true,
         })
       break;
       case 'Court':
         this.setState({
-          Court: true,
+          CourtHover: true,
         })
       break;
       case 'Library':
         this.setState({
-          Library: true,
+          LibraryHover: true,
         })
       break;
       case 'Politics':
         this.setState({
-          Politics: true,
+          PoliticsHover: true,
         })
       break;
       case 'Prison':
         this.setState({
-          Prison: true,
+          PrisonHover: true,
         })
       break;
       case 'School':
         this.setState({
-          School: true,
+          SchoolHover: true,
         })
       break;
     }
@@ -89,32 +95,32 @@ class App extends Component {
       switch(e.target.id) {
         case 'Bank':
           this.setState({
-            Bank: false,
+            BankHover: false,
           })
         break;
         case 'Court':
           this.setState({
-            Court: false,
+            CourtHover: false,
           })
         break;
         case 'Library':
           this.setState({
-            Library: false,
+            LibraryHover: false,
           })
         break;
         case 'Politics':
           this.setState({
-            Politics: false,
+            PoliticsHover: false,
           })
         break;
         case 'Prison':
           this.setState({
-            Prison: false,
+            PrisonHover: false,
           })
         break;
         case 'School':
           this.setState({
-            School: false,
+            SchoolHover: false,
           })
         break;
       }
@@ -173,6 +179,12 @@ class App extends Component {
         Politics: false,
         Prison: false,
         School: false,
+        BankHover: false,
+        CourtHover: false,
+        LibraryHover: false,
+        PoliticsHover: false,
+        PrisonHover: false,
+        SchoolHover: false,
         ModalActive: false,
       })
     }
@@ -198,11 +210,17 @@ class App extends Component {
           ModalActive={this.state.ModalActive}
           ModalContent={this.state.ModalContent}
           Bank={this.state.Bank}
+          BankHover={this.state.BankHover}
           Court={this.state.Court}
+          CourtHover={this.state.CourtHover}
           Library={this.state.Library}
+          LibraryHover={this.state.LibraryHover}
           Politics={this.state.Politics}
+          PoliticsHover={this.state.PoliticsHover}
           Prison={this.state.Prison}
+          PrisonHover={this.state.PrisonHover}
           School={this.state.School}
+          SchoolHover={this.state.SchoolHover}
         />
 			</AppView>
 		)

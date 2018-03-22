@@ -1,11 +1,35 @@
 
 import React from 'react'
 import './bdb.styl'
+import BdbEdifice from './assets/BdbEdifice.png'
 
 function BdbView (props) {
+  const menu = props.ListItems.list
   return(
     <div className="BdbContainer">
-      BdB
+       <img className="BdbEdifice" src={BdbEdifice} />
+       <div className="InfoContainer">
+        <div className="Menu">
+          <nav className="NavBdB">
+            <ul className="UlBdB">
+              {
+                menu.map((item) => {
+                  return(
+                    <li className="ItemBdB" key={item.id}>
+                      <a href="#" id={item.id}>
+                        {item.title}
+                      </a>
+                    </li>
+                  )
+                })
+              }
+            </ul>
+          </nav>
+        </div>
+        <div className="Content">
+          Loremsd olrem lorem lorem lorem lorem
+        </div>
+       </div>
     </div>
   )
 }

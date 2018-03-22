@@ -1,0 +1,24 @@
+{
+	"list": [
+		{ 
+			"id": "1", 
+			"title": "¿Qué es el Sistema de Atención al Consumidor Financiero - SACF?" 
+		}, 
+		{ 
+			"id": "2", 
+			"title": "El SACF busca" 
+		}, 
+		{ 
+			"id": "3", 
+			"title": "¿Quiénes son los principales actores del SACF?" 
+		}, 
+		{ 
+			"id": "4", 
+			"title": "¿Cuáles son los elementos del SACF?" 
+		}, 
+		{ 
+			"id": "5", 
+			"title": "¿Cómo funciona el ciclo del SACF para desarrollar su objetivo?" 
+		}
+	]
+}
