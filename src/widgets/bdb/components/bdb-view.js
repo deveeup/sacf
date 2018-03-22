@@ -7,7 +7,7 @@ function BdbView (props) {
   const menu = props.ListItems.list
   return(
     <div className="BdbContainer">
-       <img className="BdbEdifice" src={BdbEdifice} />
+       <img className="BdbEdifice" src={BdbEdifice} id="BdB-Img"/>
        <div className="InfoContainer">
         <div className="Menu">
           <nav className="NavBdB">
@@ -16,7 +16,7 @@ function BdbView (props) {
                 menu.map((item) => {
                   return(
                     <li className="ItemBdB" key={item.id}>
-                      <a href="#" id={item.id}>
+                      <a href="#" id={item.id} onClick={props.ClickMenu}>
                         {item.title}
                       </a>
                     </li>
@@ -27,7 +27,7 @@ function BdbView (props) {
           </nav>
         </div>
         <div className="Content">
-          Loremsd olrem lorem lorem lorem lorem
+          
         </div>
        </div>
     </div>

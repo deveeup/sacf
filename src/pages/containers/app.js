@@ -188,7 +188,15 @@ class App extends Component {
         ModalActive: false,
       })
     }
-    if (e.target.id == ''){
+    if (
+      e.target.id == '' 
+      || e.target.id == 'BdB-Img'
+      || e.target.id == 'BdB-1'
+      || e.target.id == 'BdB-2'
+      || e.target.id == 'BdB-3'
+      || e.target.id == 'BdB-4'
+      || e.target.id == 'BdB-5'
+    ){
       this.setState({
         ModalActive: true,
       })

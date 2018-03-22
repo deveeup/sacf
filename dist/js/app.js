@@ -18500,7 +18500,7 @@ var App = function (_Component) {
           ModalActive: false
         });
       }
-      if (e.target.id == '') {
+      if (e.target.id == '' || e.target.id == 'BdB-Img' || e.target.id == 'BdB-1' || e.target.id == 'BdB-2' || e.target.id == 'BdB-3' || e.target.id == 'BdB-4' || e.target.id == 'BdB-5') {
         _this.setState({
           ModalActive: true
         });
@@ -19206,16 +19206,28 @@ var Bdb = function (_Component) {
   _inherits(Bdb, _Component);
 
   function Bdb() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
     _classCallCheck(this, Bdb);
 
-    return _possibleConstructorReturn(this, (Bdb.__proto__ || Object.getPrototypeOf(Bdb)).apply(this, arguments));
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Bdb.__proto__ || Object.getPrototypeOf(Bdb)).call.apply(_ref, [this].concat(args))), _this), _this.ClickMenu = function (e) {
+      console.log(e.target.id);
+      e.preventDefault();
+    }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(Bdb, [{
     key: 'render',
     value: function render() {
       return _react2.default.createElement(_bdbView2.default, {
-        ListItems: _listItems2.default
+        ListItems: _listItems2.default,
+        ClickMenu: this.ClickMenu
       });
     }
   }]);
@@ -19253,7 +19265,7 @@ function BdbView(props) {
   return _react2.default.createElement(
     'div',
     { className: 'BdbContainer' },
-    _react2.default.createElement('img', { className: 'BdbEdifice', src: _BdbEdifice2.default }),
+    _react2.default.createElement('img', { className: 'BdbEdifice', src: _BdbEdifice2.default, id: 'BdB-Img' }),
     _react2.default.createElement(
       'div',
       { className: 'InfoContainer' },
@@ -19272,7 +19284,7 @@ function BdbView(props) {
                 { className: 'ItemBdB', key: item.id },
                 _react2.default.createElement(
                   'a',
-                  { href: '#', id: item.id },
+                  { href: '#', id: item.id, onClick: props.ClickMenu },
                   item.title
                 )
               );
@@ -19280,11 +19292,7 @@ function BdbView(props) {
           )
         )
       ),
-      _react2.default.createElement(
-        'div',
-        { className: 'Content' },
-        'Loremsd olrem lorem lorem lorem lorem'
-      )
+      _react2.default.createElement('div', { className: 'Content' })
     )
   );
 }
@@ -19317,7 +19325,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAwUAAAJTCAYAAABZ
 /* 62 */
 /***/ (function(module, exports) {
 
-module.exports = {"list":[{"id":"1","title":"¿Qué es el Sistema de Atención al Consumidor Financiero - SACF?"},{"id":"2","title":"El SACF busca"},{"id":"3","title":"¿Quiénes son los principales actores del SACF?"},{"id":"4","title":"¿Cuáles son los elementos del SACF?"},{"id":"5","title":"¿Cómo funciona el ciclo del SACF para desarrollar su objetivo?"}]}
+module.exports = {"list":[{"id":"BdB-1","title":"¿Qué es el Sistema de Atención al Consumidor Financiero - SACF?"},{"id":"BdB-2","title":"El SACF busca"},{"id":"BdB-3","title":"¿Quiénes son los principales actores del SACF?"},{"id":"BdB-4","title":"¿Cuáles son los elementos del SACF?"},{"id":"BdB-5","title":"¿Cómo funciona el ciclo del SACF para desarrollar su objetivo?"}]}
 
 /***/ })
 /******/ ]);
