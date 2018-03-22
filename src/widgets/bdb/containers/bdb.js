@@ -21,7 +21,6 @@ class Bdb extends Component {
         ListItems={ListItems}
         ClickMenuBdB={this.ClickMenuBdB}
         ContentBdB={this.state.ContentBdB}
-        BdB2Bold={this.state.BdB2Bold}
       />
     )
   }

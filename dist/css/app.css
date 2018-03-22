@@ -347,3 +347,20 @@
   color: #606060;
   font-size: 18px;
 }
+.BdB-1 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  width: 100%;
+}
+.BdB-1 .Left h2 {
+  font-weight: bold;
+  color: #0974b7;
+}
+.BdB-1 .Left p {
+  color: #606060;
+  font-size: 18px;
+}

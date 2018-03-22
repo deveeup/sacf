@@ -19232,8 +19232,7 @@ var Bdb = function (_Component) {
       return _react2.default.createElement(_bdbView2.default, {
         ListItems: _listItems2.default,
         ClickMenuBdB: this.ClickMenuBdB,
-        ContentBdB: this.state.ContentBdB,
-        BdB2Bold: this.state.BdB2Bold
+        ContentBdB: this.state.ContentBdB
       });
     }
   }]);
@@ -19364,6 +19363,10 @@ var _BdB = __webpack_require__(53);
 
 var _BdB2 = _interopRequireDefault(_BdB);
 
+var _BdB3 = __webpack_require__(81);
+
+var _BdB4 = _interopRequireDefault(_BdB3);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function ContentBdB(props) {
@@ -19372,11 +19375,7 @@ function ContentBdB(props) {
       return _react2.default.createElement(_BdB2.default, null);
       break;
     case 'BdB-2':
-      return _react2.default.createElement(
-        'p',
-        null,
-        'Renderrrrr!'
-      );
+      return _react2.default.createElement(_BdB4.default, null);
     case 'BdB-3':
       return _react2.default.createElement(
         'p',
@@ -21755,6 +21754,105 @@ module.exports = function domparser(html) {
     return [];
 };
 
+
+/***/ }),
+/* 81 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _BdB2View = __webpack_require__(82);
+
+var _BdB2View2 = _interopRequireDefault(_BdB2View);
+
+var _BdB2Texts = __webpack_require__(84);
+
+var _BdB2Texts2 = _interopRequireDefault(_BdB2Texts);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var BdB1 = function (_Component) {
+  _inherits(BdB1, _Component);
+
+  function BdB1() {
+    _classCallCheck(this, BdB1);
+
+    return _possibleConstructorReturn(this, (BdB1.__proto__ || Object.getPrototypeOf(BdB1)).apply(this, arguments));
+  }
+
+  _createClass(BdB1, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(_BdB2View2.default, {
+        TextContent: _BdB2Texts2.default
+      });
+    }
+  }]);
+
+  return BdB1;
+}(_react.Component);
+
+exports.default = BdB1;
+
+/***/ }),
+/* 82 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(83);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Parser = __webpack_require__(69);
+
+function BdB1View(props) {
+  return _react2.default.createElement(
+    'div',
+    { className: 'BdB-1' },
+    props.TextContent.title
+  );
+}
+
+exports.default = BdB1View;
+
+/***/ }),
+/* 83 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 84 */
+/***/ (function(module, exports) {
+
+module.exports = {"title":"El SACF busca","content":"Es un <b>sistema de control</b> que se encarga de <b>proteger</b> al Consumidor Financiero, promoviendo la protección de sus derechos y el cumplimiento de las obligaciones previstas en la normatividad vigente."}
 
 /***/ })
 /******/ ]);
