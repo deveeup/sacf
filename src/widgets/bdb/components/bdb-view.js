@@ -2,6 +2,7 @@
 import React from 'react'
 import './bdb.styl'
 import BdbEdifice from './assets/BdbEdifice.png'
+import ContainerContent from './content'
 
 function BdbView (props) {
   const menu = props.ListItems.list
@@ -27,7 +28,9 @@ function BdbView (props) {
           </nav>
         </div>
         <div className="Content">
-          
+          <ContainerContent
+            ContentBdB={props.ContentBdB}
+          />
         </div>
        </div>
     </div>

@@ -19216,9 +19216,13 @@ var Bdb = function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Bdb.__proto__ || Object.getPrototypeOf(Bdb)).call.apply(_ref, [this].concat(args))), _this), _this.ClickMenu = function (e) {
-      console.log(e.target.id);
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Bdb.__proto__ || Object.getPrototypeOf(Bdb)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+      ContentBdB: 'BdB-1'
+    }, _this.ClickMenu = function (e) {
       e.preventDefault();
+      _this.setState({
+        ContentBdB: e.target.id
+      });
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
@@ -19227,7 +19231,8 @@ var Bdb = function (_Component) {
     value: function render() {
       return _react2.default.createElement(_bdbView2.default, {
         ListItems: _listItems2.default,
-        ClickMenu: this.ClickMenu
+        ClickMenu: this.ClickMenu,
+        ContentBdB: this.state.ContentBdB
       });
     }
   }]);
@@ -19257,6 +19262,10 @@ __webpack_require__(50);
 var _BdbEdifice = __webpack_require__(61);
 
 var _BdbEdifice2 = _interopRequireDefault(_BdbEdifice);
+
+var _content = __webpack_require__(63);
+
+var _content2 = _interopRequireDefault(_content);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19292,7 +19301,13 @@ function BdbView(props) {
           )
         )
       ),
-      _react2.default.createElement('div', { className: 'Content' })
+      _react2.default.createElement(
+        'div',
+        { className: 'Content' },
+        _react2.default.createElement(_content2.default, {
+          ContentBdB: props.ContentBdB
+        })
+      )
     )
   );
 }
@@ -19326,6 +19341,64 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAwUAAAJTCAYAAABZ
 /***/ (function(module, exports) {
 
 module.exports = {"list":[{"id":"BdB-1","title":"¿Qué es el Sistema de Atención al Consumidor Financiero - SACF?"},{"id":"BdB-2","title":"El SACF busca"},{"id":"BdB-3","title":"¿Quiénes son los principales actores del SACF?"},{"id":"BdB-4","title":"¿Cuáles son los elementos del SACF?"},{"id":"BdB-5","title":"¿Cómo funciona el ciclo del SACF para desarrollar su objetivo?"}]}
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function ContentBdB(props) {
+  switch (props.ContentBdB) {
+    case 'BdB-1':
+      return _react2.default.createElement(
+        'p',
+        null,
+        'CASO1'
+      );
+      break;
+    case 'BdB-2':
+      return _react2.default.createElement(
+        'p',
+        null,
+        'Renderrrrr!'
+      );
+    case 'BdB-3':
+      return _react2.default.createElement(
+        'p',
+        null,
+        'CASO3'
+      );
+      break;
+    case 'BdB-4':
+      return _react2.default.createElement(
+        'p',
+        null,
+        'CASO4'
+      );
+      break;
+    case 'BdB-5':
+      return _react2.default.createElement(
+        'p',
+        null,
+        'CASO5'
+      );
+      break;
+  }
+}
+
+exports.default = ContentBdB;
 
 /***/ })
 /******/ ]);
