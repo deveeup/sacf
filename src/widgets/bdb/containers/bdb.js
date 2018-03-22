@@ -5,20 +5,23 @@ import ListItems from './list-items.json'
 
 class Bdb extends Component {
   state = {
-    ContentBdB: 'BdB-1'
+    ContentBdB: 'BdB-1',
   }
-  ClickMenu = (e) => {
+
+  ClickMenuBdB = (e) => {
     e.preventDefault();
     this.setState({
       ContentBdB: e.target.id
     })
   }
+
   render(){
     return(
       <BdbView
         ListItems={ListItems}
-        ClickMenu={this.ClickMenu}
+        ClickMenuBdB={this.ClickMenuBdB}
         ContentBdB={this.state.ContentBdB}
+        BdB2Bold={this.state.BdB2Bold}
       />
     )
   }

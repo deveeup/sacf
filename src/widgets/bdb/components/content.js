@@ -1,11 +1,12 @@
 
 import React from 'react'
+import BdB1 from './content/containers/BdB-1'
 
 function ContentBdB(props){
   switch(props.ContentBdB){
     case 'BdB-1':
       return(
-        <p>CASO1</p>
+        <BdB1/>
       )
     break
     case 'BdB-2':

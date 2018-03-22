@@ -1,12 +1,12 @@
 {
 	"menu": [
 		{ 
-			"id": "Bank", 
-			"title": "¿Que es SACF?" 
+			"id": "Bank",
+			"title": "¿Que es SACF?"
 		}, 
 		{ 
-			"id": "Politics", 
-			"title": "Principios del SACF" 
+			"id": "Politics",
+			"title": "Principios del SACF"
 		}, 
 		{ 
 			"id": "Library", 
