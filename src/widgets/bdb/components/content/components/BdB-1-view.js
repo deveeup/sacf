@@ -3,7 +3,6 @@ import React from 'react'
 import './BdB-1.styl'
 const Parser = require('html-react-parser')
 
-
 function BdB1View(props){
   return(
     <div className="BdB-1">

@@ -2,6 +2,8 @@
 import React from 'react'
 import BdB1 from './content/containers/BdB-1'
 import BdB2 from './content/containers/BdB-2'
+import BdB3 from './content/containers/BdB-3'
+import BdB4 from './content/containers/BdB-4'
 
 function ContentBdB(props){
   switch(props.ContentBdB){
@@ -16,12 +18,12 @@ function ContentBdB(props){
       )
     case 'BdB-3':
       return(
-        <p>CASO3</p>
+        <BdB3/>
       )
     break
     case 'BdB-4':
       return(
-        <p>CASO4</p>
+        <BdB4/>
       )
     break
     case 'BdB-5':

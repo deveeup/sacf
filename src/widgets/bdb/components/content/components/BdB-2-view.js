@@ -30,7 +30,7 @@ function BdB2View(props){
           {
             text.map((item) => {
               return(
-                <p>
+                <p key={item.id}>
                   {item.text}
                 </p>
               )
