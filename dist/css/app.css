@@ -566,6 +566,9 @@
 .BdB-4 {
   width: 100%;
 }
+.BdB-4 h2 {
+  color: #0974b7;
+}
 .BdB-4 .InfoContainer {
   width: 100%;
   display: -webkit-box;
@@ -621,4 +624,13 @@
 }
 .BdB-4 .InfoContainer .ItemsContainer .ItemContainer:nth-child(6) {
   height: 150px;
+}
+.BdB-4 .InfoContainer .ItemsContainer .ItemContainer h3 {
+  color: #f7ab2d;
+  margin-bottom: 8px;
+}
+.BdB-4 .InfoContainer .ItemsContainer .ItemContainer p {
+  color: #606060;
+  margin: 0;
+  padding: 0;
 }
