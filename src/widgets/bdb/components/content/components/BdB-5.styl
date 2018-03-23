@@ -28,7 +28,52 @@
         font-size 18px
         width 80%
   .BottomContent
+    display flex 
+    flex-wrap wrap
+    width 100%
     .ItemContainer
+      border 2px solid #F7AB2D
+      width 48%
+      &:nth-child(odd)
+        margin-right 2px
+      &:nth-child(1)
+        border-radius 15px 0 0 0
+      &:nth-child(2)
+        border-radius 0 15px 0 0
+      &:nth-child(3)
+        border-radius 0 0 0 15px
+      &:nth-child(4)
+        border-radius 0 0 15px 0
       .ItemTopContainer
+        align-items center
+        background-color #F7AB2D
+        display flex
+        justify-content center
+        margin 0 
+        padding 0 
+        border-radius 0
+      &:nth-child(1)
+        .ItemTopContainer
+          border-radius 12px 0 0 0
+      &:nth-child(2)
+        .ItemTopContainer
+          border-radius 0 12px 0 0
         figure 
-          background-color red
+          background-color #F7AB2D
+          margin 0
+          padding 10px 0 
+          img 
+            margin 0 
+            padding 0
+      .ItemContent 
+        background-color white 
+        h3
+          color #F7AB2D
+          text-align center
+          width 100% 
+        p 
+          color #606060
+          font-size 17px
+          padding 0 2.5%
+          text-align center 
+          width 95% 

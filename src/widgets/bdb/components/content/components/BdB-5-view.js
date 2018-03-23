@@ -27,8 +27,8 @@ function BdB5View(props){
                   </figure>
                 </div>
                 <div className="ItemContent">
-                  <h3>Title </h3>
-                  <p>Text</p>
+                  <h3>{item.title} </h3>
+                  <p>{item.text}</p>
                 </div>
               </div>
             )
