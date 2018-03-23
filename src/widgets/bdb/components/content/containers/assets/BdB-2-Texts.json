@@ -1,4 +1,25 @@
 {
   "title": "El SACF busca", 
-  "content": "Es un <b>sistema de control</b> que se encarga de <b>proteger</b> al Consumidor Financiero, promoviendo la protección de sus derechos y el cumplimiento de las obligaciones previstas en la normatividad vigente."
+  "texts": [
+    {
+      "id": "1",
+      "text": "Consolidar al interior de nuestro Banco una cultura de atención, respeto y servicio al Consumidor Financiero."
+    },
+    {
+      "id": "2",
+      "text": "Garantizar que exista la suficiente información para el Consumidor Financiero."
+    },
+    {
+      "id": "3",
+      "text": "Fortalecer los procedimientos para la atención de quejas y reclamos."
+    },
+    {
+      "id": "4",
+      "text": "Propiciar la protección de los derechos del Consumidor Financiero, así como su educación funanciera."
+    },
+    {
+      "id": "5",
+      "text": "Garantizar que el banco no incurra en la práctica de cláusulas abusivas."
+    }
+  ]
 }
