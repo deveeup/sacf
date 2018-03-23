@@ -4,6 +4,7 @@ import BdB1 from './content/containers/BdB-1'
 import BdB2 from './content/containers/BdB-2'
 import BdB3 from './content/containers/BdB-3'
 import BdB4 from './content/containers/BdB-4'
+import BdB5 from './content/containers/BdB-5'
 
 function ContentBdB(props){
   switch(props.ContentBdB){
@@ -28,7 +29,7 @@ function ContentBdB(props){
     break
     case 'BdB-5':
       return(
-        <p>CASO5</p>
+        <BdB5/>
       )
     break
   }

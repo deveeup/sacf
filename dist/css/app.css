@@ -634,3 +634,59 @@
   margin: 0;
   padding: 0;
 }
+.BdB-5 {
+  width: 100%;
+}
+.BdB-5 h2 {
+  color: #0974b7;
+}
+.BdB-5 .TopContent {
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -o-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.BdB-5 .TopContent .TopContentLeft {
+  margin: 0;
+  padding: 0;
+  width: 30%;
+}
+.BdB-5 .TopContent .TopContentLeft figure {
+  margin: 0;
+  padding: 0;
+}
+.BdB-5 .TopContent .TopContentLeft figure img {
+  width: 100%;
+}
+.BdB-5 .TopContent .TopContentRight {
+  width: 70%;
+}
+.BdB-5 .TopContent .TopContentRight h2 {
+  color: #0974b7;
+  width: 85%;
+}
+.BdB-5 .TopContent .TopContentRight p {
+  color: #606060;
+  font-size: 18px;
+  width: 80%;
+}
+.BdB-5 .BottomContent .ItemContainer .ItemTopContainer figure {
+  background-color: #f00;
+}
