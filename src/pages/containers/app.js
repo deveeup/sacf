@@ -8,8 +8,8 @@ import Body from '../../body/containers/body'
 
 class App extends Component {
   state = {
-    Bank: true,
-    BankHover: true,
+    Bank: false,
+    BankHover: false,
     Court: false,
     CourtHover: false,
     Library: false,
@@ -18,10 +18,11 @@ class App extends Component {
     PoliticsHover: false,
     Prison: false,
     PrisonHover: false,
-    School: false,
-    SchoolHover: false,
+    School: true,
+    SchoolHover: true,
     ModalActive: true,
-    ModalContent: 'Bank',
+    // Modificar el modal content a ''
+    ModalContent: 'School',
   }
   MouseEnter = (e) => {
     switch(e.target.id) {
@@ -164,7 +165,7 @@ class App extends Component {
       break;
       case 'School':
         this.setState({
-          ModalContent: 'Escuela',
+          ModalContent: 'School',
           Scool: true,
         })
       break;
@@ -190,12 +191,14 @@ class App extends Component {
     }
     if (
       e.target.id == '' 
-      || e.target.id == 'BdB-Img'
       || e.target.id == 'BdB-1'
       || e.target.id == 'BdB-2'
       || e.target.id == 'BdB-3'
       || e.target.id == 'BdB-4'
       || e.target.id == 'BdB-5'
+      || e.target.id == 'School-1'
+      || e.target.id == 'School-2'
+      || e.target.id == 'School-3'
     ){
       this.setState({
         ModalActive: true,

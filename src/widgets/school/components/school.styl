@@ -1,0 +1,42 @@
+@import '../../base/_var.styl'
+@import '../../base/_mixins.styl'
+
+.SchoolContainer
+  _fllW()
+  _h(95%)
+  _l(2.5%)
+  _reset(0)
+  _t(2.5%)
+  _test(red)
+  .SchoolEdifice
+    _d(block)
+    _mr(50px, 25%)
+    _mw(50%)
+  .InfoContainer
+    _dfr(flex-start, flex-start)
+    _fullW()
+    .Menu
+      _bc(white)
+      _h(400px)
+      _w(40%)
+      _test(green)
+      margin 0 0 2% 2% 
+      .NavSchool
+        _fullW()
+        _reset(0)
+        _h(100%)
+        .UlSchool
+          _dfc(flex-start, flex-start)
+          _fullW()
+          _reset(0)
+          .ItemSchool
+            _fullW()
+            _h(30px)
+            &:hover 
+              _bn()
+              _fwb()
+            a 
+              _c($lightBlue)
+              _fullW()
+              font-size $fontBig
+              text-align left

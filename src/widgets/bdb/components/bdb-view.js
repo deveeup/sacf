@@ -9,7 +9,7 @@ function BdbView (props) {
   const FontBold = {fontWeight: 'bold'}
   return(
     <div className="BdbContainer">
-      <img className="BdbEdifice" src={BdbEdifice} id="BdB-Img"/>
+      <img className="BdbEdifice" src={BdbEdifice} id="ModalImage"/>
       <div className="InfoContainer">
         <div className="Menu">
           <nav className="NavBdB">
