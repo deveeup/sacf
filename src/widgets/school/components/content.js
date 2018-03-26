@@ -1,6 +1,8 @@
 
 import React from 'react'
 import School1 from './content/containers/School-1'
+import School2 from './content/containers/School-2'
+import School3 from './content/containers/School-3'
 
 function ContentSchool(props){
   switch(props.ContentSchool){
@@ -11,9 +13,12 @@ function ContentSchool(props){
     break
     case 'School-2':
       return(
-        <div>
-          case #2
-        </div>
+          <School2/>
+      )
+    break
+    case 'School-3':
+      return(
+          <School3/>
       )
     break
   }

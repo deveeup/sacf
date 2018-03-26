@@ -1,39 +1,107 @@
 {
-  "item": [
-    {
-      "id": "1",
-      "image": "./src/widgets/school/components/content/containers/assets/image-1.png",
-      "title": "¿Que es un banco?"
-    },
-    {
-      "id": "2",
-      "image": "./src/widgets/school/components/content/containers/assets/image-2.png",
-      "title": "Economía personal <br/> y familiar"
-    },
-    {
-      "id": "3",
-      "image": "./src/widgets/school/components/content/containers/assets/image-3.png",
-      "title": "Ahorro e inversión"
-    },
-    {
-      "id": "4",
-      "image": "./src/widgets/school/components/content/containers/assets/image-4.png",
-      "title": "Crédito y <br/> endeudamiento"
-    },
-    {
-      "id": "5",
-      "image": "./src/widgets/school/components/content/containers/assets/image-5.png",
-      "title": "Seguridad <br/> Financiera"
-    },
-    {
-      "id": "6",
-      "image": "./src/widgets/school/components/content/containers/assets/image-6.png",
-      "title": "Tarjeta de <br/> Crédito"
+  "concepts": {
+    "item": [
+      {
+        "id": "1",
+        "image": "./src/widgets/school/components/content/containers/assets/image-concepts-1.png",
+        "title": "¿Que es un banco?"
+      },
+      {
+        "id": "2",
+        "image": "./src/widgets/school/components/content/containers/assets/image-concepts-2.png",
+        "title": "Economía personal <br/> y familiar"
+      },
+      {
+        "id": "3",
+        "image": "./src/widgets/school/components/content/containers/assets/image-concepts-3.png",
+        "title": "Ahorro e inversión"
+      },
+      {
+        "id": "4",
+        "image": "./src/widgets/school/components/content/containers/assets/image-concepts-4.png",
+        "title": "Crédito y <br/> endeudamiento"
+      },
+      {
+        "id": "5",
+        "image": "./src/widgets/school/components/content/containers/assets/image-concepts-5.png",
+        "title": "Seguridad <br/> Financiera"
+      },
+      {
+        "id": "6",
+        "image": "./src/widgets/school/components/content/containers/assets/image-concepts-6.png",
+        "title": "Tarjeta de <br/> Crédito"
+      }
+    ],
+    "callback": {
+      "text": "Consulta más información en detalle",
+      "button": "Aquí",
+      "url": "https://www.bancodebogota.com/wps/portal/banco-de-bogota/bogota/educacion-financiera"
     }
-  ],
-  "callback": {
-    "text": "Consulta más información en detalle",
-    "button": "Aquí",
-    "url": "https://www.bancodebogota.com/wps/portal/banco-de-bogota/bogota/educacion-financiera"
+  },
+  "tools": {
+    "title": "Estas herramientas te ayudarán a organizar tus finanzas y practicar <br/> tus habilidades financieras y así alcanzar tus metas.",
+    "item": [
+      {
+        "id": "1",
+        "image": "./src/widgets/school/components/content/containers/assets/image-tools-1.png",
+        "title": "Mi presupuesto <br/> virtual"
+      },
+      {
+        "id": "2",
+        "image": "./src/widgets/school/components/content/containers/assets/image-tools-2.png",
+        "title": "Cartilla de educación <br/> financiera"
+      },
+      {
+        "id": "3",
+        "image": "./src/widgets/school/components/content/containers/assets/image-tools-3.png",
+        "title": "Fútbol financiero"
+      },
+      {
+        "id": "4",
+        "image": "./src/widgets/school/components/content/containers/assets/image-tools-4.png",
+        "title": "Saber más, ser más"
+      },
+      {
+        "id": "5",
+        "image": "./src/widgets/school/components/content/containers/assets/image-tools-5.png",
+        "title": "Artículos BDB"
+      }
+    ],
+    "callback": {
+      "title": "Conoce y utiliza estas herramientas",
+      "button": "Aquí",
+      "url": "https://www.bancodebogota.com/wps/portal/banco-de-bogota/bogota/educacion-financiera"
+    }
+  },
+  "program": {
+    "title": "El programa contempla",
+    "item": [
+      {
+        "id": "1",
+        "image": "./src/widgets/school/components/content/containers/assets/image-program-1.png",
+        "text": "Aulas Móviles – coordinado a través de alianzas público-privadas, impartiendo formación totalmente gratuita en temas como el manejo de las finanzas personales para jóvenes, microempresarios y población adulta no bancarizada, así como finanzas públicas para funcionarios de los entes territoriales."
+      },
+      {
+        "id": "2",
+        "image": "./src/widgets/school/components/content/containers/assets/image-program-2.png",
+        "text": "Talleres para niños y jóvenes escolarizados."
+      },
+      {
+        "id": "3",
+        "image": "./src/widgets/school/components/content/containers/assets/image-program-3.png",
+        "text": "Estructuración de talleres de educación financiera basados en la temática del ahorro junto."
+      },
+      {
+        "id": "4",
+        "image": "./src/widgets/school/components/content/containers/assets/image-program-4.png",
+        "text": "Capacitaciones en aula móvil."
+      },
+      {
+        "id": "5",
+        "image": "./src/widgets/school/components/content/containers/assets/image-program-5.png",
+        "text": "Taller de formación de formadores para ejecutivos del Banco."
+      }
+    ],
+    "text": "El principal educador financiero de nuestros clientes <br/> y usuarios somos todos los colaboradores del Banco."
   }
 }

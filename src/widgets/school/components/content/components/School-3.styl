@@ -1,0 +1,46 @@
+@import './_import.styl'
+.School-3
+  .Title 
+    _c($gray)
+    _ta(center)
+    _fz($fontNormal)
+    _fwn()
+  .ItemsContainer
+    _dfr(center, flex-start)
+    _fw(wrap)
+    .ItemContainer
+      _w(33%)
+      .ImageContainer
+        _dfr(center, center)
+        _h(70px)
+        img 
+          _ma()
+          _w(50%)
+      .Title 
+        _c($gray)
+        _fwn()
+        _fz($fontMedium)
+        _ta(center)
+  .Callback
+    _dfc(center, center)
+    _fullW()
+    _mTop(25px)
+    .Text
+      _fullW()
+      _ta(center)
+      _c($gray)
+      _fz($fontNormal)
+      _fwn()
+    .Button
+      _aReset(white)
+      _bc($yellow)
+      _bn()
+      _fwb()
+      _ta(center)
+      _w(10%)
+      border-radius 7px
+      margin 0 auto
+      padding 5px 50px
+      will-change transform
+      &:active
+        transform scale(.9)

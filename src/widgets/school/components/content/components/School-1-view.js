@@ -1,14 +1,12 @@
 
 import React from 'react'
 import './School-1.styl'
-import Img from '../containers/assets/image-1.png'
 
 const Parse = require('html-react-parser')
 
 function SchoolView1 (props) {
-  console.log(props.InfoItems.item)
-  const item = props.InfoItems.item
-  const callback = props.InfoItems.callback
+  const item = props.InfoConcepts.item
+  const callback = props.InfoConcepts.callback
   return(
     <div className="School-1">
       <div className="ItemsContainer">
