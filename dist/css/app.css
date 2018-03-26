@@ -1219,7 +1219,7 @@
   height: 70px;
 }
 .School-2 .ItemsContainer .ItemContainer .ImageContainer img {
-  margin: auto;
+  margin: 0 25%;
   width: 50%;
 }
 .School-2 .ItemsContainer .ItemContainer .Title {
