@@ -1,41 +1,37 @@
+@import './_import.styl'
 .BdB-5
-  width 100%
+  _fullW()
   h2 
-    color #0974B7
+    _c($lightBlue)
   .TopContent
-    align-items flex-start
-    display flex 
-    justify-content flex-start
-    margin 0 
-    padding 0
-    width 100%
+    _dfr(flex-start, flex-start)
+    _reset(0)
+    _fullW()
     .TopContentLeft
-      margin 0 
-      padding 0
-      width 30%
+      _reset(0)
+      _w(30%)
       figure 
-        margin 0 
-        padding 0
+        _reset(0)
         img 
-          width 100%
+          _fullw()
     .TopContentRight
-      width 70%
+      _w(70%)
       h2
-        color #0974B7
-        width 85%
+        _c($lightBlue)
+        _w(85%)
       p
-        color #606060
-        font-size 18px
-        width 80%
+        _c($gray)
+        font-size $fontMedium
+        _w(80%)
   .BottomContent
     display flex 
-    flex-wrap wrap
-    width 100%
+    _fw(wrap)
+    _fullW()
     .ItemContainer
-      border 2px solid #F7AB2D
-      width 48%
+      border 2px solid $yellow
+      _w(48%)
       &:nth-child(odd)
-        margin-right 2px
+        _mRight(2px)
       &:nth-child(1)
         border-radius 15px 0 0 0
       &:nth-child(2)
@@ -45,16 +41,13 @@
       &:nth-child(4)
         border-radius 0 0 15px 0
       .ItemTopContainer
-        align-items center
-        background-color #F7AB2D
+        _bc($yellow)
         border-radius 0
-        border-right 1px solid #F7AB2D
-        border-top 1px solid #F7AB2D
-        display flex
-        height 100px
-        justify-content center
-        margin 0 
-        padding 0 
+        border-right 1px solid $yellow
+        border-top 1px solid $yellow
+        _h(100px)
+        _dfr(center, center)
+        _reset(0)
         figure
           width 20%
           img 
@@ -66,21 +59,20 @@
         .ItemTopContainer
           border-radius 0 12px 0 0
         figure 
-          background-color #F7AB2D
-          margin 0
+          _mar(0)
+          background-color $yellow
           padding 10px 0 
           img 
-            margin 0 
-            padding 0
+            _reset(0)
       .ItemContent 
-        background-color white 
+        _bc(white)
         h3
-          color #F7AB2D
-          text-align center
-          width 100% 
+          _c($yellow)
+          _fullW()
+          _ta(center)
         p 
-          color #606060
-          font-size 17px
+          _c($gray)
+          _fz($fontMedium)
+          _ta(center)
+          _w(95%)
           padding 0 2.5%
-          text-align center 
-          width 95% 
