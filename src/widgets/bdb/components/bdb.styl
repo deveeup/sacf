@@ -1,45 +1,43 @@
+@import 'base/_var.styl'
+@import 'base/_mixins.styl'
+
 .BdbContainer
-  height 95%
-  left 2.5%
-  padding 0
-  top 2.5%
-  width 100%
+  _fllW()
+  _h(95%)
+  _l(2.5%)
+  _reset(0)
+  _t(2.5%)
   .BdbEdifice
-    display block
-    margin 50px 25%
-    max-width 50% 
+    _d(block)
+    _mr(50px, 25%)
+    _mw(50%)
   .InfoContainer
-    display flex 
-    width 100%
+    _dFlex(flex-start, flex-start, row)
+    _fullW()
     .Menu
-      background-color white
-      height 400px
+      _bc(white)
+      _h(400px)
+      _w(40%)
       margin 0 0 2% 2% 
-      width 40%
       .NavBdB
-        margin 0
-        padding 0
-        width 100%
+        _fullW()
+        _reset(0)
         .UlBdB
-          align-items flex-start
-          display flex 
-          flex-direction column
-          justify-content flex-start
-          margin 0 
-          padding 0
-          width 100%
+          _dFlex(flex-start, flex-start, column)
+          _reset(0)
+          _fullW()
           .ItemBdB
-            width 100%
+            _fullW()
             &:hover 
-              border none 
+              _bn()
               font-weight bold
             a 
-              color #0974B7
-              font-size 20px
+              _c($lightBlue)
+              _fullW()
+              font-size $fontBig
               text-align left
-              width 100%
     .Content 
-      border-left 1px solid #0974B7
+      _pLeft(20px)
+      _w(52%)
+      border-left 1px solid $lightBlue
       margin 0 0 2% 2% 
-      padding-left 20px
-      width 52%

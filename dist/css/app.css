@@ -253,9 +253,9 @@
 .BdbContainer {
   height: 95%;
   left: 2.5%;
+  margin: 0;
   padding: 0;
   top: 2.5%;
-  width: 100%;
 }
 .BdbContainer .BdbEdifice {
   display: block;
@@ -269,44 +269,62 @@
   display: -ms-flexbox;
   display: box;
   display: flex;
-  width: 100%;
-}
-.BdbContainer .InfoContainer .Menu {
-  background-color: #fff;
-  height: 400px;
-  margin: 0 0 2% 2%;
-  width: 40%;
-}
-.BdbContainer .InfoContainer .Menu .NavBdB {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-.BdbContainer .InfoContainer .Menu .NavBdB .UlBdB {
-  -webkit-box-align: start;
-  -moz-box-align: start;
-  -o-box-align: start;
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -o-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-pack: start;
   -moz-box-pack: start;
   -o-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+}
+.BdbContainer .InfoContainer .Menu {
+  background-color: #fff;
+  height: 400px;
+  width: 40%;
+  margin: 0 0 2% 2%;
+}
+.BdbContainer .InfoContainer .Menu .NavBdB {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.BdbContainer .InfoContainer .Menu .NavBdB .UlBdB {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -o-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -320,15 +338,15 @@
 }
 .BdbContainer .InfoContainer .Menu .NavBdB .UlBdB .ItemBdB a {
   color: #0974b7;
+  width: 100%;
   font-size: 20px;
   text-align: left;
-  width: 100%;
 }
 .BdbContainer .InfoContainer .Content {
-  border-left: 1px solid #0974b7;
-  margin: 0 0 2% 2%;
   padding-left: 20px;
   width: 52%;
+  border-left: 1px solid #0974b7;
+  margin: 0 0 2% 2%;
 }
 .BdB-1 {
   display: -webkit-box;
@@ -729,12 +747,16 @@
   -webkit-align-items: center;
   align-items: center;
   background-color: #f7ab2d;
+  border-radius: 0;
+  border-right: 1px solid #f7ab2d;
+  border-top: 1px solid #f7ab2d;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: box;
   display: flex;
+  height: 100px;
   -webkit-box-pack: center;
   -moz-box-pack: center;
   -o-box-pack: center;
@@ -743,7 +765,12 @@
   justify-content: center;
   margin: 0;
   padding: 0;
-  border-radius: 0;
+}
+.BdB-5 .BottomContent .ItemContainer .ItemTopContainer figure {
+  width: 20%;
+}
+.BdB-5 .BottomContent .ItemContainer .ItemTopContainer figure img {
+  width: 100%;
 }
 .BdB-5 .BottomContent .ItemContainer:nth-child(1) .ItemTopContainer {
   border-radius: 12px 0 0 0;
