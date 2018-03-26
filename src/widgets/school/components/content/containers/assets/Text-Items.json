@@ -4,6 +4,36 @@
       "id": "1",
       "image": "./src/widgets/school/components/content/containers/assets/image-1.png",
       "title": "¿Que es un banco?"
+    },
+    {
+      "id": "2",
+      "image": "./src/widgets/school/components/content/containers/assets/image-2.png",
+      "title": "Economía personal <br/> y familiar"
+    },
+    {
+      "id": "3",
+      "image": "./src/widgets/school/components/content/containers/assets/image-3.png",
+      "title": "Ahorro e inversión"
+    },
+    {
+      "id": "4",
+      "image": "./src/widgets/school/components/content/containers/assets/image-4.png",
+      "title": "Crédito y <br/> endeudamiento"
+    },
+    {
+      "id": "5",
+      "image": "./src/widgets/school/components/content/containers/assets/image-5.png",
+      "title": "Seguridad <br/> Financiera"
+    },
+    {
+      "id": "6",
+      "image": "./src/widgets/school/components/content/containers/assets/image-6.png",
+      "title": "Tarjeta de <br/> Crédito"
     }
-  ]
+  ],
+  "callback": {
+    "text": "Consulta más información en detalle",
+    "button": "Aquí",
+    "url": "https://www.bancodebogota.com/wps/portal/banco-de-bogota/bogota/educacion-financiera"
+  }
 }

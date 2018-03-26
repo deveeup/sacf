@@ -5,6 +5,7 @@ import ContainerContent from './content'
 
 function SchoolView(props){
   const menu = props.ListItems.list
+  const FontBold = {fontWeight: 'bold'}
   return(
     <div className="SchoolContainer">
       <img className="SchoolEdifice" src={props.SchoolEdifice} id="ModalImage"/>
@@ -14,7 +15,18 @@ function SchoolView(props){
             <ul className="UlSchool">
             {
               menu.map((item) => {
-                return (
+                return item.id == props.ContentSchool ?
+                  <li className="ItemSchool" key={item.id}>
+                    <a 
+                      id={item.id}
+                      href="#"
+                      onClick={props.ClickMenuSchool}
+                      style={FontBold}
+                    >
+                      {item.title}
+                    </a>
+                  </li>
+                  :
                   <li className="ItemSchool" key={item.id}>
                     <a 
                       id={item.id}
@@ -24,7 +36,6 @@ function SchoolView(props){
                       {item.title}
                     </a>
                   </li>
-                )
               })
             }
             </ul>
