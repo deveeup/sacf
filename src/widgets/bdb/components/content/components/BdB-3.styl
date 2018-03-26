@@ -1,52 +1,48 @@
+@import './_import.styl'
+
 .BdB-3
-  width 100%
+  _fullW()
   .TopContent
-    display flex 
-    width 100%
+    _dfr(center, center)
+    _fullW()
     .TopContentLeft 
-      width 50%
+      _w(50%)
       h2
-        color #0974B7
+        _c($lightBlue)
+        _w(75%)
         margin 0 0 10px 0 
-        width 75%
       p
-        color #606060
-        font-size 18px
+        _c($gray)
+        _w(95%)
+        font-size $fontMedium
         line-height 1.3
-        width 95%
     .TopContentRight
-      align-items center
-      display flex 
-      justify-content center
-      width 50%
+      _dfr(center, center)
+      _w(50%)
       img
-        margin auto
-        width 100%
+        _ma()
+        _w(100%)
   .BottomContent
-    display flex
-    flex-direction column
-    flex-wrap wrap
-    height 500px
-    width 100%
+    _dfc(center, center)
+    _fullW()
+    _fw(wrap)
+    _h(500px)
     .ItemContainer
-      width 50%
+      _w(50%)
       .TitleContainer 
-        align-items center
-        display flex
-        justify-content flex-start 
-        margin 0 
-        width 100%
+        _dfr(flex-start, center)
+        _fullW()
+        _mar(0)
         .IconBefore
-          margin 0
-          width 25px
+          _reset(0)
+          _w(25px)
         .ItemTitle
-          color #F7AB2D
-          display inline-block
-          margin 0 
-          padding 0 
-          width 60%
+          _c($yellow)
+          _d(inline-block)
+          _reset(0)
+          _w(60%)
       .ItemText 
-        color #606060
+        _c($gray)
+        _pLeft(25px)
+        _w(75%)
         line-height 1.4
-        padding-left 25px
-        width 75%

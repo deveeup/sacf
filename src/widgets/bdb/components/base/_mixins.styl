@@ -5,10 +5,22 @@
     border none
 // Display
   _dFlex(justifyContent, alignItems, flexDirection)
-    display flex
-    justify-content justifyContent
     align-items alignItems
+    display flex
     flex-direction flexDirection
+    justify-content justifyContent
+  _dfr(justifyContent, alignItems)
+    align-items alignItems
+    display flex
+    flex-direction row
+    justify-content justifyContent
+  _dfc(justifyContent, alignItems)
+    align-items alignItems
+    display flex
+    flex-direction column
+    justify-content justifyContent
+  _fw(var)
+    flex-wrap var
 
 // Width / Height  
   _w(var)
