@@ -14,7 +14,6 @@ class School extends Component {
     this.setState({
       ContentSchool: e.target.id
     })
-    console.log("containers School")
   }
   render(){
     return(

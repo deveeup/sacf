@@ -967,7 +967,6 @@
   background-color: #fff;
   height: 400px;
   width: 40%;
-  border: 1px solid #008000;
   margin: 0 0 2% 2%;
 }
 .SchoolContainer .InfoContainer .Menu .NavSchool {
@@ -1018,4 +1017,14 @@
   width: 100%;
   font-size: 20px;
   text-align: left;
+}
+.SchoolContainer .InfoContainer .Content {
+  min-height: 400px;
+  padding-left: 20px;
+  width: 52%;
+  border-left: 1px solid #0974b7;
+  margin: 0 0 2% 2%;
+}
+.School-1 {
+  border: 1px solid #008000;
 }

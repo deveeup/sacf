@@ -30,9 +30,6 @@ function SchoolView(props){
             </ul>
           </nav>
         </div>
-        <div>
-          asd
-        </div>
         <div className="Content">
           <ContainerContent
             ContentSchool={props.ContentSchool}
