@@ -1,38 +1,30 @@
+@import './_import.styl'
+
 .BdB-2
-  width 100%
+  _fullW()
   h2
-    font-weight bold
-    color #0974B7
+    _fwb()
+    _c($lightBlue)
   .BdB-2-Content
-    display flex
-    flex-direction row
-    width 100%
+    _dFlex(center, center, row)
+    _fullW()
     .Left
-      align-items center
-      display flex
-      flex-direction column
-      justify-content center 
-      width 20%
+      _dFlex(center, center, column)
+      _w(20%)
       figure 
-        align-items center
-        display flex
-        height 100px
-        justify-content center 
-        margin 0
-        padding 0
-        width 100px
+        _h(100px)
+        _reset(0)
+        _w(100px)
+        _dFlex(center, center, row)
         img 
-          margin auto
-          padding 0
-          width 80%
+          _ma()
+          _w(80%)
+          _padd(0)
     .Right
-      margin 0 
-      padding 0
-      width 79%
+      _reset(0)
+      _w(79%)
       p
-        align-items center
-        color #606060
-        display flex
-        height 100px
-        margin 0
-        padding 0
+        _c($gray)
+        _dFlex(center, center, row)
+        _h(100px)
+        _reset(0)

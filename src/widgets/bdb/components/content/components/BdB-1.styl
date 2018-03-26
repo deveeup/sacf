@@ -1,12 +1,12 @@
-@import '../../base/_var.styl'
+@import './_import.styl'
 
 .BdB-1
-  display flex
-  width 100%
+  _dFlex(center, flex-start, row)
+  _fullW()
   .Left 
     h2 
-      font-weight bold
-      color $lightBlue
+      _fwb()
+      _c($lightBlue)
     p
-      color $gray
-      font-size 18px
+      _c($gray)
+      font-size $fontMedium
