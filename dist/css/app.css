@@ -1087,7 +1087,7 @@
   height: 70px;
 }
 .School-1 .ItemsContainer .ItemContainer .ImageContainer img {
-  margin: auto;
+  margin: 0 25%;
   width: 50%;
 }
 .School-1 .ItemsContainer .ItemContainer .Title {
@@ -1285,42 +1285,13 @@
 }
 .School-3 .Title {
   color: #0974b7;
-  text-align: left;
   font-size: 20px;
+  text-align: left;
 }
-.School-3 .ItemsContainer {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  -webkit-box-align: start;
-  -moz-box-align: start;
-  -o-box-align: start;
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -o-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -moz-box-pack: start;
-  -o-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-.School-3 .ItemsContainer .ItemContainer {
+.School-3 .ItemsContainer .ItemContainer,
+.School-3 .ItemsContainer _dfc(flex-start,
+.School-3 .ItemsContainer flex-start),
+.School-3 .ItemsContainer _fw(wrap) {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -1350,7 +1321,10 @@
   width: 100%;
   padding: 10px 0;
 }
-.School-3 .ItemsContainer .ItemContainer .ImageContainer {
+.School-3 .ItemsContainer .ItemContainer .ImageContainer,
+.School-3 .ItemsContainer _dfc(flex-start .ImageContainer,
+.School-3 .ItemsContainer flex-start) .ImageContainer,
+.School-3 .ItemsContainer _fw(wrap) .ImageContainer {
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -1379,11 +1353,17 @@
   justify-content: center;
   width: 17%;
 }
-.School-3 .ItemsContainer .ItemContainer .ImageContainer img {
+.School-3 .ItemsContainer .ItemContainer .ImageContainer img,
+.School-3 .ItemsContainer _dfc(flex-start .ImageContainer img,
+.School-3 .ItemsContainer flex-start) .ImageContainer img,
+.School-3 .ItemsContainer _fw(wrap) .ImageContainer img {
   margin: auto;
   width: 60%;
 }
-.School-3 .ItemsContainer .ItemContainer:nth-child(1) {
+.School-3 .ItemsContainer .ItemContainer:nth-child(1),
+.School-3 .ItemsContainer _dfc(flex-start:nth-child(1),
+.School-3 .ItemsContainer flex-start):nth-child(1),
+.School-3 .ItemsContainer _fw(wrap):nth-child(1) {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -1409,7 +1389,10 @@
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
-.School-3 .ItemsContainer .ItemContainer .TextContainer {
+.School-3 .ItemsContainer .ItemContainer .TextContainer,
+.School-3 .ItemsContainer _dfc(flex-start .TextContainer,
+.School-3 .ItemsContainer flex-start) .TextContainer,
+.School-3 .ItemsContainer _fw(wrap) .TextContainer {
   width: 82%;
   margin: 0;
   padding: 0;
@@ -1438,7 +1421,10 @@
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
-.School-3 .ItemsContainer .ItemContainer .TextContainer .Text {
+.School-3 .ItemsContainer .ItemContainer .TextContainer .Text,
+.School-3 .ItemsContainer _dfc(flex-start .TextContainer .Text,
+.School-3 .ItemsContainer flex-start) .TextContainer .Text,
+.School-3 .ItemsContainer _fw(wrap) .TextContainer .Text {
   color: #606060;
   font-weight: normal;
   font-size: 16px;
