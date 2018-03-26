@@ -172,7 +172,7 @@ class App extends Component {
     }
   }
   CloseModal = (e) => {
-    if(e.target.id == 'ModalContainer' || 'ButtonClose') {
+    if(e.target.id == 'ModalContainer') {
       this.setState({
         Bank: false,
         Court: false,
@@ -189,19 +189,21 @@ class App extends Component {
         ModalActive: false,
       })
     }
-    if (
-      e.target.id == '' 
-      || e.target.id == 'BdB-1'
-      || e.target.id == 'BdB-2'
-      || e.target.id == 'BdB-3'
-      || e.target.id == 'BdB-4'
-      || e.target.id == 'BdB-5'
-      || e.target.id == 'School-1'
-      || e.target.id == 'School-2'
-      || e.target.id == 'School-3'
-    ){
+    else if(e.target.id == 'ButtonClose') {
       this.setState({
-        ModalActive: true,
+        Bank: false,
+        Court: false,
+        Library: false,
+        Politics: false,
+        Prison: false,
+        School: false,
+        BankHover: false,
+        CourtHover: false,
+        LibraryHover: false,
+        PoliticsHover: false,
+        PrisonHover: false,
+        SchoolHover: false,
+        ModalActive: false,
       })
     }
   }

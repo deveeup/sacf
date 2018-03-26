@@ -5,8 +5,6 @@ import ContainerContent from './content'
 
 function SchoolView(props){
   const menu = props.ListItems.list
-  console.log(props.ContentSchool)
-
   return(
     <div className="SchoolContainer">
       <img className="SchoolEdifice" src={props.SchoolEdifice} id="ModalImage"/>
