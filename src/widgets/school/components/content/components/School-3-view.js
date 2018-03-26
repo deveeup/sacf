@@ -22,13 +22,15 @@ function SchoolView3 (props) {
                 <figure className="ImageContainer">
                     <img src={item.image} />
                 </figure>
-                <h3 className="Title">{Parse(item.text)}</h3>
+                <div className="TextContainer">
+                  <p className="Text">{Parse(item.text)}</p>
+                </div>
               </div>
             )
           })
         }
       </div>
-      <p>{Parse(text)}</p>
+      <p className="TextFooter">{Parse(text)}</p>
     </div>
   )
 }

@@ -1,46 +1,41 @@
 @import './_import.styl'
 .School-3
   .Title 
-    _c($gray)
-    _ta(center)
-    _fz($fontNormal)
-    _fwn()
+    _c($lightBlue)
+    _ta(left)
+    _fz($fontBig)
   .ItemsContainer
-    _dfr(center, flex-start)
+    _dfc(flex-start, flex-start)
     _fw(wrap)
     .ItemContainer
-      _w(33%)
+      _dfr(flex-start, center)
+      _reset(0)
+      _w(100%)
+      padding 10px 0
       .ImageContainer
+        _reset(0)
         _dfr(center, center)
-        _h(70px)
+        _w(17%)
         img 
           _ma()
-          _w(50%)
-      .Title 
-        _c($gray)
-        _fwn()
-        _fz($fontMedium)
-        _ta(center)
-  .Callback
-    _dfc(center, center)
-    _fullW()
-    _mTop(25px)
-    .Text
-      _fullW()
-      _ta(center)
-      _c($gray)
-      _fz($fontNormal)
-      _fwn()
-    .Button
-      _aReset(white)
-      _bc($yellow)
-      _bn()
-      _fwb()
-      _ta(center)
-      _w(10%)
-      border-radius 7px
-      margin 0 auto
-      padding 5px 50px
-      will-change transform
-      &:active
-        transform scale(.9)
+          _w(60%)
+      &:nth-child(1)
+        _dfr(flex-start, flex-start)
+      .TextContainer
+        _w(82%)
+        _reset(0)
+        _dfr(flex-start, center)
+        .Text 
+          _c($gray)
+          _fwn()
+          _fz($fontNormal)
+          _ta(left)
+          _reset(0)
+  .TextFooter
+    _c($lightBlue)
+    _fwb()
+    _fz($fontBig)
+    _w(74%)
+    border-bottom 4px solid $yellow
+    line-height 1.5
+    padding-bottom 5px
