@@ -1,39 +1,33 @@
+@import './_import.styl'
 .BdB-4
-  width 100%
+  _fullW()
   h2 
-    color #0974B7
+    _c($lightBlue)
   .InfoContainer
-    width 100%
-    display flex
+    _fullW()
+    _dfr(center, center)
     .ImageContainer
-      width 20%
-      margin 0 
-      padding 0
+      _w(20%)
+      _reset(0)
       figure 
-        margin 0 
-        padding 0
-        height 110px
-        display flex 
-        justify-content center
-        align-items flex-start
-        img 
-          margin-top 17px
+        _reset(0)
+        _h(110px)
+        _dfr(center, flex-start)
         &:nth-child(6)
-          height 150px
+          _h(150px)
     .ItemsContainer
-      width 80%
-      padding 0
+      _w(80%)
+      _padd(0)
       .ItemContainer 
-        border 1px solid transparent
-        margin 0 
-        padding 0
-        height 110px
+        _test(transparent)
+        _reset(0)
+        _h(110px)
         &:nth-child(6)
-          height 150px
+          _h(150px)
         h3
-          color #F7AB2D
-          margin-bottom 8px
+          _c($yellow)
+          margin 0 0 8px 0
+          
         p
-          color #606060
-          margin 0
-          padding 0
+          _c($gray)
+          _reset(0)
