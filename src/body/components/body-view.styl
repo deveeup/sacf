@@ -12,10 +12,10 @@
   .Transparent 
     _test(red)
     left 0
-    position absolute 
+    position relative 
     top 0
-    width 968px
-    height 700px
+    width 100%
+    height 725px
     z-index 2
     .HandleClick
       height 100% 
@@ -33,8 +33,8 @@
         top 320px
         border 1px solid purple
       .Court
-        left 300px
-        top 600px
+        left 235px
+        top 440px
       .Library 
         right 250px
         top 650px
@@ -45,15 +45,15 @@
         right 290px
         top 35px
       .School 
-        left 50px
-        top 450px
+        left 70px
+        top 350px
     .BankHover, .CourtHover, .LibraryHover, .PoliticsHover, .PrisonHover, .SchoolHover
-      height 100%
-      left 0 
       position absolute
+      right 0
+      bottom 0
+      left 0 
       top 0
       width 100%
-      max-width 968px 
     .BankHover
       background-image url('./assets/bank-hover.png')
     .CourtHover
