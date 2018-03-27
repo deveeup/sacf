@@ -1,33 +1,36 @@
-@import './_import.styl'
+@import '../../../../../_base/lib/stylus/_init.styl'
+
 .BdB-4
   _fullW()
-  h2 
+  .Title 
     _c($lightBlue)
   .InfoContainer
-    _fullW()
     _dfr(center, center)
-    .ImageContainer
-      _w(20%)
-      _reset(0)
-      figure 
-        _reset(0)
-        _h(110px)
-        _dfr(center, flex-start)
-        &:nth-child(6)
-          _h(150px)
+    _fullW()
     .ItemsContainer
-      _w(80%)
+      _fullW()
       _padd(0)
       .ItemContainer 
-        _test(transparent)
-        _reset(0)
+        _dfr(center, center)
+        _fullW()
         _h(110px)
+        _reset(0)
+        _test(transparent)
         &:nth-child(6)
-          _h(150px)
-        h3
-          _c($yellow)
-          margin 0 0 8px 0
-          
-        p
-          _c($gray)
+          _dfr(center, flex-start)
+          _h(135px)
+        .ImageContainer
+          _w(20%)
           _reset(0)
+          img 
+            _w(70%)
+            margin 0 15%
+        .Info
+          _reset(0)
+          _w(70%)
+          h3
+            _c($yellow)
+            margin 0 0 8px 0
+          p
+            _c($gray)
+            _reset(0)
