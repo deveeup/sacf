@@ -1,29 +1,31 @@
+@import '../../_base/lib/stylus/_init.styl'
+
 .ModalContainer
+	_fullW()
+	_mh(968px)
+	_pa()
+	_t(164px)
+	_z(2)
 	background-color rgba(#0974B7, .7)
-	min-height 1024px
-	position absolute
-	top 233px
 	transition 1s
-	width 100%
-	z-index 2
 	.WindowsModal
-		background-color white 
-		border-radius 25px
-		height auto
-		margin 30px auto
-		padding 10px 
-		position relative 
-		width 95% 
+		_bc(white)
+		_br(25px)
+		_h(auto)
+		_maR(30px, 5%)
+		_padd(10px)
+		_pr()
+		_w(90%)
 		.CloseButton
-			background-color transparent
+			_bc(transparent)
+			_bn()
+			_h(40px)
+			_pa()
+			_r(20px)
+			_t(20px)
+			_w(40px)
 			background-image url('./assets/ButtonClose.svg')
-			border none
-			height 40px
 			outline 0
-			position absolute 
-			right 20px
-			top 20px
-			width 40px
 			will-change transfrom
 			&:active 
 				outline 0px

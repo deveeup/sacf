@@ -1,12 +1,21 @@
-@import './_import.styl'
+@import '../../../../../_base/lib/stylus/_init.styl'
 
 .BdB-1
   _dfr(center, flex-start)
   _fullW()
+  _reset(0)
+  _mh(350px)
   .Left 
+    _reset(0)
+    _w(60%)
     h2 
       _c($lightBlue)
       _fwb()
+      _fz($fontMedium)
     p
       _c($gray)
-      font-size $fontMedium
+      font-size $fontNormal
+  .Right 
+    _w(40%)
+    img 
+      _w(100%)

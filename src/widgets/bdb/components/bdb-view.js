@@ -3,6 +3,7 @@ import React from 'react'
 import './bdb.styl'
 import BdbEdifice from './assets/BdbEdifice.png'
 import ContainerContent from './content'
+const Path = require('html-react-parser')
 
 function BdbView (props) {
   const menu = props.ListItems.list
@@ -24,7 +25,7 @@ function BdbView (props) {
                         onClick={props.ClickMenuBdB}
                         style={FontBold}
                       >
-                        {item.title}
+                        {Path(item.title)}
                       </a>
                     </li>
                     :
@@ -34,7 +35,7 @@ function BdbView (props) {
                       href="#"
                       onClick={props.ClickMenuBdB}
                       >
-                        {item.title}
+                        {Path(item.title)}
                       </a>
                     </li>
                 })

@@ -8,8 +8,8 @@ import Body from '../../body/containers/body'
 
 class App extends Component {
   state = {
-    Bank: false,
-    BankHover: false,
+    Bank: true,
+    BankHover: true,
     Court: false,
     CourtHover: false,
     Library: false,
@@ -20,9 +20,9 @@ class App extends Component {
     PrisonHover: false,
     School: false,
     SchoolHover: false,
-    ModalActive: false,
+    ModalActive: true,
     // Modificar el modal content a ''
-    ModalContent: '',
+    ModalContent: 'Bank',
   }
   MouseEnter = (e) => {
     switch(e.target.id) {

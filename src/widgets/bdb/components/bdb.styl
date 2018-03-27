@@ -1,5 +1,4 @@
-@import '../../base/_var.styl'
-@import '../../base/_mixins.styl'
+@import '../../../_base/lib/stylus/_init.styl'
 
 .BdbContainer
   _fllW()
@@ -9,35 +8,36 @@
   _t(2.5%)
   .BdbEdifice
     _d(block)
-    _mr(50px, 25%)
-    _mw(50%)
+    _mr(50px, 30%)
+    _mw(40%)
   .InfoContainer
     _dfr(flex-start, flex-start)
     _fullW()
     .Menu
       _bc(white)
-      _h(400px)
-      _w(40%)
+      _w(35%)
+      _dfc(flex-start, flex-start)
       margin 0 0 2% 2% 
       .NavBdB
         _fullW()
         _reset(0)
         .UlBdB
           _dfc(flex-start, flex-start)
-          _fullW()
-          _reset(0)
           .ItemBdB
             _fullW()
-            &:hover 
+            &:hover
               _bn()
               _fwb()
             a 
               _c($lightBlue)
+              _dfr(flex-start, flex-start)
               _fullW()
-              font-size $fontBig
-              text-align left
+              _fz($fontNormal)
+              _padd(0)
+              _reset(0)
+              _ta(left)
     .Content 
       _pLeft(20px)
-      _w(52%)
+      _w(70%)
       border-left 1px solid $lightBlue
-      margin 0 0 2% 2% 
+      margin 0 0 2% 2%

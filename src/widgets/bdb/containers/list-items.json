@@ -2,7 +2,7 @@
 	"list": [
 		{ 
 			"id": "BdB-1", 
-			"title": "¿Qué es el Sistema de Atención al Consumidor Financiero - SACF?" 
+			"title": "¿Qué es el Sistema de Atención al <br/> Consumidor Financiero - SACF?" 
 		}, 
 		{ 
 			"id": "BdB-2", 
@@ -10,15 +10,15 @@
 		}, 
 		{ 
 			"id": "BdB-3", 
-			"title": "¿Quiénes son los principales actores del SACF?" 
+			"title": "¿Quiénes son los principales actores <br/> del SACF?" 
 		}, 
 		{ 
 			"id": "BdB-4", 
-			"title": "¿Cuáles son los elementos del SACF?" 
+			"title": "¿Cuáles son los elementos <br/> del SACF?" 
 		}, 
 		{ 
 			"id": "BdB-5", 
-			"title": "¿Cómo funciona el ciclo del SACF para desarrollar su objetivo?" 
+			"title": "¿Cómo funciona el ciclo del SACF <br/> para desarrollar su objetivo?" 
 		}
 	]
 }
