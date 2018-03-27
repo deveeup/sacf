@@ -1,30 +1,41 @@
-@import './_import.styl'
+@import '../../../../../_base/lib/stylus/_init.styl'
 
 .BdB-2
   _fullW()
   h2
-    _fwb()
     _c($lightBlue)
+    _fwb()
+    _fz($fontMedium)
+    margin 0 0 0 30px
   .BdB-2-Content
-    _dfr(center, center)
+    _dfc(center, center)
     _fullW()
-    .Left
-      _dfc(center, center)
-      _w(20%)
-      figure 
-        _h(100px)
-        _reset(0)
-        _w(100px)
-        _dfr(center, center)
-        img 
-          _ma()
-          _w(80%)
-          _padd(0)
-    .Right
+    _reset(0)
+    .ItemContainer
+      _dfr(center, center)
+      _h(70px)
       _reset(0)
-      _w(79%)
-      p
-        _c($gray)
-        _dfr(center, center, row)
-        _h(100px)
+      _w(100%)
+      .Left
+        _dfc(flex-start, center)
         _reset(0)
+        _w(15%)
+        figure 
+          _dfr(center, center)
+          _h(20px)
+          _ma()
+          _reset(0)
+          _w(100%)
+          img 
+            _w(60%)
+            margin 0 20%
+            padding 10px 0
+      .Right
+        _reset(0)
+        _w(79%)
+        p
+          _c($gray)
+          _dfr(center, center, row)
+          _fz($fontNormal)
+          _h(100px)
+          _reset(0)

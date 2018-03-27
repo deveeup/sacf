@@ -4,11 +4,30 @@ import './BdB-2.styl'
 const Parser = require('html-react-parser')
 
 function BdB2View(props){
-  const text = props.TextContent.texts
+  const item = props.Info.item
+  console.log(props.Info)
   return(
     <div className="BdB-2">
-      <h2>{props.TextContent.title}</h2>
+      <h2>{props.Info.title}</h2>
       <div className="BdB-2-Content">
+        {
+          item.map((item) => {
+            return(
+              <div className="ItemContainer" key={item.id}>
+                <div className="Left">
+                  <figure>
+                    <img src={item.image} />
+                  </figure>
+                </div>
+                <div className="Right">
+                  <p>{item.text}</p>
+                </div>
+              </div>
+            )
+          })
+        }
+      </div>
+      {/*
         <div className="Left">
           <figure>
             <img src={props.LogoConsolidate} />
@@ -37,7 +56,7 @@ function BdB2View(props){
             })
           }
         </div>
-      </div>
+      */}
     </div>
   )
 }

@@ -4,7 +4,6 @@ import './BdB-1.styl'
 const Parser = require('html-react-parser')
 
 function BdB1View(props){
-  console.log(props.Info)
   return(
     <div className="BdB-1">
       <div className="Left">
