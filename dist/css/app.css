@@ -119,22 +119,24 @@
   transform: scale(0.9);
 }
 .BodyView {
-  min-height: 1024px;
+  margin: auto;
   position: relative;
-  width: 1366px;
+  width: 968px;
 }
 .BodyView .Ciudad {
   left: 0;
   position: absolute;
   top: 0;
+  width: 100%;
   z-index: 1;
 }
 .BodyView .Transparent {
-  height: 1024px;
+  border: 1px solid #f00;
   left: 0;
   position: absolute;
   top: 0;
-  width: 1366px;
+  width: 968px;
+  height: 700px;
   z-index: 2;
 }
 .BodyView .Transparent .HandleClick {
@@ -149,14 +151,16 @@
 .BodyView .Transparent .HandleClick .Prison,
 .BodyView .Transparent .HandleClick .School {
   border-radius: 50%;
-  height: 250px;
+  height: 150px;
   position: absolute;
-  width: 250px;
+  width: 150px;
   z-index: 3;
+  border: 1px solid #f00;
 }
 .BodyView .Transparent .HandleClick .Bank {
-  left: 560px;
-  top: 450px;
+  left: 410px;
+  top: 320px;
+  border: 1px solid #800080;
 }
 .BodyView .Transparent .HandleClick .Court {
   left: 300px;

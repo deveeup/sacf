@@ -1,62 +1,67 @@
-.BodyView 
-	min-height 1024px  
-	position relative
-	width 1366px
-	.Ciudad
-		left 0
-		position absolute 
-		top 0 
-		z-index 1
-	.Transparent 
-		height 1024px 
-		left 0
-		position absolute 
-		top 0
-		width 1366px
-		z-index 2
-		.HandleClick
-			height 100% 
-			position absolute 
-			width 100% 
-			.Bank, .Court, .Library, .Politics, .Prison, .School
-				border-radius 50% 
-				height 250px 
-				position absolute 
-				width 250px 
-				z-index 3
-			.Bank
-				left 560px
-				top 450px
-			.Court
-				left 300px
-				top 600px
-			.Library 
-				right 250px
-				top 650px
-			.Politics
-				right 80px
-				top 170px
-			.Prison 
-				right 380px
-				top 35px
-			.School 
-				left 50px
-				top 450px
-		.BankHover, .CourtHover, .LibraryHover, .PoliticsHover, .PrisonHover, .SchoolHover
-			height 100%
-			left 0 
-			position absolute
-			top 0
-			width 100% 
-		.BankHover
-			background-image url('./assets/bank-hover.png')
-		.CourtHover
-			background-image url('./assets/court-hover.png')
-		.LibraryHover
-			background-image url('./assets/library-hover.png')
-		.PoliticsHover
-			background-image url('./assets/politics-hover.png')
-		.PrisonHover
-			background-image url('./assets/prison-hover.png')
-		.SchoolHover
-			background-image url('./assets/school-hover.png')
+@import '../../_base/lib/stylus/_init.styl'
+.BodyView
+  _ma()
+  _pr()
+  width 968px
+  .Ciudad
+    left 0
+    position absolute 
+    top 0
+    width 100%
+    z-index 1
+  .Transparent 
+    _test(red)
+    left 0
+    position absolute 
+    top 0
+    width 968px
+    height 700px
+    z-index 2
+    .HandleClick
+      height 100% 
+      position absolute 
+      width 100% 
+      .Bank, .Court, .Library, .Politics, .Prison, .School
+        border-radius 50% 
+        height 150px 
+        position absolute 
+        width 150px 
+        z-index 3
+        border 1px solid red
+      .Bank
+        left 410px
+        top 320px
+        border 1px solid purple
+      .Court
+        left 300px
+        top 600px
+      .Library 
+        right 250px
+        top 650px
+      .Politics
+        right 80px
+        top 170px
+      .Prison 
+        right 380px
+        top 35px
+      .School 
+        left 50px
+        top 450px
+    .BankHover, .CourtHover, .LibraryHover, .PoliticsHover, .PrisonHover, .SchoolHover
+      height 100%
+      left 0 
+      position absolute
+      top 0
+      width 100% 
+    .BankHover
+      background-image url('./assets/bank-hover.png')
+    .CourtHover
+      background-image url('./assets/court-hover.png')
+    .LibraryHover
+      background-image url('./assets/library-hover.png')
+    .PoliticsHover
+      background-image url('./assets/politics-hover.png')
+    .PrisonHover
+      background-image url('./assets/prison-hover.png')
+    .SchoolHover
+      background-image url('./assets/school-hover.png')

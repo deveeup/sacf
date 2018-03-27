@@ -20,9 +20,9 @@ class App extends Component {
     PrisonHover: false,
     School: false,
     SchoolHover: false,
-    ModalActive: true,
+    ModalActive: false,
     // Modificar el modal content a ''
-    ModalContent: 'Politics',
+    ModalContent: '',
   }
   MouseEnter = (e) => {
     switch(e.target.id) {
