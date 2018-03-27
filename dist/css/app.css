@@ -1,10 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);.AppContainer {
   font-family: 'Roboto', sans-serif;
   margin: auto;
-  max-width: 1366px;
+  max-width: 968px;
   padding: 0;
   position: relative;
-  width: 100%;
 }
 .Header {
   -webkit-box-align: center;
@@ -131,7 +130,6 @@
   z-index: 1;
 }
 .BodyView .Transparent {
-  border: 1px solid #f00;
   left: 0;
   position: relative;
   top: 0;
@@ -155,12 +153,10 @@
   position: absolute;
   width: 150px;
   z-index: 3;
-  border: 1px solid #f00;
 }
 .BodyView .Transparent .HandleClick .Bank {
   left: 410px;
   top: 320px;
-  border: 1px solid #800080;
 }
 .BodyView .Transparent .HandleClick .Court {
   left: 235px;

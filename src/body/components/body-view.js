@@ -12,12 +12,12 @@ function BodyView (props) {
 		? background = props.CityStatic
 		: background = props.CityAnimate
 	{
-		// props.BankHover ? Bank = Visible : Bank = Hidden
-		// props.CourtHover ? Court = Visible : Court = Hidden
-		// props.LibraryHover ? Library = Visible : Library = Hidden
-		// props.PoliticsHover ? Politics = Visible : Politics = Hidden
-		// props.PrisonHover ? Prison = Visible : Prison = Hidden
-		// props.SchoolHover ? School = Visible : School = Hidden
+		props.BankHover ? Bank = Visible : Bank = Hidden
+		props.CourtHover ? Court = Visible : Court = Hidden
+		props.LibraryHover ? Library = Visible : Library = Hidden
+		props.PoliticsHover ? Politics = Visible : Politics = Hidden
+		props.PrisonHover ? Prison = Visible : Prison = Hidden
+		props.SchoolHover ? School = Visible : School = Hidden
 	}
 	return(
 		<div className="BodyView">
