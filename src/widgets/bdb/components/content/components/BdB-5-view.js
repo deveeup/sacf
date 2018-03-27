@@ -4,21 +4,21 @@ import './BdB-5.styl'
 const Parser = require('html-react-parser')
 
 function BdB5View(props){
-  const Items = props.TextContent.items
+  const item = props.Info.item
   return(
     <div className="BdB-5">
       <div className="TopContent">
         <figure className="TopContentLeft">
-          <img src={props.LogoSacf}/>
+          <img src={props.Info.image}/>
         </figure>
         <div className="TopContentRight">
-          <h2>{props.TextContent.title}</h2>
-          <p>{props.TextContent.textcontent}</p>
+          <h2>{props.Info.title}</h2>
+          <p>{props.Info.text}</p>
         </div>
       </div>
       <div className="BottomContent">
         {
-          Items.map((item) => {
+          item.map((item) => {
             return (
               <div className="ItemContainer" key={item.id}>
                 <div className="ItemTopContainer">

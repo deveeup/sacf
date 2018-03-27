@@ -1,28 +1,31 @@
-@import './_import.styl'
+@import '../../../../../_base/lib/stylus/_init.styl'
+
 .BdB-5
   _fullW()
   h2 
     _c($lightBlue)
   .TopContent
     _dfr(flex-start, flex-start)
-    _reset(0)
     _fullW()
+    _reset(0)
     .TopContentLeft
       _reset(0)
       _w(30%)
-      figure 
+      img 
+        _fullW()
         _reset(0)
-        img 
-          _fullw()
     .TopContentRight
       _w(70%)
       h2
         _c($lightBlue)
+        _fz($fontMedium)
         _w(85%)
+        padding-left 10px
       p
         _c($gray)
-        font-size $fontMedium
+        _fz($fontNormal)
         _w(80%)
+        padding-left 10px
   .BottomContent
     display flex 
     _fw(wrap)
@@ -42,16 +45,16 @@
         border-radius 0 0 15px 0
       .ItemTopContainer
         _bc($yellow)
-        border-radius 0
+        _br(0)
         border-right 1px solid $yellow
         border-top 1px solid $yellow
         _h(100px)
         _dfr(center, center)
         _reset(0)
         figure
-          width 20%
+          _w(20%)
           img 
-            width 100%
+            _fullW()
       &:nth-child(1)
         .ItemTopContainer
           border-radius 12px 0 0 0
@@ -60,7 +63,7 @@
           border-radius 0 12px 0 0
         figure 
           _mar(0)
-          background-color $yellow
+          _bc($yellow)
           padding 10px 0 
           img 
             _reset(0)
