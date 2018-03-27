@@ -1,10 +1,11 @@
-@import './_import.styl'
+@import '../../../../../_base/lib/stylus/_init.styl'
+
 .School-2
   .Title 
     _c($gray)
-    _ta(center)
-    _fz($fontNormal)
     _fwn()
+    _fz($fontNormal)
+    _ta(center)
   .ItemsContainer
     _dfr(center, flex-start)
     _fw(wrap)
@@ -19,18 +20,18 @@
       .Title 
         _c($gray)
         _fwn()
-        _fz($fontMedium)
+        _fz($fontNormal)
         _ta(center)
   .Callback
     _dfc(center, center)
     _fullW()
     _mTop(25px)
     .Text
-      _fullW()
-      _ta(center)
       _c($gray)
-      _fz($fontNormal)
+      _fullW()
       _fwn()
+      _fz($fontNormal)
+      _ta(center)
     .Button
       _aReset(white)
       _bc($yellow)
@@ -38,7 +39,7 @@
       _fwb()
       _ta(center)
       _w(10%)
-      border-radius 7px
+      _br(7px)
       margin 0 auto
       padding 5px 50px
       will-change transform
