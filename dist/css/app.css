@@ -1534,7 +1534,7 @@
 }
 .School-3 .Title {
   color: #0974b7;
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
 }
 .School-3 .ItemsContainer .ItemContainer {
@@ -1695,8 +1695,8 @@
 .School-3 .TextFooter {
   color: #0974b7;
   font-weight: bold;
-  font-size: 20px;
-  width: 74%;
+  font-size: 16px;
+  width: 89%;
   border-bottom: 4px solid #f7ab2d;
   line-height: 1.5;
   padding-bottom: 5px;
