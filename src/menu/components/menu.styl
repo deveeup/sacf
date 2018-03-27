@@ -1,39 +1,34 @@
+@import '../../_base/lib/stylus/_init.styl'
+
 .Menu 
-	margin 0
-	padding 0
-	height 103px
-	display flex 
-	align-items center
-	background-color #0974B7
-	padding 0
+	_bc($lightBlue)
+	_dfr(flex-start, center)
+	_h(103px)
+	_reset(0)
 	ul
-		align-items center
-		display flex
-		height 100%
-		justify-content center
-		list-style none 
-		margin 0
-		padding 0
-		width 100%
-		li 
-			align-items flex-start
-			display flex
-			height 80%
-			justify-content center
-			padding 10px
-			text-align center
-			width 16.6%
+		_dfr(center, center)
+		_fullH()
+		_fullW()
+		_lsn()
+		_reset(0)
+		li
+			_dfr(center, center)
+			_fullH()
+			_padd(10px)
+			_ta(center)
+			_w(16.6%)
 			&:hover 
-				border-bottom 8px solid #EB1B23
-			a 
-				color white
-				font-size 1em
-				padding 17px 0
-				text-decoration none
+				border-bottom 8px solid $red
+			a
+				_aReset(white)
+				_dfr(center, center)
+				_fullH()
+				_fz(14px)
+				_p(17px, 0, 17px, 0)
+				_ta(center)
 				will-change transform
-				height 100%
 				&:hover 
-					font-weight bold
+					_fwb()
 				&:active 
 					transform scale(.9)
 	
