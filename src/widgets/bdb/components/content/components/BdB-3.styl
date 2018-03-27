@@ -1,4 +1,4 @@
-@import './_import.styl'
+@import '../../../../../_base/lib/stylus/_init.styl'
 
 .BdB-3
   _fullW()
@@ -6,27 +6,28 @@
     _dfr(center, center)
     _fullW()
     .TopContentLeft 
-      _w(50%)
+      _w(60%)
       h2
         _c($lightBlue)
-        _w(75%)
-        margin 0 0 10px 0 
+        _fz($fontMedium)
+        _w(100%)
+        margin 0 0 10px 0
       p
         _c($gray)
+        _fz($fontNormal)
         _w(95%)
-        font-size $fontMedium
         line-height 1.3
     .TopContentRight
       _dfr(center, center)
-      _w(50%)
+      _w(40%)
       img
         _ma()
         _w(100%)
   .BottomContent
-    _dfc(center, center)
+    _dfc(flex-start, flex-start)
     _fullW()
     _fw(wrap)
-    _h(500px)
+    _h(600px)
     .ItemContainer
       _w(50%)
       .TitleContainer 
@@ -39,10 +40,12 @@
         .ItemTitle
           _c($yellow)
           _d(inline-block)
+          _fz($fontMedium)
           _reset(0)
           _w(60%)
       .ItemText 
         _c($gray)
+        _fz($fontNormal)
         _pLeft(25px)
         _w(75%)
         line-height 1.4

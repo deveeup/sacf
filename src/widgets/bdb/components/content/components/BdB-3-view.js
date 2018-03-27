@@ -1,31 +1,32 @@
 
 import React from 'react'
 import './BdB-3.styl'
-const Parser = require('html-react-parser')
+const Parse = require('html-react-parser')
 
 function BdB3View(props){
-  const Items = props.TextContent.items
+  const item = props.Info.item
+  console.log(props.Info)
   return(
     <div className="BdB-3">
       <div className="TopContent">
         <div className="TopContentLeft">
-          <h2>{props.TextContent.title}</h2>
-          <p>{Parser(props.TextContent.textcontent)}</p>
+          <h2>{Parse(props.Info.title)}</h2>
+          <p>{Parse(props.Info.text)}</p>
         </div>
         <figure className="TopContentRight">
-          <img src={props.IconActors} />
+          <img src={props.Info.image} />
         </figure>
       </div>
       <div className="BottomContent">
         {
-          Items.map((item) => {
+          item.map((item) => {
             return(
               <div className="ItemContainer" key={item.id}>
                 <div className="TitleContainer">
                   <figure className="IconBefore">
-                    <img src={props.IconBefore} />
+                    <img src={item.image} />
                   </figure>
-                  <h3 className="ItemTitle">{item.title}</h3>
+                  <h3 className="ItemTitle">{Parse(item.title)}</h3>
                 </div>
                 <p className="ItemText">{item.text}</p>
               </div>

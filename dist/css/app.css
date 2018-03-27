@@ -545,12 +545,11 @@
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  width: 100%;
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 .BdB-2 .BdB-2-Content .ItemContainer {
-  width: 100%;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -575,9 +574,10 @@
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  height: 70px;
   margin: 0;
   padding: 0;
-  height: 70px;
+  width: 100%;
 }
 .BdB-2 .BdB-2-Content .ItemContainer .Left {
   display: -webkit-box;
@@ -604,14 +604,11 @@
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
-  width: 15%;
   margin: 0;
   padding: 0;
+  width: 15%;
 }
 .BdB-2 .BdB-2-Content .ItemContainer .Left figure {
-  width: 100%;
-  margin: 0;
-  padding: 0;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -636,13 +633,16 @@
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  margin: auto;
   height: 20px;
+  margin: auto;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 .BdB-2 .BdB-2-Content .ItemContainer .Left figure img {
   width: 60%;
-  padding: 10px 0;
   margin: 0 20%;
+  padding: 10px 0;
 }
 .BdB-2 .BdB-2-Content .ItemContainer .Right {
   margin: 0;
@@ -711,17 +711,18 @@
   width: 100%;
 }
 .BdB-3 .TopContent .TopContentLeft {
-  width: 50%;
+  width: 60%;
 }
 .BdB-3 .TopContent .TopContentLeft h2 {
   color: #0974b7;
-  width: 75%;
+  font-size: 18px;
+  width: 100%;
   margin: 0 0 10px 0;
 }
 .BdB-3 .TopContent .TopContentLeft p {
   color: #606060;
+  font-size: 16px;
   width: 95%;
-  font-size: 18px;
   line-height: 1.3;
 }
 .BdB-3 .TopContent .TopContentRight {
@@ -749,7 +750,7 @@
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  width: 50%;
+  width: 40%;
 }
 .BdB-3 .TopContent .TopContentRight img {
   margin: auto;
@@ -759,12 +760,12 @@
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -o-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
   display: -ms-flexbox;
   display: box;
   display: flex;
@@ -774,12 +775,12 @@
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -o-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -o-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
   width: 100%;
   -webkit-box-lines: multiple;
   -moz-box-lines: multiple;
@@ -787,7 +788,7 @@
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  height: 500px;
+  height: 600px;
 }
 .BdB-3 .BottomContent .ItemContainer {
   width: 50%;
@@ -828,12 +829,14 @@
 .BdB-3 .BottomContent .ItemContainer .TitleContainer .ItemTitle {
   color: #f7ab2d;
   display: inline-block;
+  font-size: 18px;
   margin: 0;
   padding: 0;
   width: 60%;
 }
 .BdB-3 .BottomContent .ItemContainer .ItemText {
   color: #606060;
+  font-size: 16px;
   padding-left: 25px;
   width: 75%;
   line-height: 1.4;

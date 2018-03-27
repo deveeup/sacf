@@ -38,8 +38,9 @@
   },
   "actors": {
     "id": "BdB-3",
-    "title": "¿Quiénes son los principales <br/> actores del SACF?",
-    "text": "Todos somos parte del SACF y <br/> debemos contemplar los <br/> intereses del Consumidor <br/> Financiero en el rol de cada área, <br/> las principales áreas del SACF <br/> son las siguientes:",
+    "title": "¿Quiénes son los <br/> principales actores <br/> del SACF?",
+    "text": "Todos somos parte del SACF y debemos contemplar los <b>intereses</b> del Consumidor Financiero en el rol de cada área, las principales áreas del SACF son las siguientes:",
+    "image": "./src/widgets/bdb/components/assets/content/actors-image.png",
     "item": [
       {
         "id": "1",
