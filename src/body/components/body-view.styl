@@ -1,57 +1,58 @@
 @import '../../_base/lib/stylus/_init.styl'
+
 .BodyView
   _ma()
   _pr()
-  width 968px
+  _w(968px)
   .Ciudad
-    left 0
-    position absolute 
-    top 0
-    width 100%
-    z-index 1
+    _fullW()
+    _l(0)
+    _pa()
+    _t(0)
+    _z(1)
   .Transparent 
-    left 0
-    position relative 
-    top 0
-    width 100%
-    height 725px
-    z-index 2
+    _fullW()
+    _h(725px)
+    _l(0)
+    _pr()
+    _t(0)
+    _z(2)
     .HandleClick
-      height 100% 
-      position absolute 
-      width 100% 
+      _fullH()
+      _fullW()
+      _pa()
       .Bank, .Court, .Library, .Politics, .Prison, .School
-        border-radius 50% 
-        height 150px 
-        position absolute 
-        width 150px 
-        z-index 3
+        _br(50%)
+        _h(150px)
+        _pa()
+        _w(150px)
+        _z(3)
       .Bank
-        left 410px
-        top 320px
+        _l(410px)
+        _t(320px)
       .Court
-        left 235px
-        top 440px
+        _l(235px)
+        _t(440px)
       .Library 
-        right 180px
-        top 475px
+        _r(180px)
+        _t(475px)
       .Politics
-        right 80px
-        top 140px
+        _r(80px)
+        _t(140px)
       .Prison 
-        right 290px
-        top 35px
+        _r(290px)
+        _t(35px)
       .School 
-        left 70px
-        top 350px
+        _l(70px)
+        _t(350px)
     .BankHover, .CourtHover, .LibraryHover, .PoliticsHover, .PrisonHover, .SchoolHover
+      _b(0)
+      _l(0) 
+      _pa()
+      _r(0)
+      _t(0)
       background-repeat no-repeat, repeat
       background-size 100% 100%
-      bottom 0
-      left 0 
-      position absolute
-      right 0
-      top 0
     .BankHover
       background-image url('./assets/bank-hover.png')
     .CourtHover
