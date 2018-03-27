@@ -1,5 +1,4 @@
-@import '../../base/_var.styl'
-@import '../../base/_mixins.styl'
+@import '../../../_base/lib/stylus/_init.styl'
 
 .SchoolContainer
   _fllW()
@@ -9,8 +8,8 @@
   _t(2.5%)
   .SchoolEdifice
     _d(block)
-    _mr(50px, 25%)
-    _mw(50%)
+    _mr(50px, 30%)
+    _mw(40%)
   .InfoContainer
     _dfr(flex-start, flex-start)
     _fullW()
@@ -20,24 +19,28 @@
       _w(40%)
       margin 0 0 2% 2% 
       .NavSchool
+        _dfc(flex-start, flex-start)
         _fullW()
-        _reset(0)
         _h(100%)
+        _reset(0)
+        _ta(left)
         .UlSchool
           _dfc(flex-start, flex-start)
           _fullW()
           _reset(0)
           .ItemSchool
-            _fullW()
             _h(30px)
+            _ta(left)
+            _w(90%)
             &:hover 
               _bn()
               _fwb()
             a 
               _c($lightBlue)
+              _dfr(flex-start, flex-start)
               _fullW()
-              font-size $fontBig
-              text-align left
+              _fz($fontNormal)
+              _padd(10px)
     .Content 
       _mh(400px)
       _pLeft(20px)
