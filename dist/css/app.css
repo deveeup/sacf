@@ -489,7 +489,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  min-height: 350px;
+  min-height: 300px;
 }
 .BdB-1 .Left {
   margin: 0;
@@ -503,7 +503,7 @@
 }
 .BdB-1 .Left p {
   color: #606060;
-  font-size: 16px;
+  font-size: fontNormal;
 }
 .BdB-1 .Right {
   width: 40%;

@@ -4,18 +4,19 @@ import './BdB-1.styl'
 const Parser = require('html-react-parser')
 
 function BdB1View(props){
+  console.log(props.Info)
   return(
     <div className="BdB-1">
       <div className="Left">
         <h2>
-          { Parser(props.TextContent.title) }
+          { Parser(props.Info.title) }
         </h2>
         <p>
-          { Parser(props.TextContent.content) }
+          { Parser(props.Info.content) }
         </p>
       </div>
       <figure className="Right">
-        <img src={props.Image}/>
+        <img src={props.Info.image}/>
       </figure>
     </div>
   )
