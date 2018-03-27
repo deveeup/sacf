@@ -2,7 +2,7 @@
 	"menu": [
 		{ 
 			"id": "Bank",
-			"title": "¿Que es SACF?"
+			"title": "¿Qué es SACF?"
 		}, 
 		{ 
 			"id": "Politics",
@@ -10,15 +10,15 @@
 		}, 
 		{ 
 			"id": "Library", 
-			"title": "Contenido Mínimo de la información" 
+			"title": "Contenido Mínimo <br/> de la información" 
 		}, 
 		{ 
 			"id": "Prison", 
-			"title": "Cláusulas y Prácticas Abusivas" 
+			"title": "Cláusulas y Prácticas <br/> Abusivas" 
 		}, 
 		{ 
 			"id": "Court", 
-			"title": "Defensor del Consumidor Financiero" 
+			"title": "Defensor del <br/> Consumidor Financiero" 
 		}, 
 		{ 
 			"id": "School",

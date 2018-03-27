@@ -1313,12 +1313,6 @@
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -1343,14 +1337,18 @@
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 100%;
   padding: 10px 0;
 }
 .School-3 .ItemsContainer .ItemContainer .ImageContainer {
-  margin: 0;
-  padding: 0;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -1375,6 +1373,8 @@
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  margin: 0;
+  padding: 0;
   width: 15%;
 }
 .School-3 .ItemsContainer .ItemContainer .ImageContainer img {
@@ -1407,9 +1407,6 @@
   justify-content: flex-start;
 }
 .School-3 .ItemsContainer .ItemContainer .TextContainer {
-  width: 83%;
-  margin: 0;
-  padding: 0;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -1434,14 +1431,17 @@
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  width: 83%;
 }
 .School-3 .ItemsContainer .ItemContainer .TextContainer .Text {
   color: #606060;
   font-weight: normal;
   font-size: 16px;
-  text-align: left;
   margin: 0;
   padding: 0;
+  text-align: left;
 }
 .School-3 .TextFooter {
   color: #0974b7;

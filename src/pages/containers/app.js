@@ -18,9 +18,9 @@ class App extends Component {
     PoliticsHover: false,
     Prison: false,
     PrisonHover: false,
-    School: true,
-    SchoolHover: true,
-    ModalActive: true,
+    School: false,
+    SchoolHover: false,
+    ModalActive: false,
     // Modificar el modal content a ''
     ModalContent: 'School',
   }
