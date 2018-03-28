@@ -5,7 +5,11 @@ const Path = require('html-react-parser')
 function Item (props) {
   return(
 		<li>
-			<a id={props.id} onClick={props.MouseClick}>
+			<a 
+        id={props.id} 
+        onClick={props.MouseClick}
+        className="LinkMenu"
+      >
 				{Path(props.title)}
 			</a>
 		</li>

@@ -16,20 +16,24 @@
 			_fullH()
 			_padd(10px)
 			_ta(center)
-			_w(16.6%)
-			&:hover 
-				border-bottom 8px solid $red
-			a
+			_w(13%)
+			&:nth-child(2),
+			&:nth-child(3),
+			&:nth-child(4),
+			&:nth-child(5)
+				_w(18.5%)
+			.LinkMenu
+				_(transparent)
 				_aReset(white)
-				_dfr(center, flex-start)
-				_fullH()
+				_dfr(center, center)
 				_fz(14px)
-				_h(50%)
+				_h(65px)
 				_p(17px, 0, 17px, 0)
 				_ta(center)
 				will-change transform
 				&:hover 
 					_fwb()
+					border-bottom 10px solid $red
 				&:active 
 					transform scale(.9)
-	
+		
