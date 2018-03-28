@@ -1,7 +1,8 @@
 
 import React, { Component } from 'react'
+import BdBEdifice from './assets/BdbEdifice.png'
 import BdbView from '../components/bdb-view'
-import ListItems from './list-items.json'
+import ListItems from './assets/list-items.json'
 
 class Bdb extends Component {
   state = {
@@ -18,9 +19,10 @@ class Bdb extends Component {
   render(){
     return(
       <BdbView
-        ListItems={ListItems}
+        BdBEdifice={BdBEdifice}
         ClickMenuBdB={this.ClickMenuBdB}
         ContentBdB={this.state.ContentBdB}
+        ListItems={ListItems}
       />
     )
   }

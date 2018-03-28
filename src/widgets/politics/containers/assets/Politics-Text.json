@@ -1,28 +1,35 @@
 {
+  "title": "Principios del SACF",
   "list": [
     {
-      "id": "Prison-1",
-      "id": "Debida Diligencia"
+      "id": "Politics-1",
+      "letter": "A",
+      "title": "Debida Diligencia"
     },
     {
-      "id": "Prision-2",
-      "id": "Libertad de Elección"
+      "id": "Politics-2",
+      "letter": "B",
+      "title": "Libertad de Elección"
     },
     {
-      "id": "Prision-3",
-      "id": "Transparencia"
+      "id": "Politics-3",
+      "letter": "C",
+      "title": "Transparencia"
     },
     {
-      "id": "Prision-4",
-      "id": "Trámite de Quejas y Reclamos"
+      "id": "Politics-4",
+      "letter": "D",
+      "title": "Trámite de Quejas y Reclamos"
     },
     {
-      "id": "Prision-5",
-      "id": "Manejo de Conflicto de Interés"
+      "id": "Politics-5",
+      "letter": "E",
+      "title": "Manejo de Conflicto de Interés"
     },
     {
-      "id": "Prision-6",
-      "id": "Educación Financiera"
+      "id": "Politics-6",
+      "letter": "F",
+      "title": "Educación Financiera"
     }
   ]
 }

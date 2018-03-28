@@ -56,16 +56,6 @@ class ModalContainer extends Component {
             </ModalView>
           )
         break
-        default:
-          return( 
-            <ModalView 
-              CloseModal={this.props.CloseModal}
-              ModalActive={this.props.ModalActive}
-              ButtonCloseImage={ButtonCloseImage}
-            >
-              Ninguno!
-            </ModalView>
-          )
       }
     }
   }

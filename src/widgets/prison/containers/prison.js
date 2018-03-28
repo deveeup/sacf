@@ -5,9 +5,7 @@ import PrisonView from '../components/prison-view'
 class Prison extends Component {
   render(){
     return(
-      <PrisonView
-        
-      />
+      <PrisonView/>
     )
   }
 }

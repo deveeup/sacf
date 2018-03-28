@@ -1,7 +1,6 @@
 
 import React from 'react'
 import './bdb.styl'
-import BdbEdifice from './assets/BdbEdifice.png'
 import ContainerContent from './content'
 const Path = require('html-react-parser')
 
@@ -10,7 +9,7 @@ function BdbView (props) {
   const FontBold = {fontWeight: 'bold'}
   return(
     <div className="BdbContainer">
-      <img className="BdbEdifice" src={BdbEdifice} id="ModalImage"/>
+      <img className="BdbEdifice" src={props.BdBEdifice} id="ModalImage"/>
       <div className="InfoContainer">
         <div className="Menu">
           <nav className="NavBdB">

@@ -14,15 +14,15 @@ class App extends Component {
     CourtHover: false,
     Library: false,
     LibraryHover: false,
-    Politics: false,
-    PoliticsHover: false,
+    Politics: true,
+    PoliticsHover: true,
     Prison: false,
     PrisonHover: false,
-    School: true,
-    SchoolHover: true,
+    School: false,
+    SchoolHover: false,
     ModalActive: true,
     // Modificar el modal content a ''
-    ModalContent: 'School',
+    ModalContent: 'Politics',
   }
   MouseEnter = (e) => {
     switch(e.target.id) {
@@ -140,7 +140,7 @@ class App extends Component {
       break;
       case 'Court':
         this.setState({
-          ModalContent: 'Juzgado',
+          ModalContent: 'Court',
           Court: true,
         })
       break;
@@ -152,14 +152,14 @@ class App extends Component {
       break;
       case 'Politics':
         this.setState({
-          ModalContent: 'Alcaldía',
+          ModalContent: 'Politics',
           Politics: true,
 
         })
       break;
       case 'Prison':
         this.setState({
-          ModalContent: 'Prisión',
+          ModalContent: 'Prison',
           Prison: true,
         })
       break;

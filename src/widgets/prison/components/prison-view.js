@@ -4,7 +4,7 @@ import React from 'react'
 function PrisonView (props){
   return(
     <p>
-      Hi!?
+      Hi Prison! :)
     </p>
   )
 }
