@@ -8,12 +8,12 @@ function ContentLibrary(props){
   switch(props.ContentLibrary){
     case 'Library-1':
       return(
-        <Library1 Info={Info.A}/>
+        <Library1 Info={Info.content}/>
       )
     break
     case 'Library-2':
       return(
-        <Library2 Info={Info.B}/>
+        <Library2 Info={Info.A}/>
       )
     break
   }

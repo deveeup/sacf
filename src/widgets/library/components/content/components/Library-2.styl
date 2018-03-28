@@ -1,48 +1,33 @@
 @import '../../../../../_base/lib/stylus/_init.styl'
 
 .Library-2
-  _dfr(center, center)
+  _dfc(flex-start, center)
   _fw(wrap)
   _mh(285px)
   _reset(0)
-  .Top
-    _dfr(center, center)
+  .Title
+    _c($lightBlue)
     _fullW()
-    .Left
-      _w(75%)
-      .Title
-        _c($lightBlue)
-        _fullW()
-        _fz($fontMedium)
+    _fz($fontBig)
+  .ItemContainer
+    _dfc(flex-start, flex-start)
+    _fullW()
+    .Item
+      _dfr(flex-start, center)
+      _fullW()
+      _padd(10px)
+      .ImageContainer
+        _dfr(center, center)
+        _reset(0)
+        _w(20%)
+        img
+          _reset(0)
+          _w(70%)
+          margin auto
       .Text
         _c($gray)
+        _fullH()
         _fz($fontNormal)
-    .Right
-      _w(25%)
-      img
-        _fullW()
-  .Bottom
-    _br(5px)
-    _fullW()
-    padding 10px 25px
-    border 2px solid $yellow
-    .Subtitle
-      _c($gray)
-      _fz($fontNormal)
-    .OrderList
-      _lsn()
-      _reset(0)
-      _w(100%)
-      padding 10px 0
-      li
-        _dfr(flex-start, flex-start)
-        _fullW()
         _reset(0)
-        padding 10px 0
-        img
-          margin-right 10px
-        p
-          _c($gray)
-          _reset(0)
-          display inline-block
-          _fz($fontNormal)
+        _ta(left)
+        _w(80%)

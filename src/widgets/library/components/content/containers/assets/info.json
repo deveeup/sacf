@@ -1,29 +1,43 @@
 {
-  "A": {
+  "content": {
     "id": "A",
     "title": "Contenido Mínimo de <br/> la información",
-    "image": "./src/widgets/library/components/content/containers/assets/A-image.png",
+    "image": "./src/widgets/library/components/content/containers/assets/content-image.png",
     "text": "Es un mecanismo básico de protección al Consumidor Financiero que disminuye el esfuerzo del cliente y aumenta su satisfacción.",
     "subtitle": "Además, la información es:",
     "item": [
       {
         "id": "1",
-        "icon": "./src/widgets/library/components/content/containers/assets/A-icon-before.png",
+        "icon": "./src/widgets/library/components/content/containers/assets/content-icon-before.png",
         "title": "Una obligación especial de las entidades vigiladas."
       },
       {
         "id": "2",
-        "icon": "./src/widgets/library/components/content/containers/assets/A-icon-before.png",
+        "icon": "./src/widgets/library/components/content/containers/assets/content-icon-before.png",
         "title": "Un derecho de los Consumidores Financieros."
       },
       {
         "id": "3",
-        "icon": "./src/widgets/library/components/content/containers/assets/A-icon-before.png",
+        "icon": "./src/widgets/library/components/content/containers/assets/content-icon-before.png",
         "title": "Un principio orientador que debe regir las relaciones que se establezcan entre el Consumidor Financiero y la entidad vigilada."
       }
     ]
   },
-  "B": {
-    "hi": "JO!"
+  "A": {
+    "title": "A. Finalidad",
+    "item": [
+      {
+        "image": "./src/widgets/library/components/content/containers/assets/A-image-1.png",
+        "text": "Dotar de herramientas y elementos que aporten en la toma de decisiones."
+      },
+      {
+        "image": "./src/widgets/library/components/content/containers/assets/A-image-2.png",
+        "text": "Facilitar la comparación de las opciones ofrecidas en el mercado."
+      },
+      {
+        "image": "./src/widgets/library/components/content/containers/assets/A-image-3.png",
+        "text": "Velar por el conocimiento de los derechos y obligaciones."
+      }
+    ] 
   }
 }
