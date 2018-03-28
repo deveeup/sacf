@@ -68,7 +68,62 @@
     "title": "C. Difusión",
     "textOne": "La información debe ser divulgada a través de <b>mecanismos documentados</b> que cumplan con los requisitos y concuerden con el contenido de los contratos.",
     "subtitle": "Difusión Web",
-    "textTwo": "Publicación de un vínculo especial en la web con el nombre de <b>\“información sobre productos y servicios\”,<b/> información que debe ser publicada individualmente sin generar confusión con otro producto o servicio.",
+    "textTwo": "Publicación de un vínculo especial en la web con el nombre de <b>“información sobre productos y servicios”,</b> información que debe ser publicada individualmente sin generar confusión con otro producto o servicio.",
     "image": "./src/widgets/library/components/content/containers/assets/C-image.png"
+  },
+  "D": {
+    "title": "D. Contenido mínimo",
+    "item": [
+      {
+        "id": "1",
+        "image": "./src/widgets/library/components/content/containers/assets/D-image-1.png",
+        "text": "Las tarifas para el uso de los canales habilitados para la realización de operaciones."
+      },
+      {
+        "id": "2",
+        "image": "./src/widgets/library/components/content/containers/assets/D-image-2.png",
+        "text": "Las tasas de interés y la forma de liquidación de las mismas."
+      },
+      {
+        "id": "3",
+        "image": "./src/widgets/library/components/content/containers/assets/D-image-3.png",
+        "text": "Contratos y reglamentos con fecha de última actualización."
+      },
+      {
+        "id": "4",
+        "image": "./src/widgets/library/components/content/containers/assets/D-image-4.png",
+        "text": "Condiciones, plazos y requisitos mínimos para adquirir el producto."
+      },
+      {
+        "id": "5",
+        "image": "./src/widgets/library/components/content/containers/assets/D-image-5.png",
+        "text": "Plazos establecidos para la renovación del producto y servicios. Términos de respuesta a las solicitudes de productos o servicios."
+      },
+      {
+        "id": "6",
+        "image": "./src/widgets/library/components/content/containers/assets/D-image-6.png",
+        "text": "Procedimientos para la apertura y finalización de los productos y servicios."
+      },
+      {
+        "id": "7",
+        "image": "./src/widgets/library/components/content/containers/assets/D-image-7.png",
+        "text": "Descripción general del producto y condiciones de funcionamiento."
+      },
+      {
+        "id": "8",
+        "image": "./src/widgets/library/components/content/containers/assets/D-image-8.png",
+        "text": "Mecanismos para la atención al Consumidor Financiero."
+      },
+      {
+        "id": "9",
+        "image": "./src/widgets/library/components/content/containers/assets/D-image-9.png",
+        "text": "Descripción de los derechos y obligaciones tanto de los consumidores financieros como del Banco."
+      },
+      {
+        "id": "10",
+        "image": "./src/widgets/library/components/content/containers/assets/D-image-10.png",
+        "text": "Recomendaciones de seguridad."
+      }
+    ]
   }
 }
