@@ -1,0 +1,26 @@
+{
+  "A": {
+    "id": "A",
+    "title": "Contenido Mínimo de <br/> la información",
+    "image": "./src/widgets/library/components/content/containers/assets/A-image.png",
+    "text": "Es un mecanismo básico de protección al Consumidor Financiero que disminuye el esfuerzo del cliente y aumenta su satisfacción.",
+    "subtitle": "Además, la información es:",
+    "item": [
+      {
+        "id": "1",
+        "icon": "./src/widgets/library/components/content/containers/assets/A-icon-before.png",
+        "title": "Una obligación especial de las entidades vigiladas."
+      },
+      {
+        "id": "2",
+        "icon": "./src/widgets/library/components/content/containers/assets/A-icon-before.png",
+        "title": "Un derecho de los Consumidores Financieros."
+      },
+      {
+        "id": "3",
+        "icon": "./src/widgets/library/components/content/containers/assets/A-icon-before.png",
+        "title": "Un principio orientador que debe regir las relaciones que se establezcan entre el Consumidor Financiero y la entidad vigilada."
+      }
+    ]
+  }
+}
