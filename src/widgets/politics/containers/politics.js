@@ -6,7 +6,7 @@ import PoliticsView from '../components/politics-view'
 
 class Politics extends Component {
   state = {
-    ContentPolitics: 'Politics-4',
+    ContentPolitics: 'Politics-6',
   }
 
   ClickMenuPolitics = (e) => {

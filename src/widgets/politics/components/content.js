@@ -4,6 +4,8 @@ import Politics1 from './content/containers/Politics-1'
 import Politics2 from './content/containers/Politics-2'
 import Politics3 from './content/containers/Politics-3'
 import Politics4 from './content/containers/Politics-4'
+import Politics5 from './content/containers/Politics-5'
+import Politics6 from './content/containers/Politics-6'
 import Info from './content/containers/assets/info.json'
 
 function ContentPolitics(props){
@@ -26,6 +28,16 @@ function ContentPolitics(props){
     case 'Politics-4':
       return(
         <Politics3 Info={Info.D}/>
+      )
+    break
+    case 'Politics-5':
+      return(
+        <Politics3 Info={Info.E}/>
+      )
+    break
+    case 'Politics-6':
+      return(
+        <Politics3 Info={Info.F}/>
       )
     break
   }
