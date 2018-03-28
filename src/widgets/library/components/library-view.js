@@ -14,7 +14,6 @@ function LibraryView (props) {
       <img className="LibraryEdifice" src={image} /> 
       <div className="InfoContainer">
         <div className="Menu">
-          <h2 className="Title">{Parse(title)}</h2>
           <nav className="NavLibrary">
             <ul className="UlLibrary">
               {
@@ -27,7 +26,7 @@ function LibraryView (props) {
                         onClick={props.ClickMenuLibrary}
                         style={FontBold}
                       >
-                        {item.letter}. {item.title}
+                        {item.letter} {Parse(item.title)}
                       </a>
                     </li>
                     :
@@ -37,7 +36,7 @@ function LibraryView (props) {
                         id={item.id}
                         onClick={props.ClickMenuLibrary}
                       >
-                        {item.letter}. {item.title}
+                        {item.letter} {Parse(item.title)}
                       </a>
                     </li>
                 })
