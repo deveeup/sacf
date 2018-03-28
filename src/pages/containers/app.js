@@ -14,15 +14,15 @@ class App extends Component {
     CourtHover: false,
     Library: false,
     LibraryHover: false,
-    Politics: true,
-    PoliticsHover: true,
+    Politics: false,
+    PoliticsHover: false,
     Prison: false,
     PrisonHover: false,
     School: false,
     SchoolHover: false,
     ModalActive: true,
     // Modificar el modal content a ''
-    ModalContent: 'Politics',
+    ModalContent: 'Library',
   }
   MouseEnter = (e) => {
     switch(e.target.id) {

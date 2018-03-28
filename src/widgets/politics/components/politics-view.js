@@ -18,7 +18,6 @@ function PoliticsView (props){
             {
               menu.map((item) => {
                 return item.id == props.ContentPolitics ?
-
                   <li className="ItemPolitics" key={item.id}>
                     <a
                       href="#" 

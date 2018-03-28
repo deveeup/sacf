@@ -5,6 +5,7 @@ import Bdb from '../../widgets/bdb/containers/bdb'
 import School from '../../widgets/school/containers/school'
 import Prison from '../../widgets/prison/containers/prison'
 import Politics from '../../widgets/politics/containers/politics'
+import Library from '../../widgets/library/containers/library'
 
 import ButtonCloseImage from '../components/assets/ButtonClose.svg'
 
@@ -53,6 +54,17 @@ class ModalContainer extends Component {
               ButtonCloseImage={ButtonCloseImage}
             >
               <Politics/>
+            </ModalView>
+          )
+        break
+        case 'Library':
+          return(
+            <ModalView 
+              CloseModal={this.props.CloseModal}
+              ModalActive={this.props.ModalActive}
+              ButtonCloseImage={ButtonCloseImage}
+            >
+              <Library/>
             </ModalView>
           )
         break

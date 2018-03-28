@@ -2430,3 +2430,185 @@
   border-left: 5px solid #f7ab2d;
   padding: 0 8px;
 }
+.LibraryContainer {
+  height: 95%;
+  left: 2.5%;
+  margin: 0;
+  padding: 0;
+  top: 2.5%;
+}
+.LibraryContainer .LibraryEdifice {
+  display: block;
+  margin: 50px 30%;
+  max-width: 40%;
+}
+.LibraryContainer .InfoContainer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -o-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.LibraryContainer .InfoContainer .Menu {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -o-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  height: 285px;
+  width: 35%;
+  margin: 0 0 2% 2%;
+}
+.LibraryContainer .InfoContainer .Menu .Title {
+  color: #0974b7;
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  padding: 0 20px;
+}
+.LibraryContainer .InfoContainer .Menu .NavLibrary {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -o-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.LibraryContainer .InfoContainer .Menu .NavLibrary .UlLibrary {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -o-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.LibraryContainer .InfoContainer .Menu .NavLibrary .UlLibrary .ItemLibrary {
+  height: 30px;
+  text-align: left;
+  width: 90%;
+}
+.LibraryContainer .InfoContainer .Menu .NavLibrary .UlLibrary .ItemLibrary:hover {
+  border: none;
+  font-weight: bold;
+}
+.LibraryContainer .InfoContainer .Menu .NavLibrary .UlLibrary .ItemLibrary a {
+  text-decoration: none;
+  color: #0974b7;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -o-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+}
+.LibraryContainer .InfoContainer .Content {
+  min-height: 280px;
+  padding-left: 20px;
+  width: 52%;
+  border-left: 1px solid #0974b7;
+  margin: 0 0 2% 2%;
+}

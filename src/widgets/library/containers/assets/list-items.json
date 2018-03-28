@@ -1,0 +1,25 @@
+{
+  "title": "Contenido Mínimo de <br/> la información",
+  "list": [
+    {
+      "id": "Library-1",
+      "letter": "A",
+      "title": "Finalidad"
+    },
+    {
+      "id": "Library-2",
+      "letter": "B",
+      "title": "Requisitos"
+    },
+    {
+      "id": "Library-3",
+      "letter": "C",
+      "title": "Difusión"
+    },
+    {
+      "id": "Library-4",
+      "letter": "D",
+      "title": "Contenido mínimo"
+    }
+  ]
+}
