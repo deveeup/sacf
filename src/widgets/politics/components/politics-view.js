@@ -6,6 +6,7 @@ import Content from './content'
 function PoliticsView (props){
   const menu = props.ListItems.list
   const title = props.ListItems.title
+  const FontBold = {fontWeight: 'bold'}
   return(
     <div className="PoliticsContainer">
       <img className="PoliticsEdifice" src={props.PoliticsEdifice}/>
@@ -16,13 +17,28 @@ function PoliticsView (props){
             <ul className="UlPolitics">
             {
               menu.map((item) => {
-                return(
+                return item.id == props.ContentPolitics ?
+
                   <li className="ItemPolitics" key={item.id}>
-                    <a href="#" onClick={props.ClickMenuPolitics}>
+                    <a
+                      href="#" 
+                      id={item.id}
+                      onClick={props.ClickMenuPolitics}
+                      style={FontBold}
+                    >
                       {item.letter}. {item.title}
                     </a>
                   </li>
-                )
+                  :
+                  <li className="ItemPolitics" key={item.id}>
+                    <a
+                      id={item.id}
+                      href="#" 
+                      onClick={props.ClickMenuPolitics}
+                    >
+                      {item.letter}. {item.title}
+                    </a>
+                  </li>
               })
             }
             </ul>

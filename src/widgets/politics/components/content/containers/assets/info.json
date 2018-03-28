@@ -1,7 +1,7 @@
 {
   "A": {
     "id": "A",
-    "title": "Debida Diligencia",
+    "title": "Debida <br/> Diligencia",
     "text": "Es el <b>ofrecimiento</b> de productos o la prestación de servicios con calidad, así como el <b>suministro</b> de información y/o atención debida y respetuosa.",
     "image": "./src/widgets/politics/components/content/containers/assets/A-image.png"
   },

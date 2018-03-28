@@ -14,9 +14,9 @@ function PoliticsView1 (props) {
       <div className="Left">
         <div className="TitleContainer">
           <h2 className="Letter">{id}.</h2>
-          <h3 className="Title">{title}</h3>
+          <h3 className="Title">{Parse(title)}</h3>
         </div>
-        <p className="Text">{text}</p>
+        <p className="Text">{Parse(text)}</p>
       </div>
       <figure className="Right">
         <img src={image} alt={title}/>
