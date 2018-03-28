@@ -5,25 +5,22 @@ import './Politics-1.styl'
 const Parse = require('html-react-parser')
 
 function PoliticsView1 (props) {
-  // const item = props.InfoConcepts.item
-  // const callback = props.InfoConcepts.callback
+  const id = props.Info.id
+  const image = props.Info.image
+  const text = props.Info.text
+  const title = props.Info.title
   return(
     <div className="Politics-1">
-      Funciona?
-      {/*<div className="ItemsContainer">
-        {
-          item.map((item) => {
-            return(
-              <div className="ItemContainer" key={item.id}>
-                <figure className="ImageContainer">
-                  <img src={item.image} />
-                </figure>
-                <h3 className="Title">{ Parse(item.title) }</h3>
-              </div>
-            )
-          })
-        }
-      </div>*/}
+      <div className="Left">
+        <div className="TitleContainer">
+          <h2 className="Letter">{id}.</h2>
+          <h3 className="Title">{title}</h3>
+        </div>
+        <p className="Text">{text}</p>
+      </div>
+      <figure className="Right">
+        <img src={image} alt={title}/>
+      </figure>
     </div>
   )
 }

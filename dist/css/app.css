@@ -1773,7 +1773,7 @@
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   height: 400px;
-  width: 40%;
+  width: 35%;
   margin: 0 0 2% 2%;
 }
 .PoliticsContainer .InfoContainer .Menu .Title {
@@ -1845,7 +1845,7 @@
 .PoliticsContainer .InfoContainer .Menu .NavPolitics .UlPolitics .ItemPolitics {
   height: 30px;
   text-align: left;
-  width: 90%;
+  width: 95%;
 }
 .PoliticsContainer .InfoContainer .Menu .NavPolitics .UlPolitics .ItemPolitics:hover {
   border: none;
@@ -1882,7 +1882,14 @@
   font-size: 16px;
   padding: 10px;
 }
-.School-1 .ItemsContainer {
+.PoliticsContainer .InfoContainer .Content {
+  min-height: 400px;
+  padding-left: 20px;
+  width: 65%;
+  border-left: 1px solid #0974b7;
+  margin: 0 0 2% 2%;
+}
+.Politics-1 {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -1913,98 +1920,5 @@
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-}
-.School-1 .ItemsContainer .ItemContainer {
-  width: 33%;
-}
-.School-1 .ItemsContainer .ItemContainer .ImageContainer {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -o-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  -o-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -o-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  height: 70px;
-}
-.School-1 .ItemsContainer .ItemContainer .ImageContainer img {
-  margin: 0 25%;
-  width: 50%;
-}
-.School-1 .ItemsContainer .ItemContainer .Title {
-  color: #606060;
-  font-weight: normal;
-  font-size: 16px;
-  text-align: center;
-}
-.School-1 .Callback {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -o-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -o-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -o-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  width: 100%;
-}
-.School-1 .Callback .Text {
-  color: #606060;
-  width: 100%;
-  font-weight: normal;
-  font-size: 16px;
-  text-align: center;
-}
-.School-1 .Callback .Button {
-  text-decoration: none;
-  color: #fff;
-  background-color: #f7ab2d;
-  border: none;
-  border-radius: 7px;
-  font-weight: bold;
-  text-align: center;
-  width: 10%;
-  margin: 0 auto;
-  padding: 5px 50px;
-  will-change: transform;
-}
-.School-1 .Callback .Button:active {
-  -webkit-transform: scale(0.9);
-  -moz-transform: scale(0.9);
-  -o-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
+  border: 1px solid #000;
 }
