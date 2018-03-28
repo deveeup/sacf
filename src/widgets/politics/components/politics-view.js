@@ -1,6 +1,7 @@
 
 import React from 'react'
 import './politics.styl'
+import Content from './content'
 
 function PoliticsView (props){
   const menu = props.ListItems.list
@@ -28,7 +29,7 @@ function PoliticsView (props){
           </nav>
         </div>
         <div className="Content">
-          asd
+          <Content ContentPolitics={props.ContentPolitics}/>
         </div>
       </div>
     </div>

@@ -1,0 +1,41 @@
+@import '../../../../../_base/lib/stylus/_init.styl'
+
+.School-1
+  .ItemsContainer
+    _dfr(center, flex-start)
+    _fw(wrap)
+    .ItemContainer
+      _w(33%)
+      .ImageContainer
+        _dfr(center, center)
+        _h(70px)
+        img 
+          _maR(0, 25%)
+          _w(50%)
+      .Title 
+        _c($gray)
+        _fwn()
+        _fz($fontNormal)
+        _ta(center)
+  .Callback
+    _dfc(center, center)
+    _fullW()
+    .Text
+      _c($gray)
+      _fullW()
+      _fwn()
+      _fz($fontNormal)
+      _ta(center)
+    .Button
+      _aReset(white)
+      _bc($yellow)
+      _bn()
+      _br(7px)
+      _fwb()
+      _ta(center)
+      _w(10%)
+      margin 0 auto
+      padding 5px 50px
+      will-change transform
+      &:active
+        transform scale(.9)

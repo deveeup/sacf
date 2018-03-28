@@ -21,6 +21,7 @@ class Politics extends Component {
         ClickMenuPolitics={this.ClickMenuPolitics}
         ListItems={ListItems}
         PoliticsEdifice={PoliticsEdifice}
+        ContentPolitics={this.state.ContentPolitics}
       />
     )
   }

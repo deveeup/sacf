@@ -1,0 +1,38 @@
+{
+  "A": {
+    "id": "A",
+    "title": "Debida Diligencia",
+    "text": "Es el <b>ofrecimiento</b> de productos o la prestación de servicios con calidad, así como el <b>suministro</b> de información y/o atención debida y respetuosa.",
+    "image": "./src/widgets/politics/components/content/containers/assets/A-image.png"
+  },
+  "B": {
+    "id": "B",
+    "title": "Libertad de Eleción",
+    "text": "Las entidades vigiladas y los consumidores financieros podrán escoger <b>libremente</b> a sus respectivas contrapartes.",
+    "image": "./src/widgets/politics/components/content/containers/assets/B-image.png"
+  },
+  "C": {
+    "id": "C",
+    "title": "Transparencia",
+    "text": "Ofrecer información transparente a los Consumidores Financieros para que <b>conozcan</b> todos sus derechos, obligaciones y los costos en las relaciones que se establecen desde que adquieren un producto o servicio con nuestro Banco.",
+    "image": "./src/widgets/politics/components/content/containers/assets/C-image.png"
+  },
+  "D": {
+    "id": "D",
+    "title": "Trámite de Quejas y reclamos",
+    "text": "Atender <b>eficientemente</b> quejas o reclamos interpuestos por los Consumidores Financieros, en los plazos y condiciones previstos en la regulación vigente; además de <b>diseñar</b> las acciones de mejora necesarias.",
+    "image": "./src/widgets/politics/components/content/containers/assets/D-image.png"
+  },
+  "E": {
+    "id": "E",
+    "title": "Manejo de Conflicto de Interés",
+    "text": "Deben ser manejados de una manera transparente e imparcial, velando siempre por el <b>interés</b> de nuestros clientes y usuarios.",
+    "image": "./src/widgets/politics/components/content/containers/assets/E-image.png"
+  },
+  "F": {
+    "id": "F",
+    "title": "Educación Financiera",
+    "text": "Procurar una adecuada <b>educación</b> de los Consumidores Financieros, respecto a los productos y servicios que ofrece nuestro Banco.",
+    "image": "./src/widgets/politics/components/content/containers/assets/F-image.png"
+  }
+}
