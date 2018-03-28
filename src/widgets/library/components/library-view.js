@@ -1,7 +1,7 @@
 
 import React from 'react'
 import './library.styl'
-// import ContainerContent from './content'
+import Content from './content'
 const Parse = require('html-react-parser')
 
 function LibraryView (props) {
@@ -46,7 +46,7 @@ function LibraryView (props) {
           </nav>
         </div>
         <div className="Content">
-          CONTENIDO!
+          <Content ContentLibrary={props.ContentLibrary}/>
         </div>
       </div>
     </div>
