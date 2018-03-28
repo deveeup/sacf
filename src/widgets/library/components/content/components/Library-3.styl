@@ -1,0 +1,41 @@
+@import '../../../../../_base/lib/stylus/_init.styl'
+
+.Library-3
+  _dfc(flex-start, center)
+  _fw(wrap)
+  _mh(285px)
+  _reset(0)
+  .Title
+    _c($lightBlue)
+    _fullW()
+    _fz($fontBig)
+  .Text
+    _c($gray)
+    _fullW()
+    _fz($fontNormal)
+    _ta(left)
+    _padd(0)
+    margin 0 0 20px 0
+  .ItemContainer
+    _dfc(flex-start, flex-start)
+    _fullW()
+    _reset(0)
+    .Item
+      _dfr(flex-start, center)
+      _fullW()
+      _reset(0)
+      margin-bottom 10px
+      .ImageContainer
+        _reset(0)
+        _w(15%)
+        img
+          _reset(0)
+          _w(87%)
+          margin-right 10px
+      .Text
+        _c($gray)
+        _fullH()
+        _fz($fontNormal)
+        _reset(0)
+        _ta(left)
+        _w(80%)

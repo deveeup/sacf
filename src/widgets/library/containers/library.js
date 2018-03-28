@@ -6,7 +6,7 @@ import ListItems from './assets/list-items.json'
 
 class Library extends Component {
   state = {
-    ContentLibrary: 'Library-2',
+    ContentLibrary: 'Library-3',
   }
 
   ClickMenuLibrary = (e) => {

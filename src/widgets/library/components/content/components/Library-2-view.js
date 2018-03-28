@@ -16,7 +16,7 @@ function LibraryView2 (props) {
         {
           item.map((item) => {
             return(
-              <div className="Item">
+              <div className="Item" key={item.id}>
                 <figure className="ImageContainer">
                   <img src={item.image}/>
                 </figure>

@@ -27,17 +27,48 @@
     "title": "A. Finalidad",
     "item": [
       {
+        "id": "1",
         "image": "./src/widgets/library/components/content/containers/assets/A-image-1.png",
         "text": "Dotar de herramientas y elementos que aporten en la toma de decisiones."
       },
       {
+        "id": "2",
         "image": "./src/widgets/library/components/content/containers/assets/A-image-2.png",
         "text": "Facilitar la comparación de las opciones ofrecidas en el mercado."
       },
       {
+        "id": "3",
         "image": "./src/widgets/library/components/content/containers/assets/A-image-3.png",
         "text": "Velar por el conocimiento de los derechos y obligaciones."
       }
     ] 
+  },
+  "B": {
+    "title": "B. Requisitos",
+    "text": "La información debe ser veraz, suficiente y corresponder a lo ofrecido o publicitado.",
+    "item": [
+      {
+        "id": "1",
+        "image": "./src/widgets/library/components/content/containers/assets/B-image-1.png",
+        "text": "Clara y comprensible."
+      },
+      {
+        "id": "2",
+        "image": "./src/widgets/library/components/content/containers/assets/B-image-2.png",
+        "text": "Divulgada o suministrada oportunamente."
+      },
+      {
+        "id": "3",
+        "image": "./src/widgets/library/components/content/containers/assets/B-image-3.png",
+        "text": "Entregada o disponible como mínimo en web y oficina."
+      }
+    ]
+  },
+  "C": {
+    "title": "C. Difusión",
+    "textOne": "La información debe ser divulgada a través de <b>mecanismos documentados</b> que cumplan con los requisitos y concuerden con el contenido de los contratos.",
+    "subtitle": "Difusión Web",
+    "textTwo": "Publicación de un vínculo especial en la web con el nombre de <b>\“información sobre productos y servicios\”,<b/> información que debe ser publicada individualmente sin generar confusión con otro producto o servicio.",
+    "image": "./src/widgets/library/components/content/containers/assets/C-image.png"
   }
 }
