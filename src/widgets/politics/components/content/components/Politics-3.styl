@@ -1,0 +1,29 @@
+@import '../../../../../_base/lib/stylus/_init.styl'
+
+.Politics-3
+  _dfr(center, center)
+  _fw(wrap)
+  _h(285px)
+  _reset(0)
+  .Left, .Right
+    _w(49%)
+    _reset(0)
+    img
+      _w(70%)
+      margin 0 15%
+  .Left 
+    .TitleContainer
+      _c($lightBlue)
+      _dfr(center, center)
+      _fullW()
+      .Letter
+        _fz(3em)
+        _reset(0)
+        _w(20%)
+      .Title
+        _reset(0)
+        _w(80%)
+    .Text
+      _c($gray)
+      border-left 5px solid $yellow
+      padding 0 8px
