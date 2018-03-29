@@ -1,0 +1,81 @@
+@import '../../../../../_base/lib/stylus/_init.styl'
+
+.Court-1
+  _dfc(center, center)
+  _fw(wrap)
+  _mh(295px)
+  _reset(0)
+  .Title
+    _c($lightBlue)
+    _fullW()
+    _fz($fontBig)
+    _reset(0)
+    _ta(left)
+  .InfoContainer
+    _br(5px)
+    _dfc(center, center)
+    _fullW()
+    border 2px solid $yellow
+    margin 10px 0
+    .Top
+      _dfr(center, center)
+      _fullW()
+      _h(165px)
+      _reset(0)
+      margin-top 15px
+      .Image
+        _reset(0)
+        _w(50%)
+        margin-top 20px
+        img 
+          _w(40%)
+          margin 0 30%
+        .TitleDark, .TitleLight
+          _fullW()
+          _fz($fontMedium)
+          _reset(0)
+          _ta(center)
+          margin-top 10px
+        .TitleDark
+          _c($darkBlue)
+        .TitleLight
+          _c($lightBlue)
+        .Name
+          _(transparent)
+          _c($gray)
+          _fullW()
+          _fz(14px)
+          _reset(0)
+          _ta(center)
+          margin-top 7px
+    .Bottom
+      _fullW()
+      _h(250px)
+      _reset(0)
+      .OrderList
+        _lsn()
+        padding 0 30px
+        li
+          _dfr(flex-start, center)
+          padding 3px 0
+          span
+            _c($gray)
+            _fwb()
+            _fz(14px)
+            margin 0 7px
+          p
+            _c($gray)
+            _fz(14px)
+          &:last-child
+            _dfc(flex-start, flex-start)
+            .LastChild
+              _dfr(center, flex-start)
+              _fullW()
+              _padd(0)
+              margin-top 7px
+              span
+                _w(100%)
+                display block
+            p
+              margin-top 5px
+              padding-left 25px

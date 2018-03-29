@@ -8,13 +8,13 @@ function LibraryView5 (props) {
   const item = props.Info.item
   const title = props.Info.title
   return(
-    <div className="Library-5">
+    <div className="Library-5" >
       <h2 className="Title">{title}</h2>
       <div className="ItemContainer">
         {
           item.map((item) => {
             return(
-              <div className="Item">
+              <div className="Item" key={item.id}>
                 <div className="Left">
                   <img src={item.image} />
                 </div>
