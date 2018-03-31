@@ -10,5 +10,23 @@
     "fax": "3324642 <b>Celular:</b> 3183730077",
     "mail": "defensoriaconsumidorfinanciero@bancodebogota.com.co",
     "icon": "./src/widgets/court/components/content/containers/assets/who-itemBefore.png"
+  },
+  "when": {
+    "title": "¿Cuáles son sus funciones?",
+    "item": [
+        {
+            "text": "Conocer y resolver las quejas que le presenten los Consumidores Financieros."
+        },
+        {
+            "text": "Actuar como conciliador"
+        },
+        {
+            "text": "Ser vocero de los Consumidores Financieros."
+        }
+    ],
+    "titleTwo": "Alcance de los pronunciamientos del Defensor del Consumidor Financiero",
+    "icon": "./src/widgets/court/components/content/containers/assets/who-itemBefore.png",
+    "afterItem": "Las decisiones del DCF no son obligatorias o vinculantes para las partes.",
+    "image": "./src/widgets/court/components/content/containers/assets/when-image.png"
   }
 }

@@ -6,7 +6,7 @@ import ListItems from './assets/list-items.json'
 
 class Court extends Component {
   state = {
-    ContentCourt: 'Court-1',
+    ContentCourt: 'Court-2',
   }
 
   ClickMenuCourt = (e) => {
