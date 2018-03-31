@@ -2,6 +2,7 @@
 import React from 'react'
 import Court1 from './content/containers/Court-1'
 import Court2 from './content/containers/Court-2'
+import Court3 from './content/containers/Court-3'
 import Info from './content/containers/assets/info.json'
 
 function ContentCourt(props){
@@ -14,6 +15,11 @@ function ContentCourt(props){
     case 'Court-2':
       return(
         <Court2 Info={Info.when}/>
+      )
+    break
+    case 'Court-3':
+      return(
+        <Court3 Info={Info.how}/>
       )
     break
   }

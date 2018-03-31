@@ -28,5 +28,10 @@
     "icon": "./src/widgets/court/components/content/containers/assets/who-itemBefore.png",
     "afterItem": "Las decisiones del DCF no son obligatorias o vinculantes para las partes.",
     "image": "./src/widgets/court/components/content/containers/assets/when-image.png"
+  },
+  "how": {
+    "title": "¿Cómo se presenta la solicitud o queja ante el Defensor?",
+    "text": "El Consumidor Financiero deberá presentar su queja o reclamo ante el Defensor mediante un <b>documento</b> en el cual consigne sus datos personales y la información de contacto, <b>descripción</b> de los hechos y las pretensiones concretas de su queja o reclamo, la cual podrá ser remitida directamente al Defensor (Correo electrónico) o podrá ser presentada en sus oficinas o en las oficinas de la entidad bancaria en todo el país.",
+    "image": "./src/widgets/court/components/content/containers/assets/how-image.png"
   }
 }
