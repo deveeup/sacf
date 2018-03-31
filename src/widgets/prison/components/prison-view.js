@@ -1,6 +1,7 @@
 
 import React from 'react'
 import './prison.styl'
+import Content from './content'
 const Parse = require('html-react-parser')
 
 function PrisonView (props){
@@ -45,7 +46,7 @@ function PrisonView (props){
           </nav>
         </div>
         <div className="Content">
-          {/*<Content ContentPrison={props.ContentPrison}/>*/}
+          <Content ContentPrison={props.ContentPrison}/>
         </div>
       </div>
     </div>

@@ -1,28 +1,16 @@
 
 import React from 'react'
-import Court1 from './content/containers/Court-1'
-import Court2 from './content/containers/Court-2'
-import Court3 from './content/containers/Court-3'
-import Info from './content/containers/assets/info.json'
+import Prison1 from './content/containers/Prison-1'
+// import Info from './content/containers/assets/info.json'
 
-function ContentCourt(props){
-  switch(props.ContentCourt){
-    case 'Court-1':
+function ContentPrison(props){
+  switch(props.ContentPrison){
+    case 'Prison-1':
       return(
-        <Court1 Info={Info.who}/>
-      )
-    break
-    case 'Court-2':
-      return(
-        <Court2 Info={Info.when}/>
-      )
-    break
-    case 'Court-3':
-      return(
-        <Court3 Info={Info.how}/>
+        <Prison1/>
       )
     break
   }
 }
 
-export default ContentCourt
+export default ContentPrison
