@@ -1,0 +1,29 @@
+{
+  "list": [
+    {
+      "id": "Prison-1",
+      "letter": "",
+      "title": "Cláusulas y Prácticas Abusivas"
+    },
+    {
+      "id": "Prison-A",
+      "letter": "A.",
+      "title": "Aceptación de productos y servicios"
+    },
+    {
+      "id": "Prison-B",
+      "letter": "B.",
+      "title": "Diligenciamiento de Formatos"
+    },
+    {
+      "id": "Prison-C",
+      "letter": "C.",
+      "title": "Condicionamiento al Consumidor Financiero"
+    },
+    {
+      "id": "Prison-D",
+      "letter": "D.",
+      "title": "Otras Prácticas Abusivas"
+    }
+  ]
+}

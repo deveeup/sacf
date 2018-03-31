@@ -1,0 +1,50 @@
+@import '../../../_base/lib/stylus/_init.styl'
+
+.PrisonContainer
+  _fllW()
+  _h(95%)
+  _l(2.5%)
+  _reset(0)
+  _t(2.5%)
+  .PrisonEdifice
+    _d(block)
+    _mr(50px, 15%)
+    _mw(70%)
+  .InfoContainer
+    _dfr(flex-start, flex-start)
+    _fullW()
+    .Menu
+      _bc(white)
+      _dfc(flex-start, flex-start)
+      _h(285px)
+      _w(35%)
+      margin 0 0 2% 2% 
+      .NavPrison
+        _dfc(flex-start, flex-start)
+        _fullW()
+        _h(100%)
+        _reset(0)
+        _ta(left)
+        .UlPrison
+          _dfc(flex-start, flex-start)
+          _fullW()
+          _reset(0)
+          .ItemPrison
+            _h(30px)
+            _ta(left)
+            _w(90%)
+            &:hover 
+              _bn()
+              _fwb()
+            a 
+              _aReset($lightBlue)
+              _dfr(flex-start, flex-start)
+              _fullW()
+              _fz($fontNormal)
+              _padd(10px)
+    .Content 
+      _mh(280px)
+      _pLeft(20px)
+      _w(52%)
+      border-left 1px solid $lightBlue
+      margin 0 0 2% 2% 
