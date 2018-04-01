@@ -99,5 +99,63 @@
 				}
 			]
 		}
+	},
+	"C": {
+		"letter": "C",
+		"title": "Condicionamiento al <br/> Consumidor Financiero",
+		"ListLeft": {
+			"title": "Prácticas Abusivas",
+			"image": "./src/widgets/prison/components/content/containers/assets/C-Left-image.jpg",
+			"icon": "./src/widgets/prison/components/content/containers/assets/iconRed.jpg",
+			"items": [
+				{
+					"id": "1",
+					"text": "El condicionamiento al Consumidor Financiero por parte de la entidad vigilada para que acceda a la adquisición de uno o más productos o servicios que presta directamente o por medio de otras instituciones vigiladas a través de su red de oficinas, o realice inversiones o similares, para el otorgamiento de otro u otros de sus productos y servicios, y que no son necesarios para su natural prestación."
+				},
+				{
+					"id": "2",
+					"text": "Imponer, directa o indirectamente, al consumidor financiero la designación de un notario específico que dará fe pública sobre el servicio proveído, el crédito que se le otorgue o las garantías correspondientes."
+				},
+				{
+					"id": "3",
+					"text": "Solicitar documentos innecesarios para el pago anticipado total o parcial de las obligaciones, de conformidad con los límites establecidos en la ley para el efecto."
+				},
+				{
+					"id": "4",
+					"text": "Limitar el derecho de los Consumidores Financieros a dar por terminado los contratos, salvo que se trate de contratos irrevocables o por circunstancias determinadas en la ley."
+				},
+				{
+					"id": "5",
+					"text": "Restringir o limitar el derecho del Consumidor Financiero de interponer quejas o reclamos por un solo canal, evitar recibir quejas en las oficinas o por cualquier otro medio."
+				}
+			]
+		},
+		"ListRight": {
+			"title": "Mejores prácticas",
+			"image": "./src/widgets/prison/components/content/containers/assets/C-Right-image.jpg",
+			"icon": "./src/widgets/prison/components/content/containers/assets/iconYellow.jpg",
+			"items": [
+				{
+					"id": "1",
+					"text": "Ofrece los productos de acuerdo a la necesidad presentada por el cliente."
+				},
+				{
+					"id": "2",
+					"text": "Indícale al cliente que puede hacer trámites en la notaria de su elección, pero si no cuenta con una puedes sugerirle la más cercana."
+				},
+				{
+					"id": "3",
+					"text": "No solicites documentos adicionales a los ya establecidos por procedimiento en los eventos para pagos anticipados, totales o parciales."
+				},
+				{
+					"id": "4",
+					"text": "No obstaculices la cancelación de los contratos por el cliente, recuerda que en el Banco no existen contratos irrevocables."
+				},
+				{
+					"id": "5",
+					"text": "Solicita la firma de los contratos y los documentos de vinculación después de tener la aprobación del producto en firme."
+				}
+			]
+		}
 	}
 }
