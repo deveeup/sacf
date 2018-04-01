@@ -6,7 +6,7 @@ import ListItems from './assets/list-items.json'
 
 class Prison extends Component {
 	state = {
-		ContentPrison: 'Prison-1'
+		ContentPrison: 'Prison-A'
 	}
 
 	ClickMenuPrison = (e) => {

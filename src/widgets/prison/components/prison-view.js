@@ -5,11 +5,9 @@ import Content from './content'
 const Parse = require('html-react-parser')
 
 function PrisonView (props){
-	console.log(props.ListItems)
 	const image = props.PrisonEdifice
 	const menu = props.ListItems.list
   const FontBold = {fontWeight: 'bold'}
-
   return(
     <div className="PrisonContainer">
     	<img src={image} className="PrisonEdifice" />

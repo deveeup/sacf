@@ -1,0 +1,57 @@
+{
+	"clausule": {
+		"image": "./src/widgets/prison/components/content/containers/assets/clausule-image.jpg",
+		"title": "Cláusulas y Prácticas Abusivas",
+		"text": "Algunos ejemplos de prácticas que se consideran abusivas y que pueden llegar a afectar el equilibrio del contrato o dan lugar a un abuso de posición dominante contractual, son:"
+	},
+	"A": {
+		"letter": "A",
+		"title": "Aceptación de <br/> productos y servicios",
+		"ListLeft": {
+			"title": "Prácticas Abusivas",
+			"image": "./src/widgets/prison/components/content/containers/assets/A-Left-image.jpg",
+			"icon": "./src/widgets/prison/components/content/containers/assets/A-Left-iconBefore.jpg",
+			"items": [
+				{
+					"id": "1",
+					"text": "Conducir a los consumidores financieros a declarar que conocen y aceptan los reglamentos de determinados productos o servicios, sin haberlos entregado o puesto a su disposición previamente."
+				},
+				{
+					"id": "2",
+					"text": "Cobrar al consumidor financiero por servicios y productos, sin que este haya dado una autorización o consentimiento previo y expreso."
+				},
+				{
+					"id": "3",
+					"text": "Iniciar un servicio o un producto sin solicitud o autorización previa y expresa del consumidor financiero."
+				},
+				{
+					"id": "4",
+					"text": "Las que establecen el carácter de vinculante de cualquier documento en el que se mencionen rangos de tasa o precios por concepto de posibles obligaciones derivadas de cualquier contrato financiero, sin que conste allí el pleno conocimiento y aceptación por parte del consumidor financiero."
+				}
+			]
+		},
+		"ListRight": {
+			"title": "Mejores prácticas",
+			"image": "./src/widgets/prison/components/content/containers/assets/A-Right-image.jpg",
+			"icon": "./src/widgets/prison/components/content/containers/assets/A-Right-iconBefore.jpg",
+			"items": [
+				{
+					"id": "1",
+					"text": "Informa al cliente que en cualquier momento podrá consultar los contratos y/o reglamentos de uso de sus productos y servicios a través de <b>www.bancodebogota.com</b>"
+				},
+				{
+					"id": "2",
+					"text": "Informa claramente al cliente sobre las condiciones del producto que va a adquirir, incluyendo los costos y las tarifas asociadas al mismo."
+				},
+				{
+					"id": "3",
+					"text": "Informa al cliente la proximidad de la renovación de su producto para obtener su aprobación."
+				},
+				{
+					"id": "4",
+					"text": "Aclara a los clientes que, hasta no vincularse al Banco de manera formal, no tendrán ninguna obligación económica con nosotros."
+				}
+			]
+		}
+	}
+}
