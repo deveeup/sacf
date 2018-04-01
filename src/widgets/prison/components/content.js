@@ -4,6 +4,7 @@ import Prison1 from './content/containers/Prison-1'
 import PrisonA from './content/containers/Prison-A'
 import PrisonB from './content/containers/Prison-B'
 import PrisonC from './content/containers/Prison-C'
+import PrisonD from './content/containers/Prison-D'
 import Info from './content/containers/assets/info.json'
 
 function ContentPrison(props){
@@ -26,6 +27,11 @@ function ContentPrison(props){
     case 'Prison-C':
       return(
         <PrisonC Info={Info.C}/>
+      )
+    break
+    case 'Prison-D':
+      return(
+        <PrisonC Info={Info.D}/>
       )
     break
   }

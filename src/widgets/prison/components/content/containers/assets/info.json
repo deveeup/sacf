@@ -157,5 +157,47 @@
 				}
 			]
 		}
+	},
+	"D": {
+		"letter": "D",
+		"title": "Otras Prácticas <br/> Abusivas",
+		"ListLeft": {
+			"title": "Prácticas Abusivas",
+			"image": "./src/widgets/prison/components/content/containers/assets/D-Left-image.jpg",
+			"icon": "./src/widgets/prison/components/content/containers/assets/iconRed.jpg",
+			"items": [
+				{
+					"id": "1",
+					"text": "Inducir al Consumidor Financiero en la adquisición de un crédito de vivienda para que contrate más productos con la entidad vigilada como requisito para concederle el beneficio de cobertura de la tasa de interés para vivienda, no obstante que dicho beneficio es asumido por el Estado."
+				},
+				{
+					"id": "2",
+					"text": "Vincular a los Consumidores Financieros a productos respecto de los cuales no son destinatarios."
+				},
+				{
+					"id": "3",
+					"text": "No informar al consumidor financiero las razones objetivas por las cuales se les niega la aprobación de un crédito."
+				}
+			]
+		},
+		"ListRight": {
+			"title": "Otras Mejores prácticas",
+			"image": "./src/widgets/prison/components/content/containers/assets/D-Left-image.jpg",
+			"icon": "./src/widgets/prison/components/content/containers/assets/iconYellow.jpg",
+			"items": [
+				{
+					"id": "1",
+					"text": "Presenta nuestro portafolio de beneficios adicionales junto con los productos del Banco para que el cliente los tenga en cuenta al requerirlos."
+				},
+				{
+					"id": "2",
+					"text": "Recibe al cliente con amabilidad y atiende sus solicitudes."
+				},
+				{
+					"id": "3",
+					"text": "El comercial debe llamar al cliente para informar el resultado del estudio del credito."
+				}
+			]
+		}
 	}
 }

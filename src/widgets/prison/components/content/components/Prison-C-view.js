@@ -35,8 +35,6 @@ function PrisonViewC (props) {
 					<h3 className="Title">{titlerRight}</h3>
 				</div>
 			</div>
-
-
 			<div className="TextContent">
 				<div className="LeftContent">
 					<ol>

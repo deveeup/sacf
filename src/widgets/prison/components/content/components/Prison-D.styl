@@ -1,0 +1,77 @@
+@import '../../../../../_base/lib/stylus/_init.styl'
+
+.Prison-D
+  _dfr(center, center)
+  _fullW()
+  _fw(wrap)
+  _mh(285px)
+  _reset(0)
+  .Top
+    _c($lightBlue)
+    _dfr(flex-start, center)
+    _fullW()
+    margin-bottom 15px
+    .Letter
+      _fwb()
+      _fz(3em)
+      _reset(0)
+      margin-right 10px
+    .Title
+      _c($lightBlue)
+      _fz($fontBig)
+      _padd(5px)
+      _reset(0)
+  .IconAndTitle
+    _dfr(center, center)
+    _fullW()
+    _reset(0)
+    .Left
+      _reset(0)
+      _w(50%)
+      .Title
+        _c($red)
+        _fullW()
+        _reset(0)
+        margin-top 7px
+    .Right
+      _reset(0)
+      _w(50%)
+      .Title
+        _c($yellow)
+        _fullW()
+        _reset(0)
+        margin-top 7px
+    .Left, .Right
+      figure 
+        _reset(0)
+        _fullW()
+        img 
+          _w(50%)
+          margin 0 0 0 15%
+          _h(160px)
+  .TextContent
+    _dfr(flex-start, flex-start)
+    _fullW() 
+    margin-top 20px    
+    .LeftContent, .RightContent
+      _w(49%)
+      _reset(0)
+      _fullH()
+      ol
+        _lsn()
+        _reset(0)
+        li
+          _reset(0)
+          _dfr(flex-start, flex-start)
+          margin-bottom 20px
+          img, p
+            _reset(0)
+          p 
+            margin-left 10px
+            _c($gray)
+            _fz($fontNormal)
+    .LeftContent
+      padding-right 12px
+      border-right 5px solid $darkBlue
+    .RightContent
+      padding-left 12px
