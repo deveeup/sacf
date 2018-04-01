@@ -329,8 +329,8 @@
 }
 .BdbContainer .BdbEdifice {
   display: block;
-  margin: 50px 30%;
-  max-width: 40%;
+  margin: 50px 15%;
+  max-width: 70%;
 }
 .BdbContainer .InfoContainer {
   display: -webkit-box;
@@ -1136,8 +1136,8 @@
 }
 .SchoolContainer .SchoolEdifice {
   display: block;
-  margin: 50px 30%;
-  max-width: 40%;
+  margin: 50px 15%;
+  max-width: 70%;
 }
 .SchoolContainer .InfoContainer {
   display: -webkit-box;
@@ -2650,8 +2650,8 @@
 }
 .PoliticsContainer .PoliticsEdifice {
   display: block;
-  margin: 50px 30%;
-  max-width: 40%;
+  margin: 50px 15%;
+  max-width: 70%;
 }
 .PoliticsContainer .InfoContainer {
   display: -webkit-box;
@@ -3374,8 +3374,8 @@
 }
 .LibraryContainer .LibraryEdifice {
   display: block;
-  margin: 50px 30%;
-  max-width: 40%;
+  margin: 50px 15%;
+  max-width: 70%;
 }
 .LibraryContainer .InfoContainer {
   display: -webkit-box;
