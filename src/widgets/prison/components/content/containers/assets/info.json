@@ -10,7 +10,7 @@
 		"ListLeft": {
 			"title": "Prácticas Abusivas",
 			"image": "./src/widgets/prison/components/content/containers/assets/A-Left-image.jpg",
-			"icon": "./src/widgets/prison/components/content/containers/assets/A-Left-iconBefore.jpg",
+			"icon": "./src/widgets/prison/components/content/containers/assets/iconRed.jpg",
 			"items": [
 				{
 					"id": "1",
@@ -33,7 +33,7 @@
 		"ListRight": {
 			"title": "Mejores prácticas",
 			"image": "./src/widgets/prison/components/content/containers/assets/A-Right-image.jpg",
-			"icon": "./src/widgets/prison/components/content/containers/assets/A-Right-iconBefore.jpg",
+			"icon": "./src/widgets/prison/components/content/containers/assets/iconYellow.jpg",
 			"items": [
 				{
 					"id": "1",
@@ -50,6 +50,52 @@
 				{
 					"id": "4",
 					"text": "Aclara a los clientes que, hasta no vincularse al Banco de manera formal, no tendrán ninguna obligación económica con nosotros."
+				}
+			]
+		}
+	},
+	"B": {
+		"letter": "B",
+		"title": "Diligenciamiento <br/> de Formatos",
+		"ListLeft": {
+			"title": "Prácticas Abusivas",
+			"image": "./src/widgets/prison/components/content/containers/assets/B-Left-image.jpg",
+			"icon": "./src/widgets/prison/components/content/containers/assets/iconRed.jpg",
+			"items": [
+				{
+					"id": "1",
+					"text": "Espacios en blanco en formatos, sin instrucciones claras para su diligenciamiento."
+				},
+				{
+					"id": "2",
+					"text": "Que los funcionarios de las entidades aseguradoras, intermediarios de seguros o instituciones financieras, diligencien las solicitudes de seguro o las declaraciones de asegurabilidad sin permitir que el consumidor financiero lo haga o las conozca."
+				}
+			]
+		},
+		"ListRight": {
+			"title": "Mejores prácticas",
+			"image": "./src/widgets/prison/components/content/containers/assets/B-Right-image.jpg",
+			"icon": "./src/widgets/prison/components/content/containers/assets/iconYellow.jpg",
+			"items": [
+				{
+					"id": "1",
+					"text": "El cliente es quien debe diligenciar los formatos de solicitud."
+				},
+				{
+					"id": "2",
+					"text": "Muéstrale al cliente la carta de instrucciones junto con el pagaré para que lo lea, conozca y firme."
+				},
+				{
+					"id": "3",
+					"text": "Apoya al cliente en la lectura y aclaración de inquietudes sobre la información de formatos y clausulados."
+				},
+				{
+					"id": "4",
+					"text": "Asegúrate de que el formato de solicitud de servicios financieros quede completamente diligenciado por el cliente y anula los espacios en blanco en presencia del mismo."
+				},
+				{
+					"id": "5",
+					"text": "Si el cliente tiene dudas sobre el significado de algunos términos y conceptos, explícale con palabras sencillas en qué consisten."
 				}
 			]
 		}
