@@ -1,21 +1,23 @@
 @import '../../_base/lib/stylus/_init.styl'
 
 .ModalContainer
-	_fullW()
-	_mh(968px)
-	_pa()
-	_t(164px)
+	_(transparent)
+	_w(calc(100% - 2px))
+	// _h(725px)
+	_pr()
+	_t(0)
 	_z(2)
+	_reset(0)
 	background-color rgba(#0974B7, .7)
 	transition 1s
 	.WindowsModal
 		_bc(white)
 		_br(25px)
 		_h(auto)
-		_maR(30px, 5%)
-		_padd(10px)
 		_pr()
 		_w(90%)
+		margin 25px 5% 
+		_(transparent)
 		.CloseButton
 			_bc(transparent)
 			_bn()

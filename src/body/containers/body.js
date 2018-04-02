@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react'
 import BodyView from '../components/body-view'
+import BodyContainer from '../components/body-container'
 import CityAnimate from '../components/assets/ciudad.gif'
 import CityStatic from '../components/assets/ciudad.jpg'
 import Modal from '../../modal/containers/modal'
@@ -8,7 +9,7 @@ import Modal from '../../modal/containers/modal'
 class Body extends Component {
 	render(){
 		return(
-			<div>
+			<BodyContainer>
 				<BodyView 
 					CityAnimate={CityAnimate} 
 					CityStatic={CityStatic} 
@@ -35,7 +36,7 @@ class Body extends Component {
 					ModalActive={this.props.ModalActive}
 					ModalContent={this.props.ModalContent}
 				/>
-			</div>
+			</BodyContainer>
 		)
 	}
 }
