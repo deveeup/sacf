@@ -23,6 +23,7 @@ class Court extends Component {
         CourtEdifice={CourtEdifice}
         ClickMenuCourt={this.ClickMenuCourt}
         ContentCourt={this.state.ContentCourt}
+        ModalActive={this.props.ModalActive}
       />
     )
   }

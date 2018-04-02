@@ -6,8 +6,15 @@ const Parse = require('html-react-parser')
 
 function CourtView1 (props) {
   const item = props.Info
+  const Visible = { display: 'block', opacity: 1 }
+  const Hidden = { display: 'none', opacity: 0 }
+  let ContentView = Visible
+  { props.ModalActive
+    ? ContentView = Visible 
+    : ContentView = Hidden 
+  }
   return(
-    <div className="Court-1">
+    <div className="Court-1" style={ContentView}>
       <h2 className="Title">{item.title}</h2>
       <div className="InfoContainer">
         <div className="Top">

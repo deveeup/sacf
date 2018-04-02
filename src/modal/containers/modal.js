@@ -79,7 +79,7 @@ class ModalContainer extends Component {
               ModalActive={this.props.ModalActive}
               ButtonCloseImage={ButtonCloseImage}
             >
-              <Court/>
+              <Court ModalActive={this.props.ModalActive}/>
             </ModalView>
           )
         break

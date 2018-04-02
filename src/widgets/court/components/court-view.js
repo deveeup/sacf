@@ -46,7 +46,10 @@ function CourtView (props) {
           </nav>
         </div>
         <div className="Content">
-          <Content ContentCourt={props.ContentCourt}/>
+          <Content 
+            ContentCourt={props.ContentCourt}
+            ModalActive={props.ModalActive}
+          />
         </div>
       </div>
     </div>

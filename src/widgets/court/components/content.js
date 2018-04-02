@@ -9,17 +9,17 @@ function ContentCourt(props){
   switch(props.ContentCourt){
     case 'Court-1':
       return(
-        <Court1 Info={Info.who}/>
+        <Court1 Info={Info.who} ModalActive={props.ModalActive}/>
       )
     break
     case 'Court-2':
       return(
-        <Court2 Info={Info.when}/>
+        <Court2 Info={Info.when} ModalActive={props.ModalActive}/>
       )
     break
     case 'Court-3':
       return(
-        <Court3 Info={Info.how}/>
+        <Court3 Info={Info.how} ModalActive={props.ModalActive}/>
       )
     break
   }

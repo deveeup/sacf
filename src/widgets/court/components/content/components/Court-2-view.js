@@ -11,8 +11,15 @@ function CourtView2 (props) {
   const item = props.Info.item
   const title = props.Info.title
   const titleTwo = props.Info.titleTwo
+  const Visible = { display: 'block', opacity: 1 }
+  const Hidden = { display: 'none', opacity: 0 }
+  let ContentView = Visible
+  { props.ModalActive
+    ? ContentView = Visible 
+    : ContentView = Hidden 
+  }
   return(
-    <div className="Court-2">
+    <div className="Court-2" style={ContentView}>
       <div className="Left">
         <h2 className="Title">{title}</h2>
         <ol className="OrderList"> 
