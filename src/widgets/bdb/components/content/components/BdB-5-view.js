@@ -5,8 +5,15 @@ const Parser = require('html-react-parser')
 
 function BdB5View(props){
   const item = props.Info.item
+  const Visible = { display: 'block', opacity: 1 }
+  const Hidden = { display: 'none', opacity: 0 }
+  let ContentView = Visible
+  { props.ModalActive
+    ? ContentView = Visible 
+    : ContentView = Hidden 
+  }
   return(
-    <div className="BdB-5">
+    <div className="BdB-5" style={ContentView}>
       <div className="TopContent">
         <figure className="TopContentLeft">
           <img src={props.Info.image}/>

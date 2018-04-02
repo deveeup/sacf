@@ -7,6 +7,7 @@ class BdB4 extends Component {
     return(
       <BdB4View
         Info={this.props.Info}
+        ModalActive={this.props.ModalActive}
       />
     )
   }

@@ -5,8 +5,15 @@ const Parser = require('html-react-parser')
 
 function BdB2View(props){
   const item = props.Info.item
+  const Visible = { display: 'block', opacity: 1 }
+  const Hidden = { display: 'none', opacity: 0 }
+  let ContentView = Visible
+  { props.ModalActive
+    ? ContentView = Visible 
+    : ContentView = Hidden 
+  }
   return(
-    <div className="BdB-2">
+    <div className="BdB-2" style={ContentView}>
       <h2>{props.Info.title}</h2>
       <div className="BdB-2-Content">
         {

@@ -4,8 +4,8 @@ import './BdB-1.styl'
 const Parser = require('html-react-parser')
 
 function BdB1View(props){
-  const Visible = { visibility: 'visible', opacity: 1 }
-  const Hidden = { visibility: 'hidden', opacity: 0 }
+  const Visible = { display: 'block', opacity: 1 }
+  const Hidden = { display: 'none', opacity: 0 }
   let ContentView = Visible
   { props.ModalActive
     ? ContentView = Visible 
