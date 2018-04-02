@@ -46,7 +46,7 @@ class ModalContainer extends Component {
               ModalActive={this.props.ModalActive}
               ButtonCloseImage={ButtonCloseImage}
             >
-              <Prison/>
+              <Prison ModalActive={this.props.ModalActive}/>
             </ModalView>
           )
         break

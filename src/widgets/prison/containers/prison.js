@@ -23,6 +23,7 @@ class Prison extends Component {
       	PrisonEdifice={PrisonEdifice}
       	ClickMenuPrison={this.ClickMenuPrison}
       	ContentPrison={this.state.ContentPrison}
+        ModalActive={this.props.ModalActive}
       />
     )
   }

@@ -44,7 +44,10 @@ function PrisonView (props){
           </nav>
         </div>
         <div className="Content">
-          <Content ContentPrison={props.ContentPrison}/>
+          <Content 
+            ContentPrison={props.ContentPrison}
+            ModalActive={props.ModalActive}
+          />
         </div>
       </div>
     </div>

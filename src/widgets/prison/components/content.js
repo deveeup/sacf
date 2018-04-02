@@ -11,27 +11,27 @@ function ContentPrison(props){
   switch(props.ContentPrison){
     case 'Prison-1':
       return(
-        <Prison1 Info={Info.clausule}/>
+        <Prison1 Info={Info.clausule} ModalActive={props.ModalActive}/>
       )
     break
     case 'Prison-A':
       return(
-        <PrisonA Info={Info.A}/>
+        <PrisonA Info={Info.A} ModalActive={props.ModalActive}/>
       )
     break
     case 'Prison-B':
       return(
-        <PrisonB Info={Info.B}/>
+        <PrisonB Info={Info.B} ModalActive={props.ModalActive}/>
       )
     break
     case 'Prison-C':
       return(
-        <PrisonC Info={Info.C}/>
+        <PrisonC Info={Info.C} ModalActive={props.ModalActive}/>
       )
     break
     case 'Prison-D':
       return(
-        <PrisonC Info={Info.D}/>
+        <PrisonC Info={Info.D} ModalActive={props.ModalActive}/>
       )
     break
   }

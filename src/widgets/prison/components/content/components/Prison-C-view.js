@@ -15,8 +15,15 @@ function PrisonViewC (props) {
 	const imageRight = props.Info.ListRight.image
 	const iconRed = props.Info.ListLeft.icon
 	const iconYellow= props.Info.ListRight.icon
+	const Visible = { display: 'flex', opacity: 1 }
+  const Hidden = { display: 'none', opacity: 0 }
+  let ContentView = Visible
+  { props.ModalActive
+    ? ContentView = Visible 
+    : ContentView = Hidden 
+  }
 	return(
-		<div className="Prison-C">
+		<div className="Prison-C" style={ContentView}>
 			<div className="Top">
 				<h2 className="Letter">{letter}.</h2>
 				<h3 className="Title">{Parse(title)}</h3>
