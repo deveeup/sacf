@@ -11,7 +11,7 @@ function ModalView(props){
 		: ModalViewConditional = Hidden 
 	}
 	return(
-		<div id="ModalContainer" className="ModalContainer" style={ModalViewConditional} onClick={props.CloseModal}>
+		<div id="ModalContainer" className="ModalContainer" style={ModalViewConditional} onClick={props.CloseModal} onKeyPress={props.handleKeyDown}>
 			<div className="WindowsModal" id="WindowsModal" style={ModalViewConditional}>
 				{props.children}
 				<button className="CloseButton" onClick={props.CloseModal} id="ButtonClose"></button>

@@ -1,6 +1,7 @@
 
 import React from 'react'
 import './footer.styl'
+const Parse = require('html-react-parser')
 
 function FooterView(props) {
 	return( 
@@ -15,10 +16,10 @@ function FooterView(props) {
 				</figure>
 				<div className="Right">
 					<div className="Title">
-						<img />
-						<p></p>
+						<img src={props.Phone}/>
+						<p>{props.TextContent.title}</p>
 					</div>
-					<p></p>
+					<p className="Text">{Parse(props.TextContent.text)}</p>
 				</div>
 			</div>
 		</footer>

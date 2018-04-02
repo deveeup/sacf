@@ -207,6 +207,31 @@ class App extends Component {
       })
     }
   }
+  componentWillMount() {
+    window.addEventListener('keydown', this.handleKeyDown);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('keydown', this.handleKeyDown);
+  }
+  handleKeyDown = (e) => {
+    if(e.keyCode == 27){
+      this.setState({
+        Bank: false,
+        Court: false,
+        Library: false,
+        Politics: false,
+        Prison: false,
+        School: false,
+        BankHover: false,
+        CourtHover: false,
+        LibraryHover: false,
+        PoliticsHover: false,
+        PrisonHover: false,
+        SchoolHover: false,
+        ModalActive: false,
+      })
+    }
+  }
 	render(){
 		return(
 			<AppView>
@@ -220,6 +245,7 @@ class App extends Component {
           MouseEnter={this.MouseEnter}
           MouseLeave={this.MouseLeave}
           CloseModal={this.CloseModal}
+          handleKeyDown={this.handleKeyDown}
           ModalActive={this.state.ModalActive}
           ModalContent={this.state.ModalContent}
           Bank={this.state.Bank}
