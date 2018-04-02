@@ -7,8 +7,16 @@ function PoliticsView (props){
   const menu = props.ListItems.list
   const title = props.ListItems.title
   const FontBold = {fontWeight: 'bold'}
+
+  const Visible = { display: 'block', opacity: 1 }
+  const Hidden = { display: 'none', opacity: 0}
+  let ContentView = Visible
+  { props.ModalActive
+    ? ContentView = Visible 
+    : ContentView = Hidden 
+  }
   return(
-    <div className="PoliticsContainer">
+    <div className="PoliticsContainer" style={ContentView}>
       <img className="PoliticsEdifice" src={props.PoliticsEdifice}/>
       <div className="InfoContainer">
         <div className="Menu">
@@ -44,7 +52,10 @@ function PoliticsView (props){
           </nav>
         </div>
         <div className="Content">
-          <Content ContentPolitics={props.ContentPolitics}/>
+          <Content 
+            ContentPolitics={props.ContentPolitics}
+            ModalActive={props.ModalActive}
+          />
         </div>
       </div>
     </div>

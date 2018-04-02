@@ -9,8 +9,15 @@ function PoliticsView6 (props) {
   const image = props.Info.image
   const text = props.Info.text
   const title = props.Info.title
+  const Visible = { display: 'flex', opacity: 1 }
+  const Hidden = { display: 'none', opacity: 0 }
+  let ContentView = Visible
+  { props.ModalActive
+    ? ContentView = Visible 
+    : ContentView = Hidden 
+  }
   return(
-    <div className="Politics-6">
+    <div className="Politics-6" style={ContentView}>
       <div className="Left">
         <div className="TitleContainer">
           <h2 className="Letter">{id}.</h2>

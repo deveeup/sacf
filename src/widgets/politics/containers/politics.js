@@ -22,6 +22,7 @@ class Politics extends Component {
         ListItems={ListItems}
         PoliticsEdifice={PoliticsEdifice}
         ContentPolitics={this.state.ContentPolitics}
+        ModalActive={this.props.ModalActive}
       />
     )
   }

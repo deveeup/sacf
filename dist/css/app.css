@@ -247,15 +247,11 @@
   background-color: #eb1b23;
   margin: 0;
   padding: 0;
-  margin: 0;
-  padding: 0;
   width: 27%;
   border: 2px solid #eb1b23;
 }
 .Footer .Linear .Yellow {
   background-color: #f7ab2d;
-  margin: 0;
-  padding: 0;
   margin: 0;
   padding: 0;
   width: 73%;
@@ -266,7 +262,18 @@
   padding: 0;
   background-color: #054380;
   width: 100%;
-  min-height: 200px;
+  height: 230px;
+}
+.Footer .Content .Left {
+  margin: 0;
+  padding: 0;
+  width: 20%;
+}
+.Footer .Content .Left img {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
 }
 .BodyView {
   margin: auto;

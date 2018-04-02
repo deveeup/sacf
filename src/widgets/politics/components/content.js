@@ -12,32 +12,50 @@ function ContentPolitics(props){
   switch(props.ContentPolitics){
     case 'Politics-1':
       return(
-        <Politics1 Info={Info.A}/>
+        <Politics1
+          Info={Info.A}
+          ModalActive={props.ModalActive}
+        />
       )
     break
     case 'Politics-2':
       return(
-        <Politics2 Info={Info.B}/>
+        <Politics2
+          Info={Info.B}
+          ModalActive={props.ModalActive}
+        />
       )
     break
     case 'Politics-3':
       return(
-        <Politics3 Info={Info.C}/>
+        <Politics3
+          Info={Info.C}
+          ModalActive={props.ModalActive}
+        />
       )
     break
     case 'Politics-4':
       return(
-        <Politics3 Info={Info.D}/>
+        <Politics3
+          Info={Info.D}
+          ModalActive={props.ModalActive}
+        />
       )
     break
     case 'Politics-5':
       return(
-        <Politics3 Info={Info.E}/>
+        <Politics3
+          Info={Info.E}
+          ModalActive={props.ModalActive}
+        />
       )
     break
     case 'Politics-6':
       return(
-        <Politics3 Info={Info.F}/>
+        <Politics3
+          Info={Info.F}
+          ModalActive={props.ModalActive}
+        />
       )
     break
   }

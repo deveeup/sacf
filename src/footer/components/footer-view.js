@@ -11,6 +11,7 @@ function FooterView(props) {
 			</div>
 			<div className="Content">
 				<figure className="Left">
+					<img src={props.Logo} />
 				</figure>
 				<div className="Right">
 					<div className="Title">

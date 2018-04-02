@@ -5,7 +5,6 @@ import './Court-3.styl'
 const Parse = require('html-react-parser')
 
 function CourtView3 (props) {
-  console.log(props.Info)
   const title = props.Info.title
   const text = props.Info.text
   const image = props.Info.image

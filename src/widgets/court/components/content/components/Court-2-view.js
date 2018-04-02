@@ -26,7 +26,7 @@ function CourtView2 (props) {
         {
           item.map((item) => {
             return(
-              <li className="Item">
+              <li className="Item" key={item.id}>
                 <img src={icon} />
                 <p>{item.text}</p>
               </li>

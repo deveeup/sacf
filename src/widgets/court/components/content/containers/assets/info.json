@@ -15,12 +15,15 @@
     "title": "¿Cuáles son sus funciones?",
     "item": [
         {
+            "id": "1",
             "text": "Conocer y resolver las quejas que le presenten los Consumidores Financieros."
         },
         {
+            "id": "2",
             "text": "Actuar como conciliador"
         },
         {
+            "id": "3",
             "text": "Ser vocero de los Consumidores Financieros."
         }
     ],
