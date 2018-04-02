@@ -395,7 +395,6 @@
   border-radius: 25px;
   height: auto;
   position: relative;
-  border: 1px solid #f00;
   width: 90%;
   margin: 25px 5%;
 }
@@ -649,7 +648,7 @@
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  width: 100%;
+  width: 95%;
   margin: 0;
   padding: 0;
 }
@@ -977,6 +976,8 @@
   -webkit-justify-content: center;
   justify-content: center;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .BdB-4 .InfoContainer .ItemsContainer {
   width: 100%;
@@ -1135,7 +1136,7 @@
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 100%;
+  width: 98%;
 }
 .BdB-5 .BottomContent .ItemContainer {
   border: 2px solid #f7ab2d;
@@ -1441,8 +1442,8 @@
   height: 70px;
 }
 .School-1 .ItemsContainer .ItemContainer .ImageContainer img {
-  margin: 0 25%;
-  width: 50%;
+  margin: 0 2.5%;
+  width: 95%;
 }
 .School-1 .ItemsContainer .ItemContainer .Title {
   color: #606060;
@@ -1573,8 +1574,8 @@
   height: 70px;
 }
 .School-2 .ItemsContainer .ItemContainer .ImageContainer img {
-  margin: 0 25%;
-  width: 50%;
+  margin: 0 2.5%;
+  width: 95%;
 }
 .School-2 .ItemsContainer .ItemContainer .Title {
   color: #606060;
@@ -4068,18 +4069,15 @@
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  width: 100%;
   min-height: 285px;
   margin: 0;
   padding: 0;
 }
 .Library-4 .Left {
-  width: 54%;
+  width: 50%;
+  margin: 0;
+  padding: 0;
 }
 .Library-4 .Left .Title {
   color: #0974b7;
@@ -4133,7 +4131,9 @@
 }
 .Library-4 .Right img {
   padding: 0;
-  width: 90%;
+  margin: 0;
+  padding: 0;
+  width: 80%;
   margin: 0 5%;
 }
 .Library-5 {

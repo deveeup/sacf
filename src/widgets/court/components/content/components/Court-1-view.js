@@ -6,7 +6,7 @@ const Parse = require('html-react-parser')
 
 function CourtView1 (props) {
   const item = props.Info
-  const Visible = { display: 'block', opacity: 1 }
+  const Visible = { display: 'flex', opacity: 1 }
   const Hidden = { display: 'none', opacity: 0 }
   let ContentView = Visible
   { props.ModalActive

@@ -22,6 +22,7 @@ class School extends Component {
         SchoolEdifice={SchoolEdifice}
         ClickMenuSchool={this.ClickMenuSchool}
         ContentSchool={this.state.ContentSchool}
+        ModalActive={this.props.ModalActive}
       />
     )
   }

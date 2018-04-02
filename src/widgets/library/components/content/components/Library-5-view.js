@@ -7,8 +7,15 @@ const Parse = require('html-react-parser')
 function LibraryView5 (props) {
   const item = props.Info.item
   const title = props.Info.title
+  const Visible = { display: 'flex', opacity: 1 }
+  const Hidden = { display: 'none', opacity: 0 }
+  let ContentView = Visible
+  { props.ModalActive
+    ? ContentView = Visible 
+    : ContentView = Hidden 
+  }
   return(
-    <div className="Library-5" >
+    <div className="Library-5" style={ContentView}>
       <h2 className="Title">{title}</h2>
       <div className="ItemContainer">
         {

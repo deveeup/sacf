@@ -7,9 +7,16 @@ const Parse = require('html-react-parser')
 function SchoolView1 (props) {
   const item = props.InfoConcepts.item
   const callback = props.InfoConcepts.callback
+  const Visible = { display: 'flex', opacity: 1 }
+  const Hidden = { display: 'none', opacity: 0 }
+  let ContentView = Visible
+  { props.ModalActive
+    ? ContentView = Visible 
+    : ContentView = Hidden 
+  }
   return(
     <div className="School-1">
-      <div className="ItemsContainer">
+      <div className="ItemsContainer" style={ContentView}>
         {
           item.map((item) => {
             return(

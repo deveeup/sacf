@@ -8,8 +8,15 @@ function SchoolView3 (props) {
   const title = props.InfoProgram.title
   const item = props.InfoProgram.item
   const text = props.InfoProgram.text
+  const Visible = { display: 'bolck', opacity: 1 }
+  const Hidden = { display: 'none', opacity: 0 }
+  let ContentView = Visible
+  { props.ModalActive
+    ? ContentView = Visible 
+    : ContentView = Hidden 
+  }
   return(
-    <div className="School-3">
+    <div className="School-3" style={ContentView}>
       <h2 className="Title">{Parse(title)}</h2>
       <div className="ItemsContainer">
         {

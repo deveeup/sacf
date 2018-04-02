@@ -11,27 +11,27 @@ function ContentLibrary(props){
   switch(props.ContentLibrary){
     case 'Library-1':
       return(
-        <Library1 Info={Info.content}/>
+        <Library1 Info={Info.content} ModalActive={props.ModalActive}/>
       )
     break
     case 'Library-2':
       return(
-        <Library2 Info={Info.A}/>
+        <Library2 Info={Info.A} ModalActive={props.ModalActive}/>
       )
     break
     case 'Library-3':
       return(
-        <Library3 Info={Info.B}/>
+        <Library3 Info={Info.B} ModalActive={props.ModalActive}/>
       )
     break
     case 'Library-4':
       return(
-        <Library4 Info={Info.C}/>
+        <Library4 Info={Info.C} ModalActive={props.ModalActive}/>
       )
     break
     case 'Library-5':
       return(
-        <Library5 Info={Info.D}/>
+        <Library5 Info={Info.D} ModalActive={props.ModalActive}/>
       )
     break
   }

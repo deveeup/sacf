@@ -8,6 +8,7 @@ class School1 extends Component {
     return(
       <School1View
         InfoConcepts={InfoConcepts.concepts}
+        ModalActive={this.props.ModalActive}
       />
     )
   }

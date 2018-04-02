@@ -45,7 +45,10 @@ function LibraryView (props) {
           </nav>
         </div>
         <div className="Content">
-          <Content ContentLibrary={props.ContentLibrary}/>
+          <Content 
+            ContentLibrary={props.ContentLibrary}
+            ModalActive={props.ModalActive}
+          />
         </div>
       </div>
     </div>

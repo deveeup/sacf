@@ -9,7 +9,7 @@ function CourtView3 (props) {
   const title = props.Info.title
   const text = props.Info.text
   const image = props.Info.image
-  const Visible = { display: 'block', opacity: 1 }
+  const Visible = { display: 'flex', opacity: 1 }
   const Hidden = { display: 'none', opacity: 0 }
   let ContentView = Visible
   { props.ModalActive

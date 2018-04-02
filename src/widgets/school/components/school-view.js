@@ -44,6 +44,7 @@ function SchoolView(props){
         <div className="Content">
           <ContainerContent
             ContentSchool={props.ContentSchool}
+            ModalActive={props.ModalActive}
           />
         </div>
       </div>

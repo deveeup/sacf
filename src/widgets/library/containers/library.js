@@ -23,6 +23,7 @@ class Library extends Component {
         LibraryEdifice={LibraryEdifice}
         ClickMenuLibrary={this.ClickMenuLibrary}
         ContentLibrary={this.state.ContentLibrary}
+        ModalActive={this.props.ModalActive}
       />
     )
   }

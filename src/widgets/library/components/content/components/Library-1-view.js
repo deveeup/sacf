@@ -10,8 +10,15 @@ function LibraryView1 (props) {
   const image = props.Info.image
   const subtitle = props.Info.subtitle
   const item = props.Info.item
+  const Visible = { display: 'flex', opacity: 1 }
+  const Hidden = { display: 'none', opacity: 0 }
+  let ContentView = Visible
+  { props.ModalActive
+    ? ContentView = Visible 
+    : ContentView = Hidden 
+  }
   return(
-    <div className="Library-1">
+    <div className="Library-1" style={ContentView}>
       <div className="Top">
         <div className="Left">
           <h2 className="Title">{Parse(title)}</h2>

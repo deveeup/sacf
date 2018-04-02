@@ -8,8 +8,15 @@ function LibraryView3 (props) {
   const title = props.Info.title
   const text = props.Info.text
   const item = props.Info.item
+  const Visible = { display: 'flex', opacity: 1 }
+  const Hidden = { display: 'none', opacity: 0 }
+  let ContentView = Visible
+  { props.ModalActive
+    ? ContentView = Visible 
+    : ContentView = Hidden 
+  }
   return(
-    <div className="Library-3">
+    <div className="Library-3" style={ContentView}>
       <h2 className="Title">
         {title}
       </h2>

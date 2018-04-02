@@ -11,7 +11,7 @@ function CourtView2 (props) {
   const item = props.Info.item
   const title = props.Info.title
   const titleTwo = props.Info.titleTwo
-  const Visible = { display: 'block', opacity: 1 }
+  const Visible = { display: 'flex', opacity: 1 }
   const Hidden = { display: 'none', opacity: 0 }
   let ContentView = Visible
   { props.ModalActive

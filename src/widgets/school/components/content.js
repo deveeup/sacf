@@ -8,17 +8,17 @@ function ContentSchool(props){
   switch(props.ContentSchool){
     case 'School-1':
       return(
-        <School1/>
+        <School1 ModalActive={props.ModalActive}/>
       )
     break
     case 'School-2':
       return(
-          <School2/>
+          <School2 ModalActive={props.ModalActive}/>
       )
     break
     case 'School-3':
       return(
-          <School3/>
+          <School3 ModalActive={props.ModalActive}/>
       )
     break
   }

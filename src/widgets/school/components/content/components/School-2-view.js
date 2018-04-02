@@ -9,8 +9,15 @@ function SchoolView2 (props) {
   const callback = props.InfoTools.callback
   const item = props.InfoTools.item
   const title = props.InfoTools.title
+  const Visible = { display: 'block', opacity: 1 }
+  const Hidden = { display: 'none', opacity: 0 }
+  let ContentView = Visible
+  { props.ModalActive
+    ? ContentView = Visible 
+    : ContentView = Hidden 
+  }
   return(
-    <div className="School-2">
+    <div className="School-2" style={ContentView}>
       <h2 className="Title">{Parse(title)}</h2>
       <div className="ItemsContainer">
         {
