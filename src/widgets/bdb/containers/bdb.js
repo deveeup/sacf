@@ -15,7 +15,6 @@ class Bdb extends Component {
       ContentBdB: e.target.id
     })
   }
-
   render(){
     return(
       <BdbView
@@ -23,6 +22,7 @@ class Bdb extends Component {
         ClickMenuBdB={this.ClickMenuBdB}
         ContentBdB={this.state.ContentBdB}
         ListItems={ListItems}
+        ModalActive={this.props.ModalActive}
       />
     )
   }

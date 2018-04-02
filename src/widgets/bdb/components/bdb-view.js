@@ -7,6 +7,7 @@ const Path = require('html-react-parser')
 function BdbView (props) {
   const menu = props.ListItems.list
   const FontBold = {fontWeight: 'bold'}
+
   return(
     <div className="BdbContainer">
       <img className="BdbEdifice" src={props.BdBEdifice} id="ModalImage"/>
@@ -45,6 +46,7 @@ function BdbView (props) {
         <div className="Content">
           <ContainerContent
             ContentBdB={props.ContentBdB}
+            ModalActive={props.ModalActive}
           />
         </div>
        </div>

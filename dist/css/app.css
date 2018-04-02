@@ -244,19 +244,21 @@
   justify-content: flex-start;
 }
 .Footer .Linear .Red {
+  background-color: #eb1b23;
+  margin: 0;
+  padding: 0;
   margin: 0;
   padding: 0;
   width: 27%;
-  margin: 0;
-  padding: 0;
   border: 2px solid #eb1b23;
 }
 .Footer .Linear .Yellow {
+  background-color: #f7ab2d;
+  margin: 0;
+  padding: 0;
   margin: 0;
   padding: 0;
   width: 73%;
-  margin: 0;
-  padding: 0;
   border: 2px solid #f7ab2d;
 }
 .Footer .Content {
@@ -373,13 +375,14 @@
 }
 .ModalContainer {
   border: 1px solid transparent;
-  width: calc(100% - 2px);
   position: relative;
-  top: 0;
-  z-index: 2;
   margin: 0;
   padding: 0;
+  top: 0;
+  width: calc(100% - 2px);
+  z-index: 2;
   background-color: rgba(9,116,183,0.7);
+  min-height: 724px;
   -webkit-transition: 1s;
   -moz-transition: 1s;
   -o-transition: 1s;
@@ -387,13 +390,14 @@
   transition: 1s;
 }
 .ModalContainer .WindowsModal {
+  border: 1px solid transparent;
   background-color: #fff;
   border-radius: 25px;
   height: auto;
   position: relative;
+  border: 1px solid #f00;
   width: 90%;
   margin: 25px 5%;
-  border: 1px solid transparent;
 }
 .ModalContainer .WindowsModal .CloseButton {
   background-color: transparent;

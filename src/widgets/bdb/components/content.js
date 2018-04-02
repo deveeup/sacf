@@ -11,26 +11,26 @@ function ContentBdB(props){
   switch(props.ContentBdB){
     case 'BdB-1':
       return(
-        <BdB1 Info={Info.system}/>
+        <BdB1 Info={Info.system} ModalActive={props.ModalActive}/>
       )
     break
     case 'BdB-2':
       return(
-        <BdB2 Info={Info.search}/>
+        <BdB2 Info={Info.search} ModalActive={props.ModalActive}/>
       )
     case 'BdB-3':
       return(
-        <BdB3 Info={Info.actors}/>
+        <BdB3 Info={Info.actors} ModalActive={props.ModalActive}/>
       )
     break
     case 'BdB-4':
       return(
-        <BdB4 Info={Info.elements}/>
+        <BdB4 Info={Info.elements} ModalActive={props.ModalActive}/>
       )
     break
     case 'BdB-5':
       return(
-        <BdB5 Info={Info.objects}/>
+        <BdB5 Info={Info.objects} ModalActive={props.ModalActive}/>
       )
     break
   }

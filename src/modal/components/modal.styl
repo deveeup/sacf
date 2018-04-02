@@ -2,22 +2,23 @@
 
 .ModalContainer
 	_(transparent)
-	_w(calc(100% - 2px))
-	// _h(725px)
 	_pr()
-	_t(0)
-	_z(2)
 	_reset(0)
+	_t(0)
+	_w(calc(100% - 2px))
+	_z(2)
 	background-color rgba(#0974B7, .7)
+	min-height 724px
 	transition 1s
 	.WindowsModal
+		_(transparent)
 		_bc(white)
 		_br(25px)
 		_h(auto)
 		_pr()
+		_(red)
 		_w(90%)
 		margin 25px 5% 
-		_(transparent)
 		.CloseButton
 			_bc(transparent)
 			_bn()

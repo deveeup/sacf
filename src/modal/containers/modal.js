@@ -11,6 +11,9 @@ import Court from '../../widgets/court/containers/court'
 import ButtonCloseImage from '../components/assets/ButtonClose.svg'
 
 class ModalContainer extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
   render(){
     {
       switch(this.props.ModalContent){
@@ -21,7 +24,7 @@ class ModalContainer extends Component {
               ModalActive={this.props.ModalActive}
               ButtonCloseImage={ButtonCloseImage}
             >
-              <Bdb/>
+              <Bdb ModalActive={this.props.ModalActive}/>
             </ModalView>
           )
         break

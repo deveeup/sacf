@@ -4,8 +4,15 @@ import './BdB-1.styl'
 const Parser = require('html-react-parser')
 
 function BdB1View(props){
+  const Visible = { visibility: 'visible', opacity: 1 }
+  const Hidden = { visibility: 'hidden', opacity: 0 }
+  let ContentView = Visible
+  { props.ModalActive
+    ? ContentView = Visible 
+    : ContentView = Hidden 
+  }
   return(
-    <div className="BdB-1">
+    <div className="BdB-1" style={ContentView}>
       <div className="Left">
         <h2>
           { Parser(props.Info.title) }

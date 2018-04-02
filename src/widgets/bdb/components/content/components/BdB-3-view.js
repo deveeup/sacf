@@ -5,9 +5,15 @@ const Parse = require('html-react-parser')
 
 function BdB3View(props){
   const item = props.Info.item
-  console.log(props.Info)
+  const Visible = { display: 'block', opacity: 1 }
+  const Hidden = { display: 'none', opacity: 0 }
+  let ContentView = Visible
+  { props.ModalActive
+    ? ContentView = Visible 
+    : ContentView = Hidden 
+  }
   return(
-    <div className="BdB-3">
+    <div className="BdB-3" style={ContentView}>
       <div className="TopContent">
         <div className="TopContentLeft">
           <h2>{Parse(props.Info.title)}</h2>

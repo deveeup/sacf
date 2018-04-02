@@ -4,7 +4,7 @@ import './modal.styl'
 
 function ModalView(props){
 	const Visible = { visibility: 'visible', opacity: 1, height: 'auto' }
-	const Hidden = { visibility: 'hidden', opacity: 0, height: 725 }
+	const Hidden = { visibility: 'hidden', opacity: 0, height: 724 }
 	let ModalViewConditional = Hidden
 	{ props.ModalActive
 		? ModalViewConditional = Visible 
