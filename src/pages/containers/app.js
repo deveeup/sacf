@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import AppView from '../components/app-view'
 import Header from '../../header/containers/header'
 import Menu from '../../menu/containers/menu'
+import Footer from '../../footer/containers/footer'
 import Menuitems from '../../menu/containers/menu-items.json'
 import Body from '../../body/containers/body'
 
@@ -234,6 +235,7 @@ class App extends Component {
           School={this.state.School}
           SchoolHover={this.state.SchoolHover}
         />
+        <Footer/>
 			</AppView>
 		)
 	}
