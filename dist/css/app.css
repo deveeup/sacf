@@ -449,6 +449,11 @@
   width: 100%;
   position: relative;
   z-index: 5;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -ms-transition: 1s;
+  transition: 1s;
 }
 .ModalContainer {
   border: 1px solid transparent;

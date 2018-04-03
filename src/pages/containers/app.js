@@ -7,6 +7,9 @@ import Footer from '../../footer/containers/footer'
 import Menuitems from '../../menu/containers/menu-items.json'
 import Body from '../../body/containers/body'
 
+const { detect } = require('detect-browser');
+const browser = detect();
+
 class App extends Component {
   state = {
     Bank: false,
@@ -208,10 +211,22 @@ class App extends Component {
     }
   }
   componentWillMount() {
-    window.addEventListener('keydown', this.handleKeyDown);
+    switch (browser && browser.name) {
+      case 'ie':
+        console.log('Not support ESC Key.');
+      break     
+      default:
+        window.addEventListener('keydown', this.handleKeyDown);
+    }
   }
   componentWillUnmount() {
-    window.removeEventListener('keydown', this.handleKeyDown);
+    switch (browser && browser.name) {
+      case 'ie':
+        console.log('Not support ESC Key.');
+      break     
+      default:
+        window.addEventListener('keydown', this.handleKeyDown);
+    }
   }
   handleKeyDown = (e) => {
     if(e.keyCode == 27){
@@ -226,15 +241,16 @@ class App extends Component {
         CourtHover: false,
         LibraryHover: false,
         PoliticsHover: false,
+        
         PrisonHover: false,
         SchoolHover: false,
         ModalActive: false,
       })
     }
   }
-	render(){
-		return(
-			<AppView>
+  render(){
+    return(
+      <AppView>
 				<Header/>
 				<Menu 
           ListItems={Menuitems}
@@ -245,7 +261,6 @@ class App extends Component {
           MouseEnter={this.MouseEnter}
           MouseLeave={this.MouseLeave}
           CloseModal={this.CloseModal}
-          handleKeyDown={this.handleKeyDown}
           ModalActive={this.state.ModalActive}
           ModalContent={this.state.ModalContent}
           Bank={this.state.Bank}

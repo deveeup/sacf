@@ -35,7 +35,6 @@ class Body extends Component {
 					CloseModal={this.props.CloseModal}
 					ModalActive={this.props.ModalActive}
 					ModalContent={this.props.ModalContent}
-					handleKeyDown={this.props.handleKeyDown}
 				/>
 			</BodyContainer>
 		)
