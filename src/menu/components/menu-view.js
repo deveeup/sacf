@@ -16,6 +16,7 @@ function MenuView (props){
 								key={items.id}
 								id={items.id}
 								MouseClick={props.MouseClick}
+								ModalContent={props.ModalContent}
 							/>
 						)
 					})

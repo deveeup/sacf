@@ -25,7 +25,7 @@ class App extends Component {
     School: false,
     SchoolHover: false,
     ModalActive: false,
-    ModalContent: 'Bank',
+    ModalContent: '',
   }
   MouseEnter = (e) => {
     switch(e.target.id) {
@@ -190,6 +190,7 @@ class App extends Component {
         PrisonHover: false,
         SchoolHover: false,
         ModalActive: false,
+        ModalContent: '',
       })
     }
     else if(e.target.id == 'ButtonClose') {
@@ -207,6 +208,7 @@ class App extends Component {
         PrisonHover: false,
         SchoolHover: false,
         ModalActive: false,
+        ModalContent: '',
       })
     }
   }
@@ -255,6 +257,7 @@ class App extends Component {
 				<Menu 
           ListItems={Menuitems}
           MouseClick={this.MouseClick}
+          ModalContent={this.state.ModalContent}
         />
 				<Body
           MouseClick={this.MouseClick}

@@ -25,6 +25,7 @@ class ModalContainer extends Component {
               ButtonCloseImage={ButtonCloseImage}
             >
               <Bdb ModalActive={this.props.ModalActive}/>
+              }
             </ModalView>
           )
         break
@@ -83,6 +84,15 @@ class ModalContainer extends Component {
             </ModalView>
           )
         break
+        default:
+          return(
+            <ModalView 
+              CloseModal={this.props.CloseModal}
+              ModalActive={this.props.ModalActive}
+              ButtonCloseImage={ButtonCloseImage}
+            >
+            </ModalView>
+          )
       }
     }
   }
