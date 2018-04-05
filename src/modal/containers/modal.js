@@ -25,7 +25,6 @@ class ModalContainer extends Component {
               ButtonCloseImage={ButtonCloseImage}
             >
               <Bdb ModalActive={this.props.ModalActive}/>
-              }
             </ModalView>
           )
         break

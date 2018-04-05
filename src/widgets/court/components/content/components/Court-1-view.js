@@ -34,24 +34,24 @@ function CourtView1 (props) {
             <li>
               <img src={item.icon} />
               <span>Dirección:</span>
-              <p>{item.address}</p>
+              <p>{Parse(item.address)}</p>
             </li>
             <li>
               <img src={item.icon} />
               <span>PBX:</span>
-              <p>{item.pbx}</p>
+              <p>{Parse(item.pbx)}</p>
             </li>
             <li>
               <img src={item.icon} />
               <span>Fax:</span>
-              <p>{item.fax}</p>
+              <p>{Parse(item.fax)}</p>
             </li>
             <li>
               <div className="LastChild">
                 <img src={item.icon} />
                 <span>Correo Electrónico:</span>
               </div>
-              <p>{item.mail}</p>
+              <p>{Parse(item.mail)}</p>
             </li>
           </ol>
         </div>

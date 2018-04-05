@@ -141,7 +141,7 @@
 				},
 				{
 					"id": "2",
-					"text": "Indícale al cliente que puede hacer trámites en la notaria de su elección, pero si no cuenta con una puedes sugerirle la más cercana."
+					"text": "Indícale al cliente que puede hacer trámites en la notaría de su elección, pero si no cuenta con una puedes sugerirle la más cercana."
 				},
 				{
 					"id": "3",
@@ -181,7 +181,7 @@
 			]
 		},
 		"ListRight": {
-			"title": "Otras Mejores prácticas",
+			"title": "Otras mejores prácticas",
 			"image": "./src/widgets/prison/components/content/containers/assets/D-Left-image.jpg",
 			"icon": "./src/widgets/prison/components/content/containers/assets/iconYellow.jpg",
 			"items": [
@@ -195,7 +195,7 @@
 				},
 				{
 					"id": "3",
-					"text": "El comercial debe llamar al cliente para informar el resultado del estudio del credito."
+					"text": "El comercial debe llamar al cliente para informar el resultado del estudio del crédito."
 				}
 			]
 		}

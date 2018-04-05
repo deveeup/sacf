@@ -45,7 +45,7 @@
       {
         "id": "1",
         "title": "Gerencia de <br/> Soporte Posventa:",
-        "text": "Tiene a cargo la gestión y respuesta de las solicitudes, quejas y reclamos que presentan nuestros Consumidores financieros y que no estén asignados a ninguna otra área gestora.",
+        "text": "Tiene a cargo la gestión y respuesta de las solicitudes, quejas y reclamos que presentan nuestros Consumidores Financieros y que no estén asignados a ninguna otra área gestora.",
         "image": "./src/widgets/bdb/components/assets/content/actors-before.jpg"
       },
       {
@@ -105,7 +105,7 @@
       {
         "id": "5",
         "title": "Capacitación:",
-        "text": "Programas de formación preiódicos y permanentes, dirigidos a todos los cargos del Banco.",
+        "text": "Programas de formación periódicos y permanentes, dirigidos a todos los cargos del Banco.",
         "image": "./src/widgets/bdb/components/assets/content/elements-image-5.png"
       },
       {
@@ -125,13 +125,13 @@
   "objects": {
     "id": "BdB-5",
     "title": "¿Cómo funciona el ciclo del SACF para desarrollar su objetivo?",
-    "text": "Teniendo en cuenta los hechos o situaciones incidentes en la debida atención y proyección a los Consumidores Financieros, el ciclo del SACF se constituye de las siguientes etapas:",
+    "text": "Teniendo en cuenta los hechos o situaciones incidentes en la debida atención y protección a los Consumidores Financieros, el ciclo del SACF se constituye de las siguientes etapas:",
     "image": "./src/widgets/bdb/components/assets/content/objects-image-1.png",
     "item": [
       {
         "id": "1",
         "title": "Identificación:",
-        "text": "Identificar todos aquellos hechos o sitaciones que puedan afectar la debida atención y protección a los Consumidores Financieros.",
+        "text": "Identificar todos aquellos hechos o situaciones que puedan afectar la debida atención y protección a los Consumidores Financieros.",
         "image": "./src/widgets/bdb/components/assets/content/object-item-1.png"
       },
       {
@@ -143,7 +143,7 @@
       {
         "id": "3",
         "title": "Control:",
-        "text": "Tomar las medidas mara mitigar y evitar los eventos o situaciones que puedan afectar la debida atención y protección a los consumidores financieros.",
+        "text": "Tomar las medidas para mitigar y evitar los eventos o situaciones que puedan afectar la debida atención y protección a los Consumidores Financieros.",
         "image": "./src/widgets/bdb/components/assets/content/object-item-3.png"
       },
       {

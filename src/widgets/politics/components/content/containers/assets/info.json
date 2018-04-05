@@ -7,8 +7,8 @@
   },
   "B": {
     "id": "B",
-    "title": "Libertad de Eleción",
-    "text": "Las entidades vigiladas y los consumidores financieros podrán escoger <b>libremente</b> a sus respectivas contrapartes.",
+    "title": "Libertad de Elección",
+    "text": "Las entidades vigiladas y los Consumidores Financieros podrán escoger <b>libremente</b> a sus respectivas contrapartes.",
     "image": "./src/widgets/politics/components/content/containers/assets/B-image.png"
   },
   "C": {
@@ -19,7 +19,7 @@
   },
   "D": {
     "id": "D",
-    "title": "Trámite de Quejas y reclamos",
+    "title": "Trámite de Quejas y Reclamos",
     "text": "Atender <b>eficientemente</b> quejas o reclamos interpuestos por los Consumidores Financieros, en los plazos y condiciones previstos en la regulación vigente; además de <b>diseñar</b> las acciones de mejora necesarias.",
     "image": "./src/widgets/politics/components/content/containers/assets/D-image.png"
   },
