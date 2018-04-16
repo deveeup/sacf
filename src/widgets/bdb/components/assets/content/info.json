@@ -44,7 +44,7 @@
     "item": [
       {
         "id": "1",
-        "title": "Gerencia de <br/> Soporte Posventa:",
+        "title": "Gerencia de <br/> Soporte Postventa:",
         "text": "Tiene a cargo la gestión y respuesta de las solicitudes, quejas y reclamos que presentan nuestros Consumidores Financieros y que no estén asignados a ninguna otra área gestora.",
         "image": "./src/widgets/bdb/components/assets/content/actors-before.jpg"
       },

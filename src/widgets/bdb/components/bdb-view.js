@@ -10,7 +10,7 @@ function BdbView (props) {
 
   return(
     <div className="BdbContainer">
-      <img className="BdbEdifice" src="./src/widgets/bdb/containers/assets/BdbEdifice.gif" id="ModalImage"/>
+      <img className="BdbEdifice" src="./src/widgets/bdb/containers/assets/BdbEdifice.png" id="ModalImage"/>
       <div className="InfoContainer">
         <div className="Menu">
           <nav className="NavBdB">
