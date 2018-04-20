@@ -243,10 +243,10 @@ class App extends Component {
         CourtHover: false,
         LibraryHover: false,
         PoliticsHover: false,
-        
         PrisonHover: false,
         SchoolHover: false,
         ModalActive: false,
+        ModalContent: '',
       })
     }
   }

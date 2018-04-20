@@ -6,7 +6,7 @@ const Path = require('html-react-parser')
 
 function BdbView (props) {
   const menu = props.ListItems.list
-  const FontBold = {fontWeight: 'bold'}
+  const FontBold = {fontWeight: 'bold', /*color: '#f8b400'*/}
 
   return(
     <div className="BdbContainer">
