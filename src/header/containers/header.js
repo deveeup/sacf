@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react'
 import HeaderView from '../components/header-view'
-import LogoBDB from './assets/logo-bdb.png'
+import LogoBDB from './assets/imgHeader.jpg'
 class Header extends Component {
 	render(){
 		return( 
