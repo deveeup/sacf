@@ -24,10 +24,23 @@ function SchoolView2 (props) {
           item.map((item)=> {
             return(
               <div className="ItemContainer" key={item.id}>
-                <figure className="ImageContainer">
-                  <img src={item.image} />
-                </figure>
-                <h3 className="Title">{Parse(item.title)}</h3>
+                {
+                  item.link ?
+                    <a href={item.link} target="_blank">
+                      <figure className="ImageContainer">
+                        <img src={item.image}/>
+                      </figure>
+                      <h3 className="Title">{Parse(item.title)}</h3>
+                    </a>
+                  :
+                    <div className="noPointer">
+                      <figure className="ImageContainer">
+                        <img src={item.image} />
+                      </figure>
+                      <h3 className="Title">{Parse(item.title)}</h3>
+                    </div>
+                }
+
               </div>
             )
           })

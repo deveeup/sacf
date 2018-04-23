@@ -1641,6 +1641,14 @@
 .School-2 .ItemsContainer .ItemContainer {
   width: 33%;
 }
+.School-2 .ItemsContainer .ItemContainer a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #606060;
+}
+.School-2 .ItemsContainer .ItemContainer .noPointer {
+  cursor: default;
+}
 .School-2 .ItemsContainer .ItemContainer .ImageContainer {
   display: -webkit-box;
   display: -moz-box;

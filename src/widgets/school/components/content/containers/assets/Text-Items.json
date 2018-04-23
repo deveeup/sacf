@@ -54,17 +54,13 @@
       {
         "id": "3",
         "image": "./src/widgets/school/components/content/containers/assets/image-tools-3.png",
-        "title": "Fútbol financiero"
+        "title": "Fútbol financiero",
+        "link": "http://www.bancodebogota.futbolfinanciero.com.co/"
       },
       {
         "id": "4",
         "image": "./src/widgets/school/components/content/containers/assets/image-tools-4.png",
         "title": "Saber más, ser más"
-      },
-      {
-        "id": "5",
-        "image": "./src/widgets/school/components/content/containers/assets/image-tools-5.png",
-        "title": "Artículos BDB"
       }
     ],
     "callback": {
@@ -89,12 +85,7 @@
       {
         "id": "3",
         "image": "./src/widgets/school/components/content/containers/assets/image-program-3.png",
-        "text": "Estructuración de talleres de educación financiera basados en la temática del ahorro junto."
-      },
-      {
-        "id": "4",
-        "image": "./src/widgets/school/components/content/containers/assets/image-program-4.png",
-        "text": "Capacitaciones en aula móvil."
+        "text": "Entretenimiento financiero para adultos y jóvenes."
       },
       {
         "id": "5",
