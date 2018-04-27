@@ -63,7 +63,7 @@
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
-  height: 65px;
+  height: 45px;
   margin: 0;
   padding: 0;
 }
@@ -126,7 +126,7 @@
   justify-content: center;
   text-align: center;
   width: 13%;
-  height: 40px;
+  height: 30px;
   border-right: 1px solid rgba(255,255,255,0.5);
 }
 .Menu ul li:last-child {
@@ -166,15 +166,15 @@
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  font-size: 14px;
-  height: 65px;
+  font-size: 12px;
+  height: 40px;
   padding: 17px, 0, 17px, 0;
   text-align: center;
   will-change: transform;
 }
 .Menu ul li .LinkMenu:hover {
   font-weight: bold;
-  border-bottom: 10px solid #eb1b23;
+  border-bottom: 3px solid #eb1b23;
   cursor: pointer;
 }
 .Menu ul li .LinkMenu:active {
@@ -262,7 +262,7 @@
   padding: 0;
   background-color: #054380;
   width: 100%;
-  height: 170px;
+  height: 120px;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -297,17 +297,17 @@
   margin: 0;
   padding: 0;
   border: none;
-  width: 70%;
+  width: 50%;
 }
 .Footer .Content .Right {
   margin: 0;
   padding: 0;
   width: 75%;
-  height: 170px;
+  height: 120px;
 }
 .Footer .Content .Right .Title {
   width: 50%;
-  margin: 25px 0 0 40px;
+  margin: 10px 0 0 40px;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -332,6 +332,12 @@
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
+  font-size: 14px;
+}
+.Footer .Content .Right .Title img {
+  width: 10px;
+  margin: 0;
+  padding: 0;
 }
 .Footer .Content .Right .Title p {
   color: #fff;
@@ -341,8 +347,9 @@
   padding-left: 10px;
 }
 .Footer .Content .Right .Text {
-  margin: 15px 0 0 40px;
+  margin: 5px 0 0 40px;
   color: #fff;
+  font-size: 14px;
 }
 .BodyView {
   margin: auto;
@@ -608,6 +615,7 @@
 }
 .BdbContainer .InfoContainer .Menu .NavBdB .UlBdB .ItemBdB {
   width: 100%;
+  padding: 8px;
 }
 .BdbContainer .InfoContainer .Menu .NavBdB .UlBdB .ItemBdB:hover {
   border: none;
@@ -4683,12 +4691,12 @@
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -o-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
   display: -ms-flexbox;
   display: box;
   display: flex;
@@ -4704,17 +4712,22 @@
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
-  padding: 3px 0;
+  padding: 12px 0;
 }
 .Court-1 .InfoContainer .Bottom .OrderList li span {
   color: #606060;
   font-weight: bold;
   font-size: 14px;
-  margin: 0 7px;
+  margin: 0;
+  padding: 0;
+  margin-left: 5px;
 }
 .Court-1 .InfoContainer .Bottom .OrderList li p {
   color: #606060;
   font-size: 14px;
+  margin: 0;
+  padding: 0;
+  margin-left: 5px;
 }
 .Court-1 .InfoContainer .Bottom .OrderList li:last-child {
   display: -webkit-box;
@@ -4774,6 +4787,12 @@
 .Court-1 .InfoContainer .Bottom .OrderList li:last-child .LastChild span {
   width: 100%;
   display: block;
+}
+.Court-1 .InfoContainer .Bottom .OrderList li:last-child .LastChildEmail {
+  margin-left: 0px;
+  margin: 0;
+  padding: 0;
+  margin-left: 22px;
 }
 .Court-1 .InfoContainer .Bottom .OrderList li:last-child p {
   margin-top: 5px;

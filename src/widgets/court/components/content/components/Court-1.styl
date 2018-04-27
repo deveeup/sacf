@@ -57,16 +57,19 @@
         _lsn()
         padding 0 30px
         li
-          _dfr(flex-start, center)
-          padding 3px 0
+          _dfr(flex-start, flex-start)
+          padding 12px 0
           span
             _c($gray)
             _fwb()
             _fz(14px)
-            margin 0 7px
+            _reset(0)
+            margin-left 5px
           p
             _c($gray)
             _fz(14px)
+            _reset(0)
+            margin-left 5px
           &:last-child
             _dfc(flex-start, flex-start)
             .LastChild
@@ -77,6 +80,10 @@
               span
                 _w(100%)
                 display block
+            .LastChildEmail
+              margin-left 0px
+              _reset(0)
+              margin-left 22px
             p
               margin-top 5px
               padding-left 25px

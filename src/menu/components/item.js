@@ -3,7 +3,7 @@ import React from 'react'
 const Path = require('html-react-parser')
 
 function Item (props) {
-  const Active = {fontWeight: 'bold', borderBottomWidth: 10, borderBottomColor: 'red' }
+  const Active = {fontWeight: 'bold', borderBottomWidth: 3, borderBottomColor: 'red' }
   return props.ModalContent == props.id ?
 		<li>
 			<a 

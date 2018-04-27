@@ -51,7 +51,7 @@ function CourtView1 (props) {
                 <img src={item.icon} />
                 <span>Correo Electrónico:</span>
               </div>
-              <p>{Parse(item.mail)}</p>
+              <p class="LastChildEmail">{Parse(item.mail)}</p>
             </li>
           </ol>
         </div>
